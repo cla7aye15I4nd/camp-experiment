@@ -1,0 +1,442 @@
+valid,0
+
+"Full Results Table"
+
+Benchmark,"Base Ref Time","Est. Base Run Time","Est. Base Ratio","Base Selected","Base Status","Peak Ref Time","Est. Peak Run Time","Est. Peak Ratio","Peak Selected","Peak Status",Description
+410.bwaves,,,,,NR,,,,,NR
+410.bwaves,,,,,NR,,,,,NR
+410.bwaves,,,,,NR,,,,,NR
+416.gamess,,,,,NR,,,,,NR
+416.gamess,,,,,NR,,,,,NR
+416.gamess,,,,,NR,,,,,NR
+433.milc,,,,,NR,,,,,NR
+433.milc,,,,,NR,,,,,NR
+433.milc,,,,,NR,,,,,NR
+434.zeusmp,,,,,NR,,,,,NR
+434.zeusmp,,,,,NR,,,,,NR
+434.zeusmp,,,,,NR,,,,,NR
+435.gromacs,,,,,NR,,,,,NR
+435.gromacs,,,,,NR,,,,,NR
+435.gromacs,,,,,NR,,,,,NR
+436.cactusADM,,,,,NR,,,,,NR
+436.cactusADM,,,,,NR,,,,,NR
+436.cactusADM,,,,,NR,,,,,NR
+437.leslie3d,,,,,NR,,,,,NR
+437.leslie3d,,,,,NR,,,,,NR
+437.leslie3d,,,,,NR,,,,,NR
+444.namd,8020,145.053333,55.290008,1,S,,,,,,"ref iteration #1"
+444.namd,8020,147.148093,54.502915,0,S,,,,,,"ref iteration #2"
+444.namd,8020,144.734878,55.411661,0,S,,,,,,"ref iteration #3"
+447.dealII,11440,555.452675,20.595814,1,S,,,,,,"ref iteration #1"
+447.dealII,11440,560.109557,20.424576,0,S,,,,,,"ref iteration #2"
+447.dealII,11440,554.500746,20.631172,0,S,,,,,,"ref iteration #3"
+450.soplex,8340,124.705119,66.877768,0,S,,,,,,"ref iteration #1"
+450.soplex,8340,123.011625,67.79847,0,S,,,,,,"ref iteration #2"
+450.soplex,8340,123.231724,67.677378,1,S,,,,,,"ref iteration #3"
+453.povray,5320,81.380896,65.371608,1,S,,,,,,"ref iteration #1"
+453.povray,5320,81.293392,65.441973,0,S,,,,,,"ref iteration #2"
+453.povray,5320,81.421358,65.339121,0,S,,,,,,"ref iteration #3"
+454.calculix,,,,,NR,,,,,NR
+454.calculix,,,,,NR,,,,,NR
+454.calculix,,,,,NR,,,,,NR
+459.GemsFDTD,,,,,NR,,,,,NR
+459.GemsFDTD,,,,,NR,,,,,NR
+459.GemsFDTD,,,,,NR,,,,,NR
+465.tonto,,,,,NR,,,,,NR
+465.tonto,,,,,NR,,,,,NR
+465.tonto,,,,,NR,,,,,NR
+470.lbm,,,,,NR,,,,,NR
+470.lbm,,,,,NR,,,,,NR
+470.lbm,,,,,NR,,,,,NR
+481.wrf,,,,,NR,,,,,NR
+481.wrf,,,,,NR,,,,,NR
+481.wrf,,,,,NR,,,,,NR
+482.sphinx3,,,,,NR,,,,,NR
+482.sphinx3,,,,,NR,,,,,NR
+482.sphinx3,,,,,NR,,,,,NR
+
+"Selected Results Table"
+
+Benchmark,"Base Ref Time","Est. Base Run Time","Est. Base Ratio","Base Selected","Base Status","Peak Ref Time","Est. Peak Run Time","Est. Peak Ratio","Peak Selected","Peak Status",Description
+410.bwaves,,,,,NR,,,,,NR
+416.gamess,,,,,NR,,,,,NR
+433.milc,,,,,NR,,,,,NR
+434.zeusmp,,,,,NR,,,,,NR
+435.gromacs,,,,,NR,,,,,NR
+436.cactusADM,,,,,NR,,,,,NR
+437.leslie3d,,,,,NR,,,,,NR
+444.namd,8020,145.053333,55.290008,1,S,,,,,NR,"SelectedIteration (base #1)"
+447.dealII,11440,555.452675,20.595814,1,S,,,,,NR,"SelectedIteration (base #1)"
+450.soplex,8340,123.231724,67.677378,1,S,,,,,NR,"SelectedIteration (base #3)"
+453.povray,5320,81.380896,65.371608,1,S,,,,,NR,"SelectedIteration (base #1)"
+454.calculix,,,,,NR,,,,,NR
+459.GemsFDTD,,,,,NR,,,,,NR
+465.tonto,,,,,NR,,,,,NR
+470.lbm,,,,,NR,,,,,NR
+481.wrf,,,,,NR,,,,,NR
+482.sphinx3,,,,,NR,,,,,NR
+
+SPECfp_base2006,--,,--
+SPECfp2006,"Not Run",,,,,,,"Not Run"
+
+"Run number:",089
+
+"Hardware Vendor:",--
+"Hardware Model:",--
+"Date tested:",Nov-2022
+"CPU2006 License:",0
+"Test sponsor:",--
+"Tested by:",--
+"Hardware avail:",--
+"Software avail:",--
+
+
+HARDWARE
+
+"CPU Name","12th Gen Intel Core i7-12700"
+"CPU Characteristics"," "
+"CPU MHz",--
+FPU,--
+"CPU(s) enabled","-1 cores, 1 chip, -1 cores/chip, -1 threads/core"
+"CPU(s) orderable",--
+"Primary Cache",--
+"Secondary Cache",--
+"L3 Cache",--
+"Other Cache",--
+Memory,"31.047 GB fixme: If using DDR3, format is:"
+,"'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'"
+"Disk Subsystem","703 GB  add more disk info here"
+"Other Hardware",--
+
+SOFTWARE
+
+"Operating System","Ubuntu 22.04.1 LTS"
+,5.15.0-52-generic
+Compiler,--
+"Auto Parallel",No
+"File System",ext4
+"System State","Run level 5 (add definition here)"
+"Base Pointers",--
+"Peak Pointers","Not Applicable"
+"Other Software",--
+
+"Submit Notes"
+
+"'numactl' was used to bind copies to the cores."
+"See the configuration file for details."
+
+"Operating System Notes"
+
+"'ulimit -s unlimited' was used to set environment stack size"
+
+"Platform Notes"
+
+" Sysinfo program /home/moe/cpu2006/Docs/sysinfo"
+" $Rev: 6775 $ $Date:: 2011-08-16 #$ 8787f7622badcf24e01c368b1db4377c"
+" running on pc Thu Nov 10 12:18:48 2022"
+
+" This section contains SUT (System Under Test) info as seen by"
+" some common utilities.  To remove or add to this section, see:"
+"   http://www.spec.org/cpu2006/Docs/config.html#sysinfo"
+
+" From /proc/cpuinfo"
+"    model name : 12th Gen Intel(R) Core(TM) i7-12700"
+"       1 ""physical id""s (chips)"
+"       20 ""processors"""
+"    cores, siblings (Caution: counting these is hw and system dependent.  The"
+"    following excerpts from /proc/cpuinfo might not be reliable.  Use with"
+"    caution.)"
+"       cpu cores : 12"
+"       siblings  : 20"
+"       physical 0: cores 0 4 8 12 16 20 24 28 36 37 38 39"
+"    cache size : 25600 KB"
+
+" From /proc/meminfo"
+"    MemTotal:       32555656 kB"
+"    HugePages_Total:       0"
+"    Hugepagesize:       2048 kB"
+
+" /usr/bin/lsb_release -d"
+"    Ubuntu 22.04.1 LTS"
+
+" From /etc/*release* /etc/*version*"
+"    debian_version: bookworm/sid"
+"    os-release:"
+"       PRETTY_NAME=""Ubuntu 22.04.1 LTS"""
+"       NAME=""Ubuntu"""
+"       VERSION_ID=""22.04"""
+"       VERSION=""22.04.1 LTS (Jammy Jellyfish)"""
+"       VERSION_CODENAME=jammy"
+"       ID=ubuntu"
+"       ID_LIKE=debian"
+"       HOME_URL=""https://www.ubuntu.com/"""
+
+" uname -a:"
+"    Linux pc 5.15.0-52-generic #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022 x86_64"
+"    x86_64 x86_64 GNU/Linux"
+
+" run-level 5 Nov 9 22:36"
+
+" SPEC is set to: /home/moe/cpu2006"
+"    Filesystem     Type  Size  Used Avail Use% Mounted on"
+"    /dev/nvme0n1p2 ext4  703G  117G  550G  18% /"
+
+" (End of data from sysinfo program)"
+
+"Base Compiler Invocation"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd," g++"," g++"
+447.dealII," g++"," g++"
+450.soplex," g++"," g++"
+453.povray," g++"," g++"
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Base Portability Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd," -DSPEC_CPU_LP64"
+447.dealII," -DSPEC_CPU_LP64"
+450.soplex," -DSPEC_CPU_LP64"
+453.povray," -DSPEC_CPU_LP64"
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Base Optimization Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd," -O1"
+447.dealII," -O1"
+450.soplex," -O1"
+453.povray," -O1"
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Base Other Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd," No flags used"
+447.dealII," No flags used"
+450.soplex," No flags used"
+453.povray," No flags used"
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Base Forbidden Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd
+447.dealII
+450.soplex
+453.povray
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Base Unknown Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd," /usr/lib/llvm-12/bin/clan    -std=c++03"," /usr/lib/llvm-12/bin/clan    -std=c++03"
+447.dealII," /usr/lib/llvm-12/bin/clan    -std=c++03"," /usr/lib/llvm-12/bin/clan    -std=c++03"
+450.soplex," /usr/lib/llvm-12/bin/clan    -std=c++03"," /usr/lib/llvm-12/bin/clan    -std=c++03"
+453.povray," /usr/lib/llvm-12/bin/clan    -std=c++03"," /usr/lib/llvm-12/bin/clan    -std=c++03"
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Peak Compiler Invocation"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd
+447.dealII
+450.soplex
+453.povray
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Peak Portability Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd
+447.dealII
+450.soplex
+453.povray
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Peak Optimization Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd
+447.dealII
+450.soplex
+453.povray
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Peak Other Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd
+447.dealII
+450.soplex
+453.povray
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Peak Forbidden Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd
+447.dealII
+450.soplex
+453.povray
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+"Peak Unknown Flags"
+410.bwaves
+416.gamess
+433.milc
+434.zeusmp
+435.gromacs
+436.cactusADM
+437.leslie3d
+444.namd
+447.dealII
+450.soplex
+453.povray
+454.calculix
+459.GemsFDTD
+465.tonto
+470.lbm
+481.wrf
+482.sphinx3
+
+ERRORS
+
+##############################################################################
+"#   INVALID RUN INVALID RUN INVALID RUN INVALID RUN INVALID RUN INVALID RUN  #"
+"#                                                                            #"
+"# 465.tonto (base) did not have enough runs!                                 #"
+"# 416.gamess (base) did not have enough runs!                                #"
+"# 436.cactusADM (base) did not have enough runs!                             #"
+"# 459.GemsFDTD (base) did not have enough runs!                              #"
+"# 437.leslie3d (base) did not have enough runs!                              #"
+"# 481.wrf (base) did not have enough runs!                                   #"
+"# 433.milc (base) did not have enough runs!                                  #"
+"# 410.bwaves (base) did not have enough runs!                                #"
+"# 435.gromacs (base) did not have enough runs!                               #"
+"# 482.sphinx3 (base) did not have enough runs!                               #"
+"# 434.zeusmp (base) did not have enough runs!                                #"
+"# 470.lbm (base) did not have enough runs!                                   #"
+"# 454.calculix (base) did not have enough runs!                              #"
+"# Unknown flags were used! See                                               #"
+"#      http://www.spec.org/cpu2006/Docs/runspec.html#flagsurl                #"
+"# for information about how to get rid of this error.                        #"
+"#                                                                            #"
+"#   INVALID RUN INVALID RUN INVALID RUN INVALID RUN INVALID RUN INVALID RUN  #"
+##############################################################################
+----------------
+"For questions about","this result, please","contact the tester.",
+"For other inquiries,","please contact",webmaster@spec.org.,
+"Copyright 2006-2022 Standard","Performance Evaluation",Corporation,
+"Tested with SPEC CPU2006 ","v1.2.  Report","generated on ","Thu Nov 10 13:49:56 2022","by SPEC CPU2006 CSV","formatter v6364."
