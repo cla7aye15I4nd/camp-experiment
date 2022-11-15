@@ -16,6 +16,6 @@ make -j16 CC=/home/moe/violet/tools/vcc
 make install
 
 ./configure --prefix=asan
-make -j16 CC=clang -fsanitize=address -fsanitize-recover=address -mllvm -asan-stack=0 -mllvm -asan-globals=0
+make -j16 CC="clang -fsanitize=address -fsanitize-recover=address -mllvm -asan-stack=0 -mllvm -asan-globals=0"
 make install
 
