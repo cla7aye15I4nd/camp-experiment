@@ -16,7 +16,8 @@ git checkout tags/110.0.5454.1
 
 ## Native
 ```config
-is_clang = true                                                                                       clang_base_path = "/usr/lib/llvm-14"
+is_clang = true                                                                                       
+clang_base_path = "/usr/lib/llvm-14"
 is_asan = false
 is_debug = true
 clang_use_chrome_plugins = false
@@ -30,7 +31,8 @@ treat_warnings_as_errors = false
 patch -p1 < asan.patch
 ```
 ```config
-is_clang = true                                                                                       clang_base_path = "/usr/lib/llvm-14"
+is_clang = true                                                                                      
+clang_base_path = "/usr/lib/llvm-14"
 is_asan = true
 is_debug = true
 clang_use_chrome_plugins = false
