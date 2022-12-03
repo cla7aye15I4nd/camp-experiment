@@ -1,0 +1,28 @@
+diff --git a/build/config/sanitizers/BUILD.gn b/build/config/sanitizers/BUILD.gn
+index cb07c547122d8..5be034cb90199 100644
+--- a/build/config/sanitizers/BUILD.gn
++++ b/build/config/sanitizers/BUILD.gn
+@@ -158,7 +158,10 @@ config("default_sanitizer_ldflags") {
+   if (is_posix || is_fuchsia) {
+     ldflags = []
+     if (is_asan) {
+-      ldflags += [ "-fsanitize=address" ]
++      ldflags += [ "-fsanitize=address",
++                   "-mllvm", "-asan-stack=0",
++                   "-mllvm", "-asan-globals=0",
++                   "-fsanitize-recover=address" ]
+     }
+     if (is_hwasan) {
+       ldflags += [ "-fsanitize=hwaddress" ]
+@@ -261,7 +264,10 @@ config("common_sanitizer_flags") {
+ config("asan_flags") {
+   cflags = []
+   if (is_asan) {
+-    cflags += [ "-fsanitize=address" ]
++    cflags += [ "-fsanitize=address",
++                "-mllvm", "-asan-stack=0",
++                "-mllvm", "-asan-globals=0",
++                "-fsanitize-recover=address" ]
+     if (is_win) {
+       if (!defined(asan_win_blocklist_path)) {
+         asan_win_blocklist_path =
