@@ -1,6 +1,0 @@
-[submodule "baseline/softbound"]
-	path = baseline/softbound
-	url = git@github.com:cla7aye15I4nd/softboundcets-34.git
-[submodule "baseline/lowfat"]
-	path = baseline/lowfat
-	url = git@github.com:cla7aye15I4nd/LowFat.git
