@@ -1,0 +1,59 @@
+diff --git a/build/config/BUILD.gn b/build/config/BUILD.gn
+index fceb8989236f3..0d3272f445460 100644
+--- a/build/config/BUILD.gn
++++ b/build/config/BUILD.gn
+@@ -72,7 +72,7 @@ config("feature_flags") {
+     defines += [ "MEMORY_TOOL_REPLACES_ALLOCATOR" ]
+   }
+   if (is_asan) {
+-    defines += [ "ADDRESS_SANITIZER" ]
++    # defines += [ "ADDRESS_SANITIZER" ]
+   }
+   if (is_lsan) {
+     defines += [ "LEAK_SANITIZER" ]
+diff --git a/build/config/compiler/BUILD.gn b/build/config/compiler/BUILD.gn
+index 50be57ff8550e..58515925deb53 100644
+--- a/build/config/compiler/BUILD.gn
++++ b/build/config/compiler/BUILD.gn
+@@ -1627,7 +1627,7 @@ config("default_warnings") {
+       if (!is_nacl) {
+         cflags += [
+           # TODO(crbug.com/1343975) Evaluate and possibly enable.
+-          "-Wno-deprecated-builtins",
++          # "-Wno-deprecated-builtins",
+ 
+           # TODO(crbug.com/1352183) Evaluate and possibly enable.
+           "-Wno-bitfield-constant-conversion",
+diff --git a/build/config/sanitizers/BUILD.gn b/build/config/sanitizers/BUILD.gn
+index cb07c547122d8..79b0a18774101 100644
+--- a/build/config/sanitizers/BUILD.gn
++++ b/build/config/sanitizers/BUILD.gn
+@@ -158,7 +158,10 @@ config("default_sanitizer_ldflags") {
+   if (is_posix || is_fuchsia) {
+     ldflags = []
+     if (is_asan) {
+-      ldflags += [ "-fsanitize=address" ]
++      ldflags += [
++        "-L/home/moe/violet/build/src/safe_tcmalloc/tcmalloc",
++        "-ltcmalloc_tcmalloc", 
++      ]
+     }
+     if (is_hwasan) {
+       ldflags += [ "-fsanitize=hwaddress" ]
+@@ -261,7 +264,15 @@ config("common_sanitizer_flags") {
+ config("asan_flags") {
+   cflags = []
+   if (is_asan) {
+-    cflags += [ "-fsanitize=address" ]
++    cflags += [
++      "-O1", "-Xclang", "-load", "-Xclang",
++      "/home/moe/violet/build/src/compiler_pass/libProtectionPass.so",
++      "-L/home/moe/violet/build/src/safe_tcmalloc/tcmalloc",
++      "-ltcmalloc_tcmalloc", 
++      "-Qunused-arguments", 
++      "-Wpointer-arith", 
++      "-Wpointer-to-int-cast",
++    ]
+     if (is_win) {
+       if (!defined(asan_win_blocklist_path)) {
+         asan_win_blocklist_path =

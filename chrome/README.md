@@ -11,19 +11,18 @@ fetch --nohooks chromium
 cd src
 ./build/install-build-deps.sh
 gclient runhooks
-git checkout tags/110.0.5454.1
+git checkout tags/111.0.5505.0
 ```
 
 ## Native
 ```config
-is_clang = true                                                                                       
 clang_base_path = "/usr/lib/llvm-14"
-is_asan = false
-is_debug = true
+treat_warnings_as_errors = false
 clang_use_chrome_plugins = false
+is_debug = false
+is_asan = false
 symbol_level = 1
-is_component_build = true
-treat_warnings_as_errors = false   
+is_component_build = true 
 ```
 
 ## ASAN
@@ -31,12 +30,26 @@ treat_warnings_as_errors = false
 patch -p1 < asan.patch
 ```
 ```config
-is_clang = true                                                                                      
 clang_base_path = "/usr/lib/llvm-14"
-is_asan = true
-is_debug = true
+treat_warnings_as_errors = false
 clang_use_chrome_plugins = false
+is_debug = false
+is_asan = true
 symbol_level = 1
 is_component_build = true
-treat_warnings_as_errors = false   
+```
+
+
+## CAMP
+```
+patch -p1 < camp.patch
+```
+```config
+clang_base_path = "/usr/lib/llvm-14"
+treat_warnings_as_errors = false
+clang_use_chrome_plugins = false
+is_debug = false
+is_asan = true
+symbol_level = 1
+is_component_build = true
 ```
