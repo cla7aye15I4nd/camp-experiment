@@ -1,3 +1,17 @@
+diff --git a/base/allocator/partition_allocator/partition_alloc.gni b/base/allocator/partition_allocator/partition_alloc.gni
+index 31442a0b6f58c..a385727c828de 100644
+--- a/base/allocator/partition_allocator/partition_alloc.gni
++++ b/base/allocator/partition_allocator/partition_alloc.gni
+@@ -85,8 +85,7 @@ declare_args() {
+   # The implementation of ASan BRP is purpose-built to inspect Chromium
+   # internals and is entangled with `//base` s.t. it cannot be used
+   # outside of Chromium.
+-  use_asan_backup_ref_ptr =
+-      build_with_chromium && is_asan && (is_win || is_android || is_linux)
++  use_asan_backup_ref_ptr = false
+ 
+   # Use probe-on-destruct unowned ptr detection with ASAN.
+   use_asan_unowned_ptr = false
 diff --git a/build/config/BUILD.gn b/build/config/BUILD.gn
 index fceb8989236f3..0d3272f445460 100644
 --- a/build/config/BUILD.gn
