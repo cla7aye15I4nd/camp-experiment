@@ -44,6 +44,13 @@ is_component_build = true
 ```
 patch -p1 < camp.patch
 ```
+in `src/third_party/boringssl/src/crypto/mem.c:OPENSSL_free:188`
+```
+// replace code betweem #else and #elseif with
+(void)sdallocx;
+free(ptr);
+```
+
 ```config
 clang_base_path = "/usr/lib/llvm-14"
 treat_warnings_as_errors = false
