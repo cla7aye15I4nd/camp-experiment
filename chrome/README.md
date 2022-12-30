@@ -44,9 +44,8 @@ is_component_build = true
 ```
 patch -p1 < camp.patch
 ```
-in `src/third_party/boringssl/src/crypto/mem.c:OPENSSL_free:188`
-```
-// replace code betweem #else and #elseif with
+in `src/third_party/boringssl/src/crypto/mem.c:OPENSSL_free:188`, replace code between `#else` and `#elseif` with:
+```c
 (void)sdallocx;
 free(ptr);
 ```
