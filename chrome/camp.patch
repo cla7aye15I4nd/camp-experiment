@@ -1,16 +1,3 @@
-diff --git a/build/config/BUILD.gn b/build/config/BUILD.gn
-index fceb8989236f3..7ffd220972990 100644
---- a/build/config/BUILD.gn
-+++ b/build/config/BUILD.gn
-@@ -68,7 +68,7 @@ config("feature_flags") {
-     # setting use_ozone globally.
-     defines += [ "USE_OZONE=1" ]
-   }
--  if (is_asan || is_hwasan || is_lsan || is_tsan || is_msan) {
-+  if (is_asan || is_hwasan || is_lsan || is_tsan || is_msan || is_camp) {
-     defines += [ "MEMORY_TOOL_REPLACES_ALLOCATOR" ]
-   }
-   if (is_asan) {
 diff --git a/build/config/compiler/BUILD.gn b/build/config/compiler/BUILD.gn
 index 50be57ff8550e..58515925deb53 100644
 --- a/build/config/compiler/BUILD.gn
