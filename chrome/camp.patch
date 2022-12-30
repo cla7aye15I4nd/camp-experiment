@@ -1,30 +1,16 @@
-diff --git a/base/allocator/partition_allocator/partition_alloc.gni b/base/allocator/partition_allocator/partition_alloc.gni
-index 31442a0b6f58c..a385727c828de 100644
---- a/base/allocator/partition_allocator/partition_alloc.gni
-+++ b/base/allocator/partition_allocator/partition_alloc.gni
-@@ -85,8 +85,7 @@ declare_args() {
-   # The implementation of ASan BRP is purpose-built to inspect Chromium
-   # internals and is entangled with `//base` s.t. it cannot be used
-   # outside of Chromium.
--  use_asan_backup_ref_ptr =
--      build_with_chromium && is_asan && (is_win || is_android || is_linux)
-+  use_asan_backup_ref_ptr = false
- 
-   # Use probe-on-destruct unowned ptr detection with ASAN.
-   use_asan_unowned_ptr = false
 diff --git a/build/config/BUILD.gn b/build/config/BUILD.gn
-index fceb8989236f3..0d3272f445460 100644
+index fceb8989236f3..7ffd220972990 100644
 --- a/build/config/BUILD.gn
 +++ b/build/config/BUILD.gn
-@@ -72,7 +72,7 @@ config("feature_flags") {
+@@ -68,7 +68,7 @@ config("feature_flags") {
+     # setting use_ozone globally.
+     defines += [ "USE_OZONE=1" ]
+   }
+-  if (is_asan || is_hwasan || is_lsan || is_tsan || is_msan) {
++  if (is_asan || is_hwasan || is_lsan || is_tsan || is_msan || is_camp) {
      defines += [ "MEMORY_TOOL_REPLACES_ALLOCATOR" ]
    }
    if (is_asan) {
--    defines += [ "ADDRESS_SANITIZER" ]
-+    # defines += [ "ADDRESS_SANITIZER" ]
-   }
-   if (is_lsan) {
-     defines += [ "LEAK_SANITIZER" ]
 diff --git a/build/config/compiler/BUILD.gn b/build/config/compiler/BUILD.gn
 index 50be57ff8550e..58515925deb53 100644
 --- a/build/config/compiler/BUILD.gn
@@ -39,27 +25,29 @@ index 50be57ff8550e..58515925deb53 100644
            # TODO(crbug.com/1352183) Evaluate and possibly enable.
            "-Wno-bitfield-constant-conversion",
 diff --git a/build/config/sanitizers/BUILD.gn b/build/config/sanitizers/BUILD.gn
-index cb07c547122d8..79b0a18774101 100644
+index cb07c547122d8..4ee1f212a0bab 100644
 --- a/build/config/sanitizers/BUILD.gn
 +++ b/build/config/sanitizers/BUILD.gn
-@@ -158,7 +158,10 @@ config("default_sanitizer_ldflags") {
+@@ -157,6 +157,12 @@ config("default_sanitizer_ldflags") {
+ 
    if (is_posix || is_fuchsia) {
      ldflags = []
-     if (is_asan) {
--      ldflags += [ "-fsanitize=address" ]
++    if (is_camp) {
 +      ldflags += [
 +        "-L/home/moe/violet/build/src/safe_tcmalloc/tcmalloc",
 +        "-ltcmalloc_tcmalloc", 
 +      ]
++    }
+     if (is_asan) {
+       ldflags += [ "-fsanitize=address" ]
      }
-     if (is_hwasan) {
-       ldflags += [ "-fsanitize=hwaddress" ]
-@@ -261,7 +264,15 @@ config("common_sanitizer_flags") {
- config("asan_flags") {
-   cflags = []
-   if (is_asan) {
--    cflags += [ "-fsanitize=address" ]
-+    cflags += [
+@@ -382,6 +388,20 @@ config("hwasan_flags") {
+   }
+ }
+ 
++config("camp_flags") {
++  if (is_camp) {
++    cflags = [
 +      "-O1", "-Xclang", "-load", "-Xclang",
 +      "/home/moe/violet/build/src/compiler_pass/libProtectionPass.so",
 +      "-L/home/moe/violet/build/src/safe_tcmalloc/tcmalloc",
@@ -67,7 +55,31 @@ index cb07c547122d8..79b0a18774101 100644
 +      "-Qunused-arguments", 
 +      "-Wpointer-arith", 
 +      "-Wpointer-to-int-cast",
-+    ]
-     if (is_win) {
-       if (!defined(asan_win_blocklist_path)) {
-         asan_win_blocklist_path =
++    ]  
++  }
++}
++
+ config("lsan_flags") {
+   if (is_lsan) {
+     cflags = [ "-fsanitize=leak" ]
+@@ -514,6 +534,7 @@ all_sanitizer_configs = [
+   ":common_sanitizer_flags",
+   ":coverage_flags",
+   ":default_sanitizer_ldflags",
++  ":camp_flags",
+   ":asan_flags",
+   ":cfi_flags",
+   ":hwasan_flags",
+diff --git a/build/config/sanitizers/sanitizers.gni b/build/config/sanitizers/sanitizers.gni
+index ebc3c3e2365a1..9fc1927f9a4b3 100644
+--- a/build/config/sanitizers/sanitizers.gni
++++ b/build/config/sanitizers/sanitizers.gni
+@@ -10,6 +10,8 @@ import("//build/config/profiling/profiling.gni")
+ import("//build/toolchain/toolchain.gni")
+ 
+ declare_args() {
++  is_camp = false
++  
+   # Compile for Address Sanitizer to find memory bugs.
+   is_asan = false
+ 

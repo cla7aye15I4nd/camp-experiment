@@ -49,7 +49,7 @@ clang_base_path = "/usr/lib/llvm-14"
 treat_warnings_as_errors = false
 clang_use_chrome_plugins = false
 is_debug = false
-is_asan = true
+is_camp = true
 symbol_level = 1
 is_component_build = true
 ```
