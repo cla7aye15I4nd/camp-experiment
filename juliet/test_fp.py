@@ -17,9 +17,9 @@ with open("dump", 'w') as f:
         f.write(f'{i}\n')
 
 assert len(goodans) == len(goodout)
-
 for idx, (key, path_ans) in enumerate(goodans.items()):
-    print(f'[{idx}/{len(goodans)}]{path_ans}{" " * (150 - len(path_ans))}', end='\r')
+    name = path_ans[len("dataset/testcases/"):-len(".goodans")]
+    print(f'[{idx}/{len(goodans)}]{name}{" " * (110 - len(name))}', end='\r')
 
     path_out = goodout[key]
     with open("dump") as f:
