@@ -27,6 +27,10 @@ def collect(tag):
 
 
 os.system('find dataset | grep "\.out$" | xargs rm')
+os.system('find dataset | grep "\.goodout$" | xargs rm')
+os.system('find dataset | grep "\.badout$" | xargs rm')
+os.system('find dataset | grep "\.goodans$" | xargs rm')
+os.system('find dataset | grep "\.badans$" | xargs rm')
 
 patch('bad')
 os.system('cd dataset && make individuals -j`nproc`')
