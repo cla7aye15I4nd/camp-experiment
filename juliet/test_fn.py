@@ -1,8 +1,3 @@
-import sys
-sys.path.append('qiling/')
-
-from qiling import Qiling
-
 import os
 import string
 import socket
@@ -120,21 +115,26 @@ def test_must_be_detected(vtype):
             print('[FAIL]', path)
     print(f'\n[FINISHED] {vtype}')
 
-def test_must_be_detected_with_qiling(vtype):
+def test_must_be_detected_with_gdb(vtype):
     for idx, path in enumerate(badout[vtype]):
         name = path[len("dataset/testcases/"):-len(".badout")]
         print(f'[{idx+1}/{len(badout[vtype])}]{name}{" " * (110 - len(name))}', end='\r')
-        print(path)
-        def check(ql, type, addr, size, value):
-            print(hex(addr))
-            ql.stop()
-
-        ql = Qiling([path], "/",
-                    env={'LD_LIBRARY_PATH': '/home/moe/violet/build/src/safe_tcmalloc/tcmalloc'})
-        ql.hook_mem_write_invalid(check)
-        ql.run()
-        break
-
+        
+        for _ in range(50):
+            p = subprocess.Popen(
+                ['gdb', '--batch', '--command', 'uaf.gdb', f'{path}'],
+                env={'LD_LIBRARY_PATH': '/home/moe/violet/build/src/safe_tcmalloc/tcmalloc'},
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE)
+            
+            out, err = p.communicate()
+            if b'UAF detected' in out:
+                break
+            time.sleep(0.5)
+        else:
+            print('[FAIL]', path)
+    
+    print(f'\n[FINISHED] {vtype}')
 
 def test_heap_overflow(vtype):
     fail = 0
@@ -163,7 +163,7 @@ def test_heap_overflow(vtype):
 # test_must_be_detected('CWE415_Double_Free')
 
 ## [TESTED]
-test_must_be_detected_with_qiling('CWE416_Use_After_Free')
+test_must_be_detected_with_gdb('CWE416_Use_After_Free')
 
 # [TESTED]
 # test_must_be_detected('CWE761_Free_Pointer_Not_at_Start_of_Buffer')
