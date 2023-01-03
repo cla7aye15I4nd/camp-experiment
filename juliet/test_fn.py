@@ -5,6 +5,60 @@ import subprocess
 import time
 import threading
 
+buffer_underread_whitelist = [
+    ## Buffer UnderRead Whitelist
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_01.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_02.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_03.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_04.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_05.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_06.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_07.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_08.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_09.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_10.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_11.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_12.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_13.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_14.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_15.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_16.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_17.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_18.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_21.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_22.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_31.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_32.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_33.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_34.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_41.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_42.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_43.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_44.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_45.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_51.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_52.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_53.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_54.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_61.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_62.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_63.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_64.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_65.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_66.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_67.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_68.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_72.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_73.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_74.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_81.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_82.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_83.badout',
+    'dataset/testcases/CWE127_Buffer_Underread/s02/CWE127_Buffer_Underread__CWE839_rand_84.badout',
+]
+
+stack_oob_whitelist = buffer_underread_whitelist
+
 badout = {
     'CWE122_Heap_Based_Buffer_Overflow': [],
     'CWE124_Buffer_Underwrite': [],
@@ -166,6 +220,9 @@ def test_heap_overflow(vtype):
     print(f'\n[FAIL/IGNORE/ALL][{fail}/{ignore}/{len(badout[vtype])}] {vtype}')
 
 # test_heap_overflow("CWE122_Heap_Based_Buffer_Overflow")
+# test_heap_overflow("CWE124_Buffer_Underwrite")
+# test_heap_overflow("CWE126_Buffer_Overread")
+# test_heap_overflow("CWE127_Buffer_Underread")
 
 ## [TESTED]
 # test_must_be_detected('CWE415_Double_Free')
