@@ -1477,8 +1477,6 @@ def test_heap_overflow(vtype):
     for idx, path in enumerate(badout[vtype]):
         name = path[len("dataset/testcases/"):-len(".badout")]
         print(f'[{idx + 1}/{len(badout[vtype])}]{name}{" " * (110 - len(name))}', end='\r')
-        if 'connect' in path or 'listen' in path:
-            continue
 
         exitcode, out, err = common_setup(path)
         if b'OOB detected' in err:
