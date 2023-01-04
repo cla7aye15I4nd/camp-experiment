@@ -20,8 +20,10 @@ static inline int run(const char *file, char *const *argv)
     pid_t pid = fork();
     if (pid == 0)
     {
+        close(1);
+        close(2);
         execvp(file, argv);
-        exit(1);
+        exit(-1);
     }
     else if (pid > 0)
     {
