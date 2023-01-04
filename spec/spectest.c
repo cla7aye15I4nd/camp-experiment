@@ -54,6 +54,7 @@ int main(int argc, char *argv[]) {
     printf("Running ");
     for (int i = 1; i < argc; ++i)
         printf("%s%c", argv[i], " \n"[i + 1 == argc]);
+    fflush(stdout);
 
     int ret = run(argv[1], (char *const *)&argv[1]);
     ret = WEXITSTATUS(ret);
@@ -70,5 +71,7 @@ int main(int argc, char *argv[]) {
     printf("cpu time used: %6d ms\n", cpu_time_used);
     printf("memory used:   %6d kb\n", memory_used);
     printf("exit code:     %6d\n", signum);
+    fflush(stdout);
+
     return 0;
 }
