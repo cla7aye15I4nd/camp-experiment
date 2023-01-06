@@ -20,7 +20,7 @@ def create_spec2017_script():
         ],
     }
 
-    tags = ['asan', 'camp', 'native']
+    tags = ['asan', 'camp', 'native', 'camp_oob', 'camp_uaf']
     base_dir = '/home/moe/cpu2017/benchspec/CPU'
     run_base = 'run_peak_refspeed_'
 
@@ -78,7 +78,7 @@ def create_spec2006_script():
         ],
     }
 
-    tags = ['asan', 'camp', 'native']
+    tags = ['asan', 'camp', 'native', 'camp_oob', 'camp_uaf']
     base_dir = '/home/moe/cpu2006/benchspec/CPU2006'
     run_base = 'run_base_ref_'
 
@@ -102,9 +102,16 @@ def create_spec2006_script():
                         for line in sf.read().splitlines():
                             if line.startswith('-o') or line.startswith('-i'):
                                 line_split = line.split()
+
+                                inp = None
+                                if line.startswith('-i'):
+                                    inp = line_split[1]
                                 while not line_split[0].startswith('../run'):
                                     line_split.pop(0)
-                                f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line_split) + '\n')
+                                if inp:
+                                    f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line_split) + f' < {inp} \n')
+                                else:
+                                    f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line_split) + '\n')
                     
                     f.write('\n')
 
