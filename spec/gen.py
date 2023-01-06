@@ -43,7 +43,11 @@ def create_spec2017_script():
                     with open(f'{run_path}/speccmds.cmd') as sf:
                         for line in sf.read().splitlines():
                             if line.startswith('-o'):
-                                f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line.split()[4:line.split().index('>')]) + '\n')
+                                line_split = line.split()
+                                line_split = line_split[:line_split.index('>')]
+                                while not line_split[0].startswith('../run'):
+                                    line_split.pop(0)
+                                f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line_split) + '\n')
                     
                     f.write('\n')
 
@@ -97,7 +101,10 @@ def create_spec2006_script():
                     with open(f'{run_path}/speccmds.cmd') as sf:
                         for line in sf.read().splitlines():
                             if line.startswith('-o') or line.startswith('-i'):
-                                f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line.split()[4:]) + '\n')
+                                line_split = line.split()
+                                while not line_split[0].startswith('../run'):
+                                    line_split.pop(0)
+                                f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line_split) + '\n')
                     
                     f.write('\n')
 
