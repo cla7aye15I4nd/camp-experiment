@@ -66,6 +66,7 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 export PATH="$PATH:${HOME}/depot_tools"
 mkdir v8 && cd v8
 fetch v8	# download v8 source code
+./build/install-build-deps.sh
 gclient sync
 # git reset --hard VERSION
 patch -p1 < camp.patch # if it fails, we can modify it manually
