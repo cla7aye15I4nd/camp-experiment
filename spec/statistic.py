@@ -36,6 +36,10 @@ for file in file_list:
 for item in result:
     print(item[0], item[1]/1000, item[3])
 
+print('Mem')
 for item in result:
-    print(item[3])
+    print(item[0])
+print('Time')
+for item in result:
+    print(item[1]/1000)
 
