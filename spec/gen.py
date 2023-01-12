@@ -1,6 +1,7 @@
 import os
+import sys
 
-def create_spec2017_script():
+def create_spec2017_script(tag):
     script = {
         'int': [
             '600.perlbench_s',
@@ -20,7 +21,7 @@ def create_spec2017_script():
         ],
     }
 
-    tags = ['asan', 'camp', 'native', 'camp_oob', 'camp_uaf']
+    tags = [tag]
     base_dir = '/home/moe/cpu2017/benchspec/CPU'
     run_base = 'run_peak_refspeed_'
 
@@ -51,7 +52,7 @@ def create_spec2017_script():
                     
                     f.write('\n')
 
-def create_spec2006_script():
+def create_spec2006_script(tag):
     script = {
         'all_c': [
             '400.perlbench',
@@ -72,13 +73,12 @@ def create_spec2006_script():
             '447.dealII',
             '450.soplex',
             '453.povray',
-            '471.omnetpp',
             '473.astar',
             '483.xalancbmk',
         ],
     }
 
-    tags = ['asan', 'camp', 'native', 'camp_oob', 'camp_uaf']
+    tags = [tag]
     base_dir = '/home/moe/cpu2006/benchspec/CPU2006'
     run_base = 'run_base_ref_'
 
@@ -115,7 +115,13 @@ def create_spec2006_script():
                     
                     f.write('\n')
 
-
-create_spec2017_script()
-create_spec2006_script()
+tag = 'native' if len(sys.argv) < 2 else sys.argv[1]
+create_spec2017_script(tag)
+create_spec2006_script(tag)
+with open(f'{tag}.sh', 'w') as f:
+    f.write(f'./int_{tag}_2017_test.sh | tee {tag}_2017_int.txt\n')
+    f.write(f'./fp_{tag}_2017_test.sh | tee {tag}_2017_fp.txt\n')
+    f.write(f'./all_c_{tag}_2006_test.sh | tee {tag}_2006_c.txt\n')
+    f.write(f'./all_cpp_{tag}_2006_test.sh | tee {tag}_2006_cpp.txt\n')
+    
 os.system('chmod +x *.sh')
