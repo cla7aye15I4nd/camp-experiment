@@ -38,7 +38,7 @@ for item in result:
 
 print('Mem')
 for item in result:
-    print(item[0])
+    print(item[3])
 print('Time')
 for item in result:
     print(item[1]/1000)
