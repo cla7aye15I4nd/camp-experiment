@@ -1,0 +1,170 @@
+Running ../run_base_ref_asan.0000/perlbench_base.asan -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     146931 ms
+cpu time used: 146905 ms
+memory used:   1506472 kb
+exit code:      22033
+Running ../run_base_ref_asan.0000/perlbench_base.asan -I./lib diffmail.pl 4 800 10 17 19 300
+time used:     123303 ms
+cpu time used: 123290 ms
+memory used:   2011196 kb
+exit code:      21969
+Running ../run_base_ref_asan.0000/perlbench_base.asan -I./lib splitmail.pl 1600 12 26 16 4500
+time used:     240810 ms
+cpu time used: 240788 ms
+memory used:   1918672 kb
+exit code:      22004
+Running ../run_base_ref_asan.0000/bzip2_base.asan input.source 280
+time used:      70352 ms
+cpu time used:  70294 ms
+memory used:   893652 kb
+exit code:      22042
+Running ../run_base_ref_asan.0000/bzip2_base.asan chicken.jpg 30
+time used:      22330 ms
+cpu time used:  22325 ms
+memory used:   125180 kb
+exit code:      22073
+Running ../run_base_ref_asan.0000/bzip2_base.asan liberty.jpg 30
+time used:      35946 ms
+cpu time used:  35924 ms
+memory used:   126376 kb
+exit code:      22085
+Running ../run_base_ref_asan.0000/bzip2_base.asan input.program 280
+time used:      75410 ms
+cpu time used:  75403 ms
+memory used:   892508 kb
+exit code:      21886
+Running ../run_base_ref_asan.0000/bzip2_base.asan text.html 280
+time used:      88737 ms
+cpu time used:  88731 ms
+memory used:   892436 kb
+exit code:      21891
+Running ../run_base_ref_asan.0000/bzip2_base.asan input.combined 200
+time used:      54348 ms
+cpu time used:  54333 ms
+memory used:   648804 kb
+exit code:      22007
+Running ../run_base_ref_asan.0000/gcc_base.asan 166.in -o 166.s
+time used:      18042 ms
+cpu time used:  17923 ms
+memory used:   818708 kb
+exit code:      21991
+Running ../run_base_ref_asan.0000/gcc_base.asan 200.in -o 200.s
+time used:      28278 ms
+cpu time used:  28184 ms
+memory used:   1536344 kb
+exit code:      22091
+Running ../run_base_ref_asan.0000/gcc_base.asan c-typeck.in -o c-typeck.s
+time used:      39922 ms
+cpu time used:  39820 ms
+memory used:   1826496 kb
+exit code:      22071
+Running ../run_base_ref_asan.0000/gcc_base.asan cp-decl.in -o cp-decl.s
+time used:      28669 ms
+cpu time used:  28592 ms
+memory used:   1331636 kb
+exit code:      22018
+Running ../run_base_ref_asan.0000/gcc_base.asan expr.in -o expr.s
+time used:      32312 ms
+cpu time used:  32233 ms
+memory used:   1257500 kb
+exit code:      22030
+Running ../run_base_ref_asan.0000/gcc_base.asan expr2.in -o expr2.s
+time used:      44549 ms
+cpu time used:  44453 ms
+memory used:   1516856 kb
+exit code:      21949
+Running ../run_base_ref_asan.0000/gcc_base.asan g23.in -o g23.s
+time used:      45268 ms
+cpu time used:  45175 ms
+memory used:   1251548 kb
+exit code:      22037
+Running ../run_base_ref_asan.0000/gcc_base.asan s04.in -o s04.s
+time used:      50502 ms
+cpu time used:  50411 ms
+memory used:   1358948 kb
+exit code:      22028
+Running ../run_base_ref_asan.0000/gcc_base.asan scilab.in -o scilab.s
+time used:      10069 ms
+cpu time used:   9977 ms
+memory used:   1476536 kb
+exit code:      22022
+Running ../run_base_ref_asan.0000/mcf_base.asan inp.in
+time used:     172820 ms
+cpu time used: 172808 ms
+memory used:   1935392 kb
+exit code:      22013
+Running ../run_base_ref_asan.0000/milc_base.asan
+time used:     360853 ms
+cpu time used: 360793 ms
+memory used:   981844 kb
+exit code:      21955
+Running ../run_base_ref_asan.0000/gobmk_base.asan --quiet --mode gtp
+time used:      43765 ms
+cpu time used:  43711 ms
+memory used:   366296 kb
+exit code:      21885
+Running ../run_base_ref_asan.0000/gobmk_base.asan --quiet --mode gtp
+time used:     111295 ms
+cpu time used: 111180 ms
+memory used:   370604 kb
+exit code:      22040
+Running ../run_base_ref_asan.0000/gobmk_base.asan --quiet --mode gtp
+time used:      54305 ms
+cpu time used:  54232 ms
+memory used:   181880 kb
+exit code:      22064
+Running ../run_base_ref_asan.0000/gobmk_base.asan --quiet --mode gtp
+time used:      42955 ms
+cpu time used:  42854 ms
+memory used:   250068 kb
+exit code:      22070
+Running ../run_base_ref_asan.0000/gobmk_base.asan --quiet --mode gtp
+time used:      57599 ms
+cpu time used:  57553 ms
+memory used:   168836 kb
+exit code:      22015
+Running ../run_base_ref_asan.0000/hmmer_base.asan nph3.hmm swiss41
+time used:      92447 ms
+cpu time used:  92426 ms
+memory used:   423424 kb
+exit code:      21916
+Running ../run_base_ref_asan.0000/hmmer_base.asan --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     196977 ms
+cpu time used: 196967 ms
+memory used:   389316 kb
+exit code:      21938
+Running ../run_base_ref_asan.0000/sjeng_base.asan ref.txt
+time used:     381593 ms
+cpu time used: 381537 ms
+memory used:   184264 kb
+exit code:      21910
+Running ../run_base_ref_asan.0000/libquantum_base.asan 1397 8
+time used:     195728 ms
+cpu time used: 195715 ms
+memory used:   366460 kb
+exit code:      21898
+Running ../run_base_ref_asan.0000/h264ref_base.asan -d foreman_ref_encoder_baseline.cfg
+time used:      54463 ms
+cpu time used:  54389 ms
+memory used:   229200 kb
+exit code:      21875
+Running ../run_base_ref_asan.0000/h264ref_base.asan -d foreman_ref_encoder_main.cfg
+time used:      38676 ms
+cpu time used:  38611 ms
+memory used:   165636 kb
+exit code:      21849
+Running ../run_base_ref_asan.0000/h264ref_base.asan -d sss_encoder_main.cfg
+time used:     340315 ms
+cpu time used: 339372 ms
+memory used:   327184 kb
+exit code:      21916
+Running ../run_base_ref_asan.0000/lbm_base.asan 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:     116240 ms
+cpu time used: 116227 ms
+memory used:   475960 kb
+exit code:      21927
+Running ../run_base_ref_asan.0000/sphinx_livepretend_base.asan ctlfile . args.an4
+time used:     343990 ms
+cpu time used: 343890 ms
+memory used:   411524 kb
+exit code:      22002

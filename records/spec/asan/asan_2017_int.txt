@@ -1,0 +1,80 @@
+Running ../run_peak_refspeed_asan.0000/perlbench_s_peak.asan -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     183925 ms
+cpu time used: 183914 ms
+memory used:   775152 kb
+exit code:      22029
+Running ../run_peak_refspeed_asan.0000/perlbench_s_peak.asan -I./lib diffmail.pl 4 800 10 17 19 300
+time used:     133934 ms
+cpu time used: 133927 ms
+memory used:   924128 kb
+exit code:      22064
+Running ../run_peak_refspeed_asan.0000/perlbench_s_peak.asan -I./lib splitmail.pl 6400 12 26 16 100 0
+time used:     159817 ms
+cpu time used: 159806 ms
+memory used:   747876 kb
+exit code:      21999
+Running ../run_peak_refspeed_asan.0000/sgcc_peak.asan gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_-fipa-pta.s
+time used:     412110 ms
+cpu time used: 411905 ms
+memory used:   11877068 kb
+exit code:      22018
+Running ../run_peak_refspeed_asan.0000/sgcc_peak.asan gcc-pp.c -O5 -finline-limit=1000 -fselective-scheduling -fselective-scheduling2 -o gcc-pp.opts-O5_-finline-limit_1000_-fselective-scheduling_-fselective-scheduling2.s
+time used:     187632 ms
+cpu time used: 187434 ms
+memory used:   6155432 kb
+exit code:      21889
+Running ../run_peak_refspeed_asan.0000/sgcc_peak.asan gcc-pp.c -O5 -finline-limit=24000 -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o gcc-pp.opts-O5_-finline-limit_24000_-fgcse_-fgcse-las_-fgcse-lm_-fgcse-sm.s
+time used:     167257 ms
+cpu time used: 167103 ms
+memory used:   5706428 kb
+exit code:      22064
+Running ../run_peak_refspeed_asan.0000/mcf_s_peak.asan inp.in
+time used:     578503 ms
+cpu time used: 578473 ms
+memory used:   4390080 kb
+exit code:      22022
+Running ../run_peak_refspeed_asan.0000/omnetpp_s_peak.asan -c General -r 0
+time used:     874194 ms
+cpu time used: 874073 ms
+memory used:   1231320 kb
+exit code:      22005
+Running ../run_peak_refspeed_asan.0000/xalancbmk_s_peak.asan -v t5.xml xalanc.xsl
+time used:     631259 ms
+cpu time used: 631228 ms
+memory used:   2863436 kb
+exit code:      21937
+Running ../run_peak_refspeed_asan.0000/x264_s_peak.asan --pass 1 --stats x264_stats.log --bitrate 1000 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:      59311 ms
+cpu time used:  59245 ms
+memory used:   194300 kb
+exit code:      22040
+Running ../run_peak_refspeed_asan.0000/x264_s_peak.asan --pass 2 --stats x264_stats.log --bitrate 1000 --dumpyuv 200 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     208123 ms
+cpu time used: 208051 ms
+memory used:    53984 kb
+exit code:      21883
+Running ../run_peak_refspeed_asan.0000/x264_s_peak.asan --seek 500 --dumpyuv 200 --frames 1250 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     209463 ms
+cpu time used: 209455 ms
+memory used:   193256 kb
+exit code:      21973
+Running ../run_peak_refspeed_asan.0000/deepsjeng_s_peak.asan ref.txt
+time used:     426609 ms
+cpu time used: 426592 ms
+memory used:   7049360 kb
+exit code:      22055
+Running ../run_peak_refspeed_asan.0000/leela_s_peak.asan ref.sgf
+time used:     903752 ms
+cpu time used: 903714 ms
+memory used:   1019528 kb
+exit code:      21914
+Running ../run_peak_refspeed_asan.0000/xz_s_peak.asan cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4
+time used:     1034273 ms
+cpu time used: 1034031 ms
+memory used:   16028304 kb
+exit code:      21866
+Running ../run_peak_refspeed_asan.0000/xz_s_peak.asan cld.tar.xz 1400 19cf30ae51eddcbefda78dd06014b4b96281456e078ca7c13e1c0c9e6aaea8dff3efb4ad6b0456697718cede6bd5454852652806a657bb56e07d61128434b474 536995164 539938872 8
+time used:     1403590 ms
+cpu time used: 1403440 ms
+memory used:   4734452 kb
+exit code:      21916

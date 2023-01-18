@@ -1,0 +1,15 @@
+Running ../run_peak_refspeed_asan.0000/lbm_s_peak.asan 2000 reference.dat 0 0 200_200_260_ldc.of
+time used:     772618 ms
+cpu time used: 772582 ms
+memory used:   3511132 kb
+exit code:      22081
+Running ../run_peak_refspeed_asan.0000/imagick_s_peak.asan -limit disk 0 refspeed_input.tga -resize 817% -rotate -2.76 -shave 540x375 -alpha remove -auto-level -contrast-stretch 1x1% -colorspace Lab -channel R -equalize +channel -colorspace sRGB -define histogram:unique-colors=false -adaptive-blur 0x5 -despeckle -auto-gamma -adaptive-sharpen 55 -enhance -brightness-contrast 10x10 -resize 30% refspeed_output.tga
+time used:     6019325 ms
+cpu time used: 6019048 ms
+memory used:   7656352 kb
+exit code:      22047
+Running ../run_peak_refspeed_asan.0000/nab_s_peak.asan 3j1n 20140317 220
+time used:     1354733 ms
+cpu time used: 1354592 ms
+memory used:   1062392 kb
+exit code:      22025
