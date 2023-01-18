@@ -1,0 +1,80 @@
+Running ../run_peak_refspeed_native.0000/perlbench_s_peak.native -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:      85125 ms
+cpu time used:  85119 ms
+memory used:   207244 kb
+exit code:      22052
+Running ../run_peak_refspeed_native.0000/perlbench_s_peak.native -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      48481 ms
+cpu time used:  48478 ms
+memory used:   158384 kb
+exit code:      22066
+Running ../run_peak_refspeed_native.0000/perlbench_s_peak.native -I./lib splitmail.pl 6400 12 26 16 100 0
+time used:      53934 ms
+cpu time used:  53931 ms
+memory used:    91672 kb
+exit code:      22013
+Running ../run_peak_refspeed_native.0000/sgcc_peak.native gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_-fipa-pta.s
+time used:     200519 ms
+cpu time used: 200487 ms
+memory used:   7826440 kb
+exit code:      21865
+Running ../run_peak_refspeed_native.0000/sgcc_peak.native gcc-pp.c -O5 -finline-limit=1000 -fselective-scheduling -fselective-scheduling2 -o gcc-pp.opts-O5_-finline-limit_1000_-fselective-scheduling_-fselective-scheduling2.s
+time used:      85091 ms
+cpu time used:  85070 ms
+memory used:   3188004 kb
+exit code:      22051
+Running ../run_peak_refspeed_native.0000/sgcc_peak.native gcc-pp.c -O5 -finline-limit=24000 -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o gcc-pp.opts-O5_-finline-limit_24000_-fgcse_-fgcse-las_-fgcse-lm_-fgcse-sm.s
+time used:      81791 ms
+cpu time used:  81774 ms
+memory used:   3174556 kb
+exit code:      21866
+Running ../run_peak_refspeed_native.0000/mcf_s_peak.native inp.in
+time used:     443741 ms
+cpu time used: 443726 ms
+memory used:   4056452 kb
+exit code:      22084
+Running ../run_peak_refspeed_native.0000/omnetpp_s_peak.native -c General -r 0
+time used:     552018 ms
+cpu time used: 551993 ms
+memory used:   247476 kb
+exit code:      21979
+Running ../run_peak_refspeed_native.0000/xalancbmk_s_peak.native -v t5.xml xalanc.xsl
+time used:     315817 ms
+cpu time used: 315810 ms
+memory used:   490792 kb
+exit code:      21859
+Running ../run_peak_refspeed_native.0000/x264_s_peak.native --pass 1 --stats x264_stats.log --bitrate 1000 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:      35008 ms
+cpu time used:  35002 ms
+memory used:   159648 kb
+exit code:      21993
+Running ../run_peak_refspeed_native.0000/x264_s_peak.native --pass 2 --stats x264_stats.log --bitrate 1000 --dumpyuv 200 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     122238 ms
+cpu time used: 122222 ms
+memory used:    41948 kb
+exit code:      22050
+Running ../run_peak_refspeed_native.0000/x264_s_peak.native --seek 500 --dumpyuv 200 --frames 1250 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     125644 ms
+cpu time used: 125629 ms
+memory used:   159824 kb
+exit code:      22076
+Running ../run_peak_refspeed_native.0000/deepsjeng_s_peak.native ref.txt
+time used:     258202 ms
+cpu time used: 258192 ms
+memory used:   7046392 kb
+exit code:      21848
+Running ../run_peak_refspeed_native.0000/leela_s_peak.native ref.sgf
+time used:     792696 ms
+cpu time used: 792667 ms
+memory used:    27748 kb
+exit code:      22065
+Running ../run_peak_refspeed_native.0000/xz_s_peak.native cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4
+time used:     771180 ms
+cpu time used: 771151 ms
+memory used:   15710604 kb
+exit code:      21974
+Running ../run_peak_refspeed_native.0000/xz_s_peak.native cld.tar.xz 1400 19cf30ae51eddcbefda78dd06014b4b96281456e078ca7c13e1c0c9e6aaea8dff3efb4ad6b0456697718cede6bd5454852652806a657bb56e07d61128434b474 536995164 539938872 8
+time used:     1298255 ms
+cpu time used: 1298219 ms
+memory used:   4302568 kb
+exit code:      22095

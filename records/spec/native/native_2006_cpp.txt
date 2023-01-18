@@ -1,0 +1,40 @@
+Running ../run_base_ref_native.0000/namd_base.native --input namd.input --iterations 38 --output namd.out
+time used:     145434 ms
+cpu time used: 145432 ms
+memory used:    49508 kb
+exit code:      22061
+Running ../run_base_ref_native.0000/dealII_base.native 23
+time used:     560804 ms
+cpu time used: 560737 ms
+memory used:   815684 kb
+exit code:      21892
+Running ../run_base_ref_native.0000/soplex_base.native -s1 -e -m45000 pds-50.mps
+time used:      62012 ms
+cpu time used:  62008 ms
+memory used:   129160 kb
+exit code:      21954
+Running ../run_base_ref_native.0000/soplex_base.native -m3500 ref.mps
+time used:      62550 ms
+cpu time used:  62515 ms
+memory used:   434248 kb
+exit code:      22071
+Running ../run_base_ref_native.0000/povray_base.native SPEC-benchmark-ref.ini
+time used:      81905 ms
+cpu time used:  81857 ms
+memory used:     7172 kb
+exit code:      22032
+Running ../run_base_ref_native.0000/astar_base.native BigLakes2048.cfg
+time used:      75933 ms
+cpu time used:  75928 ms
+memory used:   335288 kb
+exit code:      21859
+Running ../run_base_ref_native.0000/astar_base.native rivers.cfg
+time used:     139341 ms
+cpu time used: 139337 ms
+memory used:   137884 kb
+exit code:      21897
+Running ../run_base_ref_native.0000/Xalan_base.native -v t5.xml xalanc.xsl
+time used:     275569 ms
+cpu time used: 275546 ms
+memory used:   430556 kb
+exit code:      21990

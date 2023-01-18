@@ -1,0 +1,170 @@
+Running ../run_base_ref_native.0000/perlbench_base.native -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:      78429 ms
+cpu time used:  78413 ms
+memory used:   243716 kb
+exit code:      22008
+Running ../run_base_ref_native.0000/perlbench_base.native -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      21700 ms
+cpu time used:  21694 ms
+memory used:   310388 kb
+exit code:      22071
+Running ../run_base_ref_native.0000/perlbench_base.native -I./lib splitmail.pl 1600 12 26 16 4500
+time used:      37110 ms
+cpu time used:  37068 ms
+memory used:   680104 kb
+exit code:      22022
+Running ../run_base_ref_native.0000/bzip2_base.native input.source 280
+time used:      53425 ms
+cpu time used:  53393 ms
+memory used:   870968 kb
+exit code:      21856
+Running ../run_base_ref_native.0000/bzip2_base.native chicken.jpg 30
+time used:      18508 ms
+cpu time used:  18505 ms
+memory used:   103508 kb
+exit code:      21961
+Running ../run_base_ref_native.0000/bzip2_base.native liberty.jpg 30
+time used:      26833 ms
+cpu time used:  26832 ms
+memory used:   103508 kb
+exit code:      22023
+Running ../run_base_ref_native.0000/bzip2_base.native input.program 280
+time used:      52422 ms
+cpu time used:  52366 ms
+memory used:   870876 kb
+exit code:      21951
+Running ../run_base_ref_native.0000/bzip2_base.native text.html 280
+time used:      58481 ms
+cpu time used:  58463 ms
+memory used:   870956 kb
+exit code:      21872
+Running ../run_base_ref_native.0000/bzip2_base.native input.combined 200
+time used:      41357 ms
+cpu time used:  41351 ms
+memory used:   625856 kb
+exit code:      22063
+Running ../run_base_ref_native.0000/gcc_base.native 166.in -o 166.s
+time used:      11546 ms
+cpu time used:  11496 ms
+memory used:   236824 kb
+exit code:      21962
+Running ../run_base_ref_native.0000/gcc_base.native 200.in -o 200.s
+time used:      22185 ms
+cpu time used:  22182 ms
+memory used:   258128 kb
+exit code:      21848
+Running ../run_base_ref_native.0000/gcc_base.native c-typeck.in -o c-typeck.s
+time used:      15709 ms
+cpu time used:  15705 ms
+memory used:   454740 kb
+exit code:      21887
+Running ../run_base_ref_native.0000/gcc_base.native cp-decl.in -o cp-decl.s
+time used:      11224 ms
+cpu time used:  11221 ms
+memory used:   343328 kb
+exit code:      21873
+Running ../run_base_ref_native.0000/gcc_base.native expr.in -o expr.s
+time used:      13079 ms
+cpu time used:  13061 ms
+memory used:   461584 kb
+exit code:      22024
+Running ../run_base_ref_native.0000/gcc_base.native expr2.in -o expr2.s
+time used:      18835 ms
+cpu time used:  18832 ms
+memory used:   623380 kb
+exit code:      21864
+Running ../run_base_ref_native.0000/gcc_base.native g23.in -o g23.s
+time used:      32893 ms
+cpu time used:  32890 ms
+memory used:   868728 kb
+exit code:      21922
+Running ../run_base_ref_native.0000/gcc_base.native s04.in -o s04.s
+time used:      26298 ms
+cpu time used:  26277 ms
+memory used:   907616 kb
+exit code:      21981
+Running ../run_base_ref_native.0000/gcc_base.native scilab.in -o scilab.s
+time used:       7802 ms
+cpu time used:   7779 ms
+memory used:    98000 kb
+exit code:      22091
+Running ../run_base_ref_native.0000/mcf_base.native inp.in
+time used:     277946 ms
+cpu time used: 277928 ms
+memory used:   1718012 kb
+exit code:      22037
+Running ../run_base_ref_native.0000/milc_base.native
+time used:     346180 ms
+cpu time used: 346172 ms
+memory used:   697364 kb
+exit code:      21948
+Running ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:      31562 ms
+cpu time used:  31496 ms
+memory used:    30628 kb
+exit code:      21862
+Running ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:      79148 ms
+cpu time used:  78950 ms
+memory used:    30844 kb
+exit code:      21923
+Running ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:      38865 ms
+cpu time used:  38773 ms
+memory used:    30324 kb
+exit code:      21868
+Running ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:      30692 ms
+cpu time used:  30569 ms
+memory used:    30360 kb
+exit code:      21847
+Running ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:      40741 ms
+cpu time used:  40629 ms
+memory used:    30104 kb
+exit code:      22070
+Running ../run_base_ref_native.0000/hmmer_base.native nph3.hmm swiss41
+time used:      47708 ms
+cpu time used:  47704 ms
+memory used:    27508 kb
+exit code:      21884
+Running ../run_base_ref_native.0000/hmmer_base.native --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     103029 ms
+cpu time used: 103026 ms
+memory used:     5484 kb
+exit code:      22032
+Running ../run_base_ref_native.0000/sjeng_base.native ref.txt
+time used:     253798 ms
+cpu time used: 253777 ms
+memory used:   180800 kb
+exit code:      22012
+Running ../run_base_ref_native.0000/libquantum_base.native 1397 8
+time used:     161991 ms
+cpu time used: 161972 ms
+memory used:   100260 kb
+exit code:      21867
+Running ../run_base_ref_native.0000/h264ref_base.native -d foreman_ref_encoder_baseline.cfg
+time used:      25810 ms
+cpu time used:  25768 ms
+memory used:    29032 kb
+exit code:      22045
+Running ../run_base_ref_native.0000/h264ref_base.native -d foreman_ref_encoder_main.cfg
+time used:      17390 ms
+cpu time used:  17389 ms
+memory used:    19804 kb
+exit code:      21876
+Running ../run_base_ref_native.0000/h264ref_base.native -d sss_encoder_main.cfg
+time used:     151066 ms
+cpu time used: 150722 ms
+memory used:    66732 kb
+exit code:      22058
+Running ../run_base_ref_native.0000/lbm_base.native 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:      91763 ms
+cpu time used:  91758 ms
+memory used:   420564 kb
+exit code:      21990
+Running ../run_base_ref_native.0000/sphinx_livepretend_base.native ctlfile . args.an4
+time used:     219313 ms
+cpu time used: 219250 ms
+memory used:    45344 kb
+exit code:      21850
