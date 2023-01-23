@@ -72,7 +72,6 @@ def create_spec2006_script():
             '447.dealII',
             '450.soplex',
             '453.povray',
-            '471.omnetpp',
             '473.astar',
             '483.xalancbmk',
         ],
@@ -118,4 +117,10 @@ def create_spec2006_script():
 
 create_spec2017_script()
 create_spec2006_script()
+with open(f'valgrind.sh', 'w') as f:
+    f.write(f'./int_valgrind_2017_test.sh | tee valgrind_2017_int.txt\n')
+    f.write(f'./fp_valgrind_2017_test.sh | tee valgrind_2017_fp.txt\n')
+    f.write(f'./all_c_valgrind_2006_test.sh | tee valgrind_2006_c.txt\n')
+    f.write(f'./all_cpp_valgrind_2006_test.sh | tee valgrind_2006_cpp.txt\n')
+    
 os.system('chmod +x *.sh')
