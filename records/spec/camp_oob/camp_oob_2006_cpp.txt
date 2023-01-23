@@ -1,0 +1,40 @@
+Running ../run_base_ref_camp_oob.0000/namd_base.camp_oob --input namd.input --iterations 38 --output namd.out
+time used:     282195 ms
+cpu time used: 282181 ms
+memory used:    56344 kb
+exit code:      22029
+Running ../run_base_ref_camp_oob.0000/dealII_base.camp_oob 23
+time used:     770935 ms
+cpu time used: 770888 ms
+memory used:   867416 kb
+exit code:      21996
+Running ../run_base_ref_camp_oob.0000/soplex_base.camp_oob -s1 -e -m45000 pds-50.mps
+time used:     126412 ms
+cpu time used: 126402 ms
+memory used:   159840 kb
+exit code:      22000
+Running ../run_base_ref_camp_oob.0000/soplex_base.camp_oob -m3500 ref.mps
+time used:     120766 ms
+cpu time used: 120753 ms
+memory used:   715976 kb
+exit code:      21954
+Running ../run_base_ref_camp_oob.0000/povray_base.camp_oob SPEC-benchmark-ref.ini
+time used:     142795 ms
+cpu time used: 142748 ms
+memory used:    13588 kb
+exit code:      21867
+Running ../run_base_ref_camp_oob.0000/astar_base.camp_oob BigLakes2048.cfg
+time used:     105591 ms
+cpu time used: 105583 ms
+memory used:   381296 kb
+exit code:      22005
+Running ../run_base_ref_camp_oob.0000/astar_base.camp_oob rivers.cfg
+time used:     210064 ms
+cpu time used: 210055 ms
+memory used:   162240 kb
+exit code:      21902
+Running ../run_base_ref_camp_oob.0000/Xalan_base.camp_oob -v t5.xml xalanc.xsl
+time used:     602384 ms
+cpu time used: 602363 ms
+memory used:   478400 kb
+exit code:      22078
