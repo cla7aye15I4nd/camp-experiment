@@ -1,0 +1,15 @@
+Running ../run_peak_refspeed_camp_rm.0000/lbm_s_peak.camp_rm 2000 reference.dat 0 0 200_200_260_ldc.of
+time used:     880194 ms
+cpu time used: 880161 ms
+memory used:   3314664 kb
+exit code:      22095
+Running ../run_peak_refspeed_camp_rm.0000/imagick_s_peak.camp_rm -limit disk 0 refspeed_input.tga -resize 817% -rotate -2.76 -shave 540x375 -alpha remove -auto-level -contrast-stretch 1x1% -colorspace Lab -channel R -equalize +channel -colorspace sRGB -define histogram:unique-colors=false -adaptive-blur 0x5 -despeckle -auto-gamma -adaptive-sharpen 55 -enhance -brightness-contrast 10x10 -resize 30% refspeed_output.tga
+time used:     6798423 ms
+cpu time used: 6798372 ms
+memory used:   7333272 kb
+exit code:      21979
+Running ../run_peak_refspeed_camp_rm.0000/nab_s_peak.camp_rm 3j1n 20140317 220
+time used:     1794676 ms
+cpu time used: 1794658 ms
+memory used:   637676 kb
+exit code:      21982
