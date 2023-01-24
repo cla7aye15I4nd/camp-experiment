@@ -1,0 +1,170 @@
+Running ../run_base_ref_camp_ty.0000/perlbench_base.camp_ty -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     217974 ms
+cpu time used: 217925 ms
+memory used:   247936 kb
+exit code:      21872
+Running ../run_base_ref_camp_ty.0000/perlbench_base.camp_ty -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      86414 ms
+cpu time used:  86376 ms
+memory used:   347648 kb
+exit code:      22053
+Running ../run_base_ref_camp_ty.0000/perlbench_base.camp_ty -I./lib splitmail.pl 1600 12 26 16 4500
+time used:     126274 ms
+cpu time used: 126257 ms
+memory used:   681564 kb
+exit code:      22084
+Running ../run_base_ref_camp_ty.0000/bzip2_base.camp_ty input.source 280
+time used:      89390 ms
+cpu time used:  89375 ms
+memory used:   878424 kb
+exit code:      21962
+Running ../run_base_ref_camp_ty.0000/bzip2_base.camp_ty chicken.jpg 30
+time used:      26076 ms
+cpu time used:  26054 ms
+memory used:   108344 kb
+exit code:      21942
+Running ../run_base_ref_camp_ty.0000/bzip2_base.camp_ty liberty.jpg 30
+time used:      43594 ms
+cpu time used:  43586 ms
+memory used:   108636 kb
+exit code:      22085
+Running ../run_base_ref_camp_ty.0000/bzip2_base.camp_ty input.program 280
+time used:      92697 ms
+cpu time used:  92686 ms
+memory used:   878016 kb
+exit code:      22000
+Running ../run_base_ref_camp_ty.0000/bzip2_base.camp_ty text.html 280
+time used:     108018 ms
+cpu time used: 108008 ms
+memory used:   878008 kb
+exit code:      21932
+Running ../run_base_ref_camp_ty.0000/bzip2_base.camp_ty input.combined 200
+time used:      68539 ms
+cpu time used:  68528 ms
+memory used:   632052 kb
+exit code:      21917
+Running ../run_base_ref_camp_ty.0000/gcc_base.camp_ty 166.in -o 166.s
+time used:      18329 ms
+cpu time used:  18309 ms
+memory used:   282668 kb
+exit code:      21862
+Running ../run_base_ref_camp_ty.0000/gcc_base.camp_ty 200.in -o 200.s
+time used:      35574 ms
+cpu time used:  35526 ms
+memory used:   298596 kb
+exit code:      22010
+Running ../run_base_ref_camp_ty.0000/gcc_base.camp_ty c-typeck.in -o c-typeck.s
+time used:      25787 ms
+cpu time used:  25780 ms
+memory used:   473572 kb
+exit code:      21957
+Running ../run_base_ref_camp_ty.0000/gcc_base.camp_ty cp-decl.in -o cp-decl.s
+time used:      19298 ms
+cpu time used:  19277 ms
+memory used:   377612 kb
+exit code:      21880
+Running ../run_base_ref_camp_ty.0000/gcc_base.camp_ty expr.in -o expr.s
+time used:      21719 ms
+cpu time used:  21711 ms
+memory used:   483216 kb
+exit code:      21956
+Running ../run_base_ref_camp_ty.0000/gcc_base.camp_ty expr2.in -o expr2.s
+time used:      30504 ms
+cpu time used:  30482 ms
+memory used:   663972 kb
+exit code:      21910
+Running ../run_base_ref_camp_ty.0000/gcc_base.camp_ty g23.in -o g23.s
+time used:      40661 ms
+cpu time used:  40652 ms
+memory used:   888088 kb
+exit code:      21955
+Running ../run_base_ref_camp_ty.0000/gcc_base.camp_ty s04.in -o s04.s
+time used:      37365 ms
+cpu time used:  37345 ms
+memory used:   905360 kb
+exit code:      22018
+Running ../run_base_ref_camp_ty.0000/gcc_base.camp_ty scilab.in -o scilab.s
+time used:      13272 ms
+cpu time used:  13265 ms
+memory used:   121376 kb
+exit code:      21926
+Running ../run_base_ref_camp_ty.0000/mcf_base.camp_ty inp.in
+time used:     226980 ms
+cpu time used: 226971 ms
+memory used:   1727896 kb
+exit code:      22013
+Running ../run_base_ref_camp_ty.0000/milc_base.camp_ty
+time used:     370364 ms
+cpu time used: 370357 ms
+memory used:   725724 kb
+exit code:      21905
+Running ../run_base_ref_camp_ty.0000/gobmk_base.camp_ty --quiet --mode gtp
+time used:      43761 ms
+cpu time used:  43708 ms
+memory used:    37864 kb
+exit code:      21878
+Running ../run_base_ref_camp_ty.0000/gobmk_base.camp_ty --quiet --mode gtp
+time used:     110639 ms
+cpu time used: 110467 ms
+memory used:    37748 kb
+exit code:      21858
+Running ../run_base_ref_camp_ty.0000/gobmk_base.camp_ty --quiet --mode gtp
+time used:      55249 ms
+cpu time used:  55155 ms
+memory used:    37304 kb
+exit code:      22045
+Running ../run_base_ref_camp_ty.0000/gobmk_base.camp_ty --quiet --mode gtp
+time used:      42605 ms
+cpu time used:  42477 ms
+memory used:    37248 kb
+exit code:      22053
+Running ../run_base_ref_camp_ty.0000/gobmk_base.camp_ty --quiet --mode gtp
+time used:      57764 ms
+cpu time used:  57698 ms
+memory used:    37260 kb
+exit code:      22049
+Running ../run_base_ref_camp_ty.0000/hmmer_base.camp_ty nph3.hmm swiss41
+time used:     112142 ms
+cpu time used: 112129 ms
+memory used:    54156 kb
+exit code:      21855
+Running ../run_base_ref_camp_ty.0000/hmmer_base.camp_ty --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     242302 ms
+cpu time used: 242294 ms
+memory used:    16496 kb
+exit code:      21967
+Running ../run_base_ref_camp_ty.0000/sjeng_base.camp_ty ref.txt
+time used:     300457 ms
+cpu time used: 300414 ms
+memory used:   187976 kb
+exit code:      22002
+Running ../run_base_ref_camp_ty.0000/libquantum_base.camp_ty 1397 8
+time used:     200542 ms
+cpu time used: 200509 ms
+memory used:   127652 kb
+exit code:      21870
+Running ../run_base_ref_camp_ty.0000/h264ref_base.camp_ty -d foreman_ref_encoder_baseline.cfg
+time used:      76972 ms
+cpu time used:  76958 ms
+memory used:    38340 kb
+exit code:      22084
+Running ../run_base_ref_camp_ty.0000/h264ref_base.camp_ty -d foreman_ref_encoder_main.cfg
+time used:      49453 ms
+cpu time used:  49446 ms
+memory used:    29416 kb
+exit code:      22024
+Running ../run_base_ref_camp_ty.0000/h264ref_base.camp_ty -d sss_encoder_main.cfg
+time used:     403854 ms
+cpu time used: 402835 ms
+memory used:   102232 kb
+exit code:      22005
+Running ../run_base_ref_camp_ty.0000/lbm_base.camp_ty 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:      93733 ms
+cpu time used:  93719 ms
+memory used:   427064 kb
+exit code:      21919
+Running ../run_base_ref_camp_ty.0000/sphinx_livepretend_base.camp_ty ctlfile . args.an4
+time used:     497047 ms
+cpu time used: 496975 ms
+memory used:    54860 kb
+exit code:      21897
