@@ -1,0 +1,170 @@
+Running ../run_base_ref_camp_ctx.0000/perlbench_base.camp_ctx -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     134613 ms
+cpu time used: 134588 ms
+memory used:   247032 kb
+exit code:      21849
+Running ../run_base_ref_camp_ctx.0000/perlbench_base.camp_ctx -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      37795 ms
+cpu time used:  37783 ms
+memory used:   347352 kb
+exit code:      21885
+Running ../run_base_ref_camp_ctx.0000/perlbench_base.camp_ctx -I./lib splitmail.pl 1600 12 26 16 4500
+time used:      73584 ms
+cpu time used:  73570 ms
+memory used:   680516 kb
+exit code:      21926
+Running ../run_base_ref_camp_ctx.0000/bzip2_base.camp_ctx input.source 280
+time used:     118438 ms
+cpu time used: 118421 ms
+memory used:   878020 kb
+exit code:      21973
+Running ../run_base_ref_camp_ctx.0000/bzip2_base.camp_ctx chicken.jpg 30
+time used:      36000 ms
+cpu time used:  35992 ms
+memory used:   108472 kb
+exit code:      22040
+Running ../run_base_ref_camp_ctx.0000/bzip2_base.camp_ctx liberty.jpg 30
+time used:      83643 ms
+cpu time used:  83634 ms
+memory used:   108228 kb
+exit code:      21953
+Running ../run_base_ref_camp_ctx.0000/bzip2_base.camp_ctx input.program 280
+time used:     111524 ms
+cpu time used: 111514 ms
+memory used:   878380 kb
+exit code:      22084
+Running ../run_base_ref_camp_ctx.0000/bzip2_base.camp_ctx text.html 280
+time used:     238746 ms
+cpu time used: 238731 ms
+memory used:   878916 kb
+exit code:      21861
+Running ../run_base_ref_camp_ctx.0000/bzip2_base.camp_ctx input.combined 200
+time used:      91673 ms
+cpu time used:  91662 ms
+memory used:   631648 kb
+exit code:      22010
+Running ../run_base_ref_camp_ctx.0000/gcc_base.camp_ctx 166.in -o 166.s
+time used:      11323 ms
+cpu time used:  11309 ms
+memory used:   266832 kb
+exit code:      22030
+Running ../run_base_ref_camp_ctx.0000/gcc_base.camp_ctx 200.in -o 200.s
+time used:      22252 ms
+cpu time used:  22234 ms
+memory used:   299736 kb
+exit code:      21975
+Running ../run_base_ref_camp_ctx.0000/gcc_base.camp_ctx c-typeck.in -o c-typeck.s
+time used:      18483 ms
+cpu time used:  18460 ms
+memory used:   472468 kb
+exit code:      21882
+Running ../run_base_ref_camp_ctx.0000/gcc_base.camp_ctx cp-decl.in -o cp-decl.s
+time used:      13007 ms
+cpu time used:  12984 ms
+memory used:   357732 kb
+exit code:      22046
+Running ../run_base_ref_camp_ctx.0000/gcc_base.camp_ctx expr.in -o expr.s
+time used:      15746 ms
+cpu time used:  15740 ms
+memory used:   491512 kb
+exit code:      21992
+Running ../run_base_ref_camp_ctx.0000/gcc_base.camp_ctx expr2.in -o expr2.s
+time used:      22527 ms
+cpu time used:  22517 ms
+memory used:   670040 kb
+exit code:      21895
+Running ../run_base_ref_camp_ctx.0000/gcc_base.camp_ctx g23.in -o g23.s
+time used:      29958 ms
+cpu time used:  29950 ms
+memory used:   887608 kb
+exit code:      21942
+Running ../run_base_ref_camp_ctx.0000/gcc_base.camp_ctx s04.in -o s04.s
+time used:      24477 ms
+cpu time used:  24470 ms
+memory used:   901532 kb
+exit code:      21987
+Running ../run_base_ref_camp_ctx.0000/gcc_base.camp_ctx scilab.in -o scilab.s
+time used:       8445 ms
+cpu time used:   8435 ms
+memory used:   120872 kb
+exit code:      21991
+Running ../run_base_ref_camp_ctx.0000/mcf_base.camp_ctx inp.in
+time used:     192622 ms
+cpu time used: 192579 ms
+memory used:   1727968 kb
+exit code:      21935
+Running ../run_base_ref_camp_ctx.0000/milc_base.camp_ctx
+time used:     268828 ms
+cpu time used: 268802 ms
+memory used:   725708 kb
+exit code:      21968
+Running ../run_base_ref_camp_ctx.0000/gobmk_base.camp_ctx --quiet --mode gtp
+time used:      41592 ms
+cpu time used:  41546 ms
+memory used:    37628 kb
+exit code:      22043
+Running ../run_base_ref_camp_ctx.0000/gobmk_base.camp_ctx --quiet --mode gtp
+time used:     104109 ms
+cpu time used: 103985 ms
+memory used:    37804 kb
+exit code:      22058
+Running ../run_base_ref_camp_ctx.0000/gobmk_base.camp_ctx --quiet --mode gtp
+time used:      52285 ms
+cpu time used:  52170 ms
+memory used:    37220 kb
+exit code:      21934
+Running ../run_base_ref_camp_ctx.0000/gobmk_base.camp_ctx --quiet --mode gtp
+time used:      40287 ms
+cpu time used:  40175 ms
+memory used:    37148 kb
+exit code:      22013
+Running ../run_base_ref_camp_ctx.0000/gobmk_base.camp_ctx --quiet --mode gtp
+time used:      53515 ms
+cpu time used:  53479 ms
+memory used:    37100 kb
+exit code:      21944
+Running ../run_base_ref_camp_ctx.0000/hmmer_base.camp_ctx nph3.hmm swiss41
+time used:     460995 ms
+cpu time used: 460980 ms
+memory used:    53856 kb
+exit code:      22092
+Running ../run_base_ref_camp_ctx.0000/hmmer_base.camp_ctx --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     949488 ms
+cpu time used: 949475 ms
+memory used:    16268 kb
+exit code:      22095
+Running ../run_base_ref_camp_ctx.0000/sjeng_base.camp_ctx ref.txt
+time used:     311040 ms
+cpu time used: 311005 ms
+memory used:   187448 kb
+exit code:      21854
+Running ../run_base_ref_camp_ctx.0000/libquantum_base.camp_ctx 1397 8
+time used:     431829 ms
+cpu time used: 431789 ms
+memory used:   127692 kb
+exit code:      22055
+Running ../run_base_ref_camp_ctx.0000/h264ref_base.camp_ctx -d foreman_ref_encoder_baseline.cfg
+time used:     170521 ms
+cpu time used: 170509 ms
+memory used:    37868 kb
+exit code:      22066
+Running ../run_base_ref_camp_ctx.0000/h264ref_base.camp_ctx -d foreman_ref_encoder_main.cfg
+time used:      91798 ms
+cpu time used:  91784 ms
+memory used:    28412 kb
+exit code:      22024
+Running ../run_base_ref_camp_ctx.0000/h264ref_base.camp_ctx -d sss_encoder_main.cfg
+time used:     812472 ms
+cpu time used: 811410 ms
+memory used:   102080 kb
+exit code:      21978
+Running ../run_base_ref_camp_ctx.0000/lbm_base.camp_ctx 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:     107302 ms
+cpu time used: 107288 ms
+memory used:   427172 kb
+exit code:      21978
+Running ../run_base_ref_camp_ctx.0000/sphinx_livepretend_base.camp_ctx ctlfile . args.an4
+time used:     1407803 ms
+cpu time used: 1407718 ms
+memory used:    54832 kb
+exit code:      21932
