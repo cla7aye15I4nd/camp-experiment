@@ -26,7 +26,7 @@ def create_spec2017_script():
 
     for name, cases in script.items():
         for tag in tags:
-            with open(f'{name}_{tag}_2017_test.sh', 'w') as f:
+            with open(f'{name}_valgrind_2017_test.sh', 'w') as f:
                 f.write('#!/bin/bash\n\n')
                 f.write('g++ spectest.c -o spectest\n\n')
 
@@ -83,7 +83,7 @@ def create_spec2006_script():
 
     for name, cases in script.items():
         for tag in tags:
-            with open(f'{name}_{tag}_2006_test.sh', 'w') as f:
+            with open(f'{name}_valgrind_2006_test.sh', 'w') as f:
                 f.write('#!/bin/bash\n\n')
                 f.write('g++ spectest.c -o spectest\n\n')
 
