@@ -1,0 +1,170 @@
+Running ../run_base_ref_camp_tc.0000/perlbench_base.camp_tc -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:      71423 ms
+cpu time used:  71400 ms
+memory used:   246812 kb
+exit code:      21951
+Running ../run_base_ref_camp_tc.0000/perlbench_base.camp_tc -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      25476 ms
+cpu time used:  25466 ms
+memory used:   347096 kb
+exit code:      21951
+Running ../run_base_ref_camp_tc.0000/perlbench_base.camp_tc -I./lib splitmail.pl 1600 12 26 16 4500
+time used:      35994 ms
+cpu time used:  35956 ms
+memory used:   679564 kb
+exit code:      21851
+Running ../run_base_ref_camp_tc.0000/bzip2_base.camp_tc input.source 280
+time used:      51055 ms
+cpu time used:  51014 ms
+memory used:   878276 kb
+exit code:      21848
+Running ../run_base_ref_camp_tc.0000/bzip2_base.camp_tc chicken.jpg 30
+time used:      15222 ms
+cpu time used:  15214 ms
+memory used:   109004 kb
+exit code:      22050
+Running ../run_base_ref_camp_tc.0000/bzip2_base.camp_tc liberty.jpg 30
+time used:      24151 ms
+cpu time used:  24144 ms
+memory used:   108500 kb
+exit code:      21853
+Running ../run_base_ref_camp_tc.0000/bzip2_base.camp_tc input.program 280
+time used:      51282 ms
+cpu time used:  51276 ms
+memory used:   878348 kb
+exit code:      22005
+Running ../run_base_ref_camp_tc.0000/bzip2_base.camp_tc text.html 280
+time used:      56457 ms
+cpu time used:  56447 ms
+memory used:   878056 kb
+exit code:      21902
+Running ../run_base_ref_camp_tc.0000/bzip2_base.camp_tc input.combined 200
+time used:      39369 ms
+cpu time used:  39356 ms
+memory used:   631936 kb
+exit code:      21867
+Running ../run_base_ref_camp_tc.0000/gcc_base.camp_tc 166.in -o 166.s
+time used:       7626 ms
+cpu time used:   7618 ms
+memory used:   285408 kb
+exit code:      22071
+Running ../run_base_ref_camp_tc.0000/gcc_base.camp_tc 200.in -o 200.s
+time used:      15775 ms
+cpu time used:  15769 ms
+memory used:   299384 kb
+exit code:      22046
+Running ../run_base_ref_camp_tc.0000/gcc_base.camp_tc c-typeck.in -o c-typeck.s
+time used:      11952 ms
+cpu time used:  11946 ms
+memory used:   472952 kb
+exit code:      21954
+Running ../run_base_ref_camp_tc.0000/gcc_base.camp_tc cp-decl.in -o cp-decl.s
+time used:       8461 ms
+cpu time used:   8455 ms
+memory used:   418176 kb
+exit code:      22015
+Running ../run_base_ref_camp_tc.0000/gcc_base.camp_tc expr.in -o expr.s
+time used:       9777 ms
+cpu time used:   9771 ms
+memory used:   507188 kb
+exit code:      22049
+Running ../run_base_ref_camp_tc.0000/gcc_base.camp_tc expr2.in -o expr2.s
+time used:      14059 ms
+cpu time used:  14051 ms
+memory used:   668212 kb
+exit code:      21952
+Running ../run_base_ref_camp_tc.0000/gcc_base.camp_tc g23.in -o g23.s
+time used:      18947 ms
+cpu time used:  18925 ms
+memory used:   887260 kb
+exit code:      21955
+Running ../run_base_ref_camp_tc.0000/gcc_base.camp_tc s04.in -o s04.s
+time used:      16295 ms
+cpu time used:  16287 ms
+memory used:   911176 kb
+exit code:      21937
+Running ../run_base_ref_camp_tc.0000/gcc_base.camp_tc scilab.in -o scilab.s
+time used:       5818 ms
+cpu time used:   5811 ms
+memory used:   120752 kb
+exit code:      22004
+Running ../run_base_ref_camp_tc.0000/mcf_base.camp_tc inp.in
+time used:     128160 ms
+cpu time used: 128150 ms
+memory used:   1727840 kb
+exit code:      21866
+Running ../run_base_ref_camp_tc.0000/milc_base.camp_tc
+time used:     242764 ms
+cpu time used: 242742 ms
+memory used:   718036 kb
+exit code:      21954
+Running ../run_base_ref_camp_tc.0000/gobmk_base.camp_tc --quiet --mode gtp
+time used:      31997 ms
+cpu time used:  31941 ms
+memory used:    37656 kb
+exit code:      21901
+Running ../run_base_ref_camp_tc.0000/gobmk_base.camp_tc --quiet --mode gtp
+time used:      80558 ms
+cpu time used:  80443 ms
+memory used:    37780 kb
+exit code:      21935
+Running ../run_base_ref_camp_tc.0000/gobmk_base.camp_tc --quiet --mode gtp
+time used:      39299 ms
+cpu time used:  39228 ms
+memory used:    37148 kb
+exit code:      22004
+Running ../run_base_ref_camp_tc.0000/gobmk_base.camp_tc --quiet --mode gtp
+time used:      31167 ms
+cpu time used:  31075 ms
+memory used:    37380 kb
+exit code:      21983
+Running ../run_base_ref_camp_tc.0000/gobmk_base.camp_tc --quiet --mode gtp
+time used:      41298 ms
+cpu time used:  41188 ms
+memory used:    36952 kb
+exit code:      21865
+Running ../run_base_ref_camp_tc.0000/hmmer_base.camp_tc nph3.hmm swiss41
+time used:      48954 ms
+cpu time used:  48944 ms
+memory used:    53776 kb
+exit code:      21987
+Running ../run_base_ref_camp_tc.0000/hmmer_base.camp_tc --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     105726 ms
+cpu time used: 105721 ms
+memory used:    16256 kb
+exit code:      21981
+Running ../run_base_ref_camp_tc.0000/sjeng_base.camp_tc ref.txt
+time used:     256725 ms
+cpu time used: 256700 ms
+memory used:   187420 kb
+exit code:      21850
+Running ../run_base_ref_camp_tc.0000/libquantum_base.camp_tc 1397 8
+time used:     162963 ms
+cpu time used: 162948 ms
+memory used:   128180 kb
+exit code:      21929
+Running ../run_base_ref_camp_tc.0000/h264ref_base.camp_tc -d foreman_ref_encoder_baseline.cfg
+time used:      26484 ms
+cpu time used:  26474 ms
+memory used:    37584 kb
+exit code:      22053
+Running ../run_base_ref_camp_tc.0000/h264ref_base.camp_tc -d foreman_ref_encoder_main.cfg
+time used:      17651 ms
+cpu time used:  17647 ms
+memory used:    29028 kb
+exit code:      21860
+Running ../run_base_ref_camp_tc.0000/h264ref_base.camp_tc -d sss_encoder_main.cfg
+time used:     150722 ms
+cpu time used: 150374 ms
+memory used:   101108 kb
+exit code:      21876
+Running ../run_base_ref_camp_tc.0000/lbm_base.camp_tc 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:      92990 ms
+cpu time used:  92980 ms
+memory used:   427112 kb
+exit code:      22024
+Running ../run_base_ref_camp_tc.0000/sphinx_livepretend_base.camp_tc ctlfile . args.an4
+time used:     226671 ms
+cpu time used: 226577 ms
+memory used:    54856 kb
+exit code:      22005
