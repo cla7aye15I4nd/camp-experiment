@@ -69,7 +69,7 @@ def create_spec2006_script():
         ],
         'all_cpp': [
             '444.namd',
-            '447.dealII',
+            # '447.dealII',
             '450.soplex',
             '453.povray',
             '473.astar',
