@@ -1,0 +1,170 @@
+Running ../run_base_ref_freeguard.0000/perlbench_base.freeguard -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:      74428 ms
+cpu time used:  74388 ms
+memory used:   455216 kb
+exit code:      21864
+Running ../run_base_ref_freeguard.0000/perlbench_base.freeguard -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      66560 ms
+cpu time used:  66520 ms
+memory used:   625204 kb
+exit code:      21939
+Running ../run_base_ref_freeguard.0000/perlbench_base.freeguard -I./lib splitmail.pl 1600 12 26 16 4500
+time used:      36846 ms
+cpu time used:  36834 ms
+memory used:   1050076 kb
+exit code:      21849
+Running ../run_base_ref_freeguard.0000/bzip2_base.freeguard input.source 280
+time used:      51076 ms
+cpu time used:  51058 ms
+memory used:   882408 kb
+exit code:      21980
+Running ../run_base_ref_freeguard.0000/bzip2_base.freeguard chicken.jpg 30
+time used:      15537 ms
+cpu time used:  15532 ms
+memory used:   114228 kb
+exit code:      22065
+Running ../run_base_ref_freeguard.0000/bzip2_base.freeguard liberty.jpg 30
+time used:      23808 ms
+cpu time used:  23803 ms
+memory used:   111404 kb
+exit code:      21875
+Running ../run_base_ref_freeguard.0000/bzip2_base.freeguard input.program 280
+time used:      51122 ms
+cpu time used:  51116 ms
+memory used:   883420 kb
+exit code:      21986
+Running ../run_base_ref_freeguard.0000/bzip2_base.freeguard text.html 280
+time used:      55635 ms
+cpu time used:  55629 ms
+memory used:   885968 kb
+exit code:      21961
+Running ../run_base_ref_freeguard.0000/bzip2_base.freeguard input.combined 200
+time used:      39052 ms
+cpu time used:  39045 ms
+memory used:   637384 kb
+exit code:      21881
+Running ../run_base_ref_freeguard.0000/gcc_base.freeguard 166.in -o 166.s
+time used:      11996 ms
+cpu time used:  11967 ms
+memory used:   1453464 kb
+exit code:      21896
+Running ../run_base_ref_freeguard.0000/gcc_base.freeguard 200.in -o 200.s
+time used:      56011 ms
+cpu time used:  56007 ms
+memory used:   1306532 kb
+exit code:      21861
+Running ../run_base_ref_freeguard.0000/gcc_base.freeguard c-typeck.in -o c-typeck.s
+time used:      16757 ms
+cpu time used:  16754 ms
+memory used:   3893364 kb
+exit code:      21975
+Running ../run_base_ref_freeguard.0000/gcc_base.freeguard cp-decl.in -o cp-decl.s
+time used:      11638 ms
+cpu time used:  11634 ms
+memory used:   1615784 kb
+exit code:      21923
+Running ../run_base_ref_freeguard.0000/gcc_base.freeguard expr.in -o expr.s
+time used:       5112 ms
+cpu time used:   5110 ms
+memory used:   919996 kb
+exit code:      21934
+Running ../run_base_ref_freeguard.0000/gcc_base.freeguard expr2.in -o expr2.s
+time used:      15272 ms
+cpu time used:  15269 ms
+memory used:   2764268 kb
+exit code:      21977
+Running ../run_base_ref_freeguard.0000/gcc_base.freeguard g23.in -o g23.s
+time used:      16891 ms
+cpu time used:  16889 ms
+memory used:   2757908 kb
+exit code:      21990
+Running ../run_base_ref_freeguard.0000/gcc_base.freeguard s04.in -o s04.s
+time used:      16840 ms
+cpu time used:  16837 ms
+memory used:   3390060 kb
+exit code:      21953
+Running ../run_base_ref_freeguard.0000/gcc_base.freeguard scilab.in -o scilab.s
+time used:      10290 ms
+cpu time used:  10285 ms
+memory used:   403180 kb
+exit code:      22017
+Running ../run_base_ref_freeguard.0000/mcf_base.freeguard inp.in
+time used:     169758 ms
+cpu time used: 169735 ms
+memory used:   1720772 kb
+exit code:      22080
+Running ../run_base_ref_freeguard.0000/milc_base.freeguard
+time used:     268218 ms
+cpu time used: 268203 ms
+memory used:   707672 kb
+exit code:      21992
+Running ../run_base_ref_freeguard.0000/gobmk_base.freeguard --quiet --mode gtp
+time used:      33000 ms
+cpu time used:  32960 ms
+memory used:    44852 kb
+exit code:      21859
+Running ../run_base_ref_freeguard.0000/gobmk_base.freeguard --quiet --mode gtp
+time used:      82879 ms
+cpu time used:  82741 ms
+memory used:    47244 kb
+exit code:      21884
+Running ../run_base_ref_freeguard.0000/gobmk_base.freeguard --quiet --mode gtp
+time used:      40776 ms
+cpu time used:  40657 ms
+memory used:    38540 kb
+exit code:      21910
+Running ../run_base_ref_freeguard.0000/gobmk_base.freeguard --quiet --mode gtp
+time used:      32177 ms
+cpu time used:  32080 ms
+memory used:    40764 kb
+exit code:      21984
+Running ../run_base_ref_freeguard.0000/gobmk_base.freeguard --quiet --mode gtp
+time used:      42519 ms
+cpu time used:  42439 ms
+memory used:    37808 kb
+exit code:      21912
+Running ../run_base_ref_freeguard.0000/hmmer_base.freeguard nph3.hmm swiss41
+time used:      49216 ms
+cpu time used:  49212 ms
+memory used:   117564 kb
+exit code:      22020
+Running ../run_base_ref_freeguard.0000/hmmer_base.freeguard --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     107589 ms
+cpu time used: 107581 ms
+memory used:    35240 kb
+exit code:      22002
+Running ../run_base_ref_freeguard.0000/sjeng_base.freeguard ref.txt
+time used:     263808 ms
+cpu time used: 263792 ms
+memory used:   183780 kb
+exit code:      22036
+Running ../run_base_ref_freeguard.0000/libquantum_base.freeguard 1397 8
+time used:     179105 ms
+cpu time used: 179090 ms
+memory used:   111308 kb
+exit code:      21963
+Running ../run_base_ref_freeguard.0000/h264ref_base.freeguard -d foreman_ref_encoder_baseline.cfg
+time used:      26934 ms
+cpu time used:  26910 ms
+memory used:    53612 kb
+exit code:      22048
+Running ../run_base_ref_freeguard.0000/h264ref_base.freeguard -d foreman_ref_encoder_main.cfg
+time used:      17807 ms
+cpu time used:  17805 ms
+memory used:    38804 kb
+exit code:      21997
+Running ../run_base_ref_freeguard.0000/h264ref_base.freeguard -d sss_encoder_main.cfg
+time used:     154573 ms
+cpu time used: 154223 ms
+memory used:   105276 kb
+exit code:      22064
+Running ../run_base_ref_freeguard.0000/lbm_base.freeguard 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:     108156 ms
+cpu time used: 108149 ms
+memory used:   423132 kb
+exit code:      21942
+Running ../run_base_ref_freeguard.0000/sphinx_livepretend_base.freeguard ctlfile . args.an4
+time used:     237191 ms
+cpu time used: 237162 ms
+memory used:   959468 kb
+exit code:      22094

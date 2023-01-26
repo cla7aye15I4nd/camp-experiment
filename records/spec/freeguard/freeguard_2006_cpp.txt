@@ -1,0 +1,40 @@
+Running ../run_base_ref_freeguard.0000/namd_base.freeguard --input namd.input --iterations 38 --output namd.out
+time used:     150123 ms
+cpu time used: 150114 ms
+memory used:    54568 kb
+exit code:      21930
+Running ../run_base_ref_freeguard.0000/dealII_base.freeguard 23
+time used:     651840 ms
+cpu time used: 636610 ms
+memory used:   1634932 kb
+exit code:      21907
+Running ../run_base_ref_freeguard.0000/soplex_base.freeguard -s1 -e -m45000 pds-50.mps
+time used:      68844 ms
+cpu time used:  68840 ms
+memory used:   773992 kb
+exit code:      21981
+Running ../run_base_ref_freeguard.0000/soplex_base.freeguard -m3500 ref.mps
+time used:      65166 ms
+cpu time used:  65134 ms
+memory used:   605632 kb
+exit code:      22017
+Running ../run_base_ref_freeguard.0000/povray_base.freeguard SPEC-benchmark-ref.ini
+time used:      83578 ms
+cpu time used:  83549 ms
+memory used:    16660 kb
+exit code:      22055
+Running ../run_base_ref_freeguard.0000/astar_base.freeguard BigLakes2048.cfg
+time used:     105621 ms
+cpu time used: 105611 ms
+memory used:   800452 kb
+exit code:      22014
+Running ../run_base_ref_freeguard.0000/astar_base.freeguard rivers.cfg
+time used:     143601 ms
+cpu time used: 143588 ms
+memory used:   295576 kb
+exit code:      21853
+Running ../run_base_ref_freeguard.0000/Xalan_base.freeguard -v t5.xml xalanc.xsl
+time used:     286714 ms
+cpu time used: 282810 ms
+memory used:   3504816 kb
+exit code:      21890
