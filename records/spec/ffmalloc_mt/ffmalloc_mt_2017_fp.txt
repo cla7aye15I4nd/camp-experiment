@@ -1,0 +1,15 @@
+Running ../run_peak_refspeed_ffmalloc_mt.0000/lbm_s_peak.ffmalloc_mt 2000 reference.dat 0 0 200_200_260_ldc.of
+time used:     1183787 ms
+cpu time used: 1183729 ms
+memory used:   3338808 kb
+exit code:      21895
+Running ../run_peak_refspeed_ffmalloc_mt.0000/imagick_s_peak.ffmalloc_mt -limit disk 0 refspeed_input.tga -resize 817% -rotate -2.76 -shave 540x375 -alpha remove -auto-level -contrast-stretch 1x1% -colorspace Lab -channel R -equalize +channel -colorspace sRGB -define histogram:unique-colors=false -adaptive-blur 0x5 -despeckle -auto-gamma -adaptive-sharpen 55 -enhance -brightness-contrast 10x10 -resize 30% refspeed_output.tga
+time used:     4773906 ms
+cpu time used: 4773742 ms
+memory used:   7201280 kb
+exit code:      21957
+Running ../run_peak_refspeed_ffmalloc_mt.0000/nab_s_peak.ffmalloc_mt 3j1n 20140317 220
+time used:     1010095 ms
+cpu time used: 1010071 ms
+memory used:   970852 kb
+exit code:      21915

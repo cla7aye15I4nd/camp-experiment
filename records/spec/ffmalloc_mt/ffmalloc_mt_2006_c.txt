@@ -1,0 +1,170 @@
+Running ../run_base_ref_ffmalloc_mt.0000/perlbench_base.ffmalloc_mt -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:      72842 ms
+cpu time used:  72822 ms
+memory used:   1450396 kb
+exit code:      22034
+Running ../run_base_ref_ffmalloc_mt.0000/perlbench_base.ffmalloc_mt -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      24494 ms
+cpu time used:  24488 ms
+memory used:   405812 kb
+exit code:      21983
+Running ../run_base_ref_ffmalloc_mt.0000/perlbench_base.ffmalloc_mt -I./lib splitmail.pl 1600 12 26 16 4500
+time used:      37603 ms
+cpu time used:  37590 ms
+memory used:   927504 kb
+exit code:      21873
+Running ../run_base_ref_ffmalloc_mt.0000/bzip2_base.ffmalloc_mt input.source 280
+time used:      51315 ms
+cpu time used:  51302 ms
+memory used:   903464 kb
+exit code:      22036
+Running ../run_base_ref_ffmalloc_mt.0000/bzip2_base.ffmalloc_mt chicken.jpg 30
+time used:      15664 ms
+cpu time used:  15643 ms
+memory used:   135560 kb
+exit code:      21865
+Running ../run_base_ref_ffmalloc_mt.0000/bzip2_base.ffmalloc_mt liberty.jpg 30
+time used:      24477 ms
+cpu time used:  24456 ms
+memory used:   137720 kb
+exit code:      21997
+Running ../run_base_ref_ffmalloc_mt.0000/bzip2_base.ffmalloc_mt input.program 280
+time used:      51607 ms
+cpu time used:  51601 ms
+memory used:   904848 kb
+exit code:      22092
+Running ../run_base_ref_ffmalloc_mt.0000/bzip2_base.ffmalloc_mt text.html 280
+time used:      56768 ms
+cpu time used:  56761 ms
+memory used:   905920 kb
+exit code:      22069
+Running ../run_base_ref_ffmalloc_mt.0000/bzip2_base.ffmalloc_mt input.combined 200
+time used:      39749 ms
+cpu time used:  39693 ms
+memory used:   660140 kb
+exit code:      21853
+Running ../run_base_ref_ffmalloc_mt.0000/gcc_base.ffmalloc_mt 166.in -o 166.s
+time used:      12078 ms
+cpu time used:  12022 ms
+memory used:   256096 kb
+exit code:      21907
+Running ../run_base_ref_ffmalloc_mt.0000/gcc_base.ffmalloc_mt 200.in -o 200.s
+time used:      21916 ms
+cpu time used:  21910 ms
+memory used:   394704 kb
+exit code:      21946
+Running ../run_base_ref_ffmalloc_mt.0000/gcc_base.ffmalloc_mt c-typeck.in -o c-typeck.s
+time used:      25100 ms
+cpu time used:  25082 ms
+memory used:   526136 kb
+exit code:      21981
+Running ../run_base_ref_ffmalloc_mt.0000/gcc_base.ffmalloc_mt cp-decl.in -o cp-decl.s
+time used:      16598 ms
+cpu time used:  16592 ms
+memory used:   379132 kb
+exit code:      22038
+Running ../run_base_ref_ffmalloc_mt.0000/gcc_base.ffmalloc_mt expr.in -o expr.s
+time used:      18748 ms
+cpu time used:  18743 ms
+memory used:   491632 kb
+exit code:      21906
+Running ../run_base_ref_ffmalloc_mt.0000/gcc_base.ffmalloc_mt expr2.in -o expr2.s
+time used:      26712 ms
+cpu time used:  26706 ms
+memory used:   642076 kb
+exit code:      21964
+Running ../run_base_ref_ffmalloc_mt.0000/gcc_base.ffmalloc_mt g23.in -o g23.s
+time used:      33852 ms
+cpu time used:  33845 ms
+memory used:   922212 kb
+exit code:      21847
+Running ../run_base_ref_ffmalloc_mt.0000/gcc_base.ffmalloc_mt s04.in -o s04.s
+time used:      32914 ms
+cpu time used:  32910 ms
+memory used:   920600 kb
+exit code:      21883
+Running ../run_base_ref_ffmalloc_mt.0000/gcc_base.ffmalloc_mt scilab.in -o scilab.s
+time used:       7739 ms
+cpu time used:   7717 ms
+memory used:   223212 kb
+exit code:      22033
+Running ../run_base_ref_ffmalloc_mt.0000/mcf_base.ffmalloc_mt inp.in
+time used:     159286 ms
+cpu time used: 159273 ms
+memory used:   1751836 kb
+exit code:      21915
+Running ../run_base_ref_ffmalloc_mt.0000/milc_base.ffmalloc_mt
+time used:     305220 ms
+cpu time used: 305205 ms
+memory used:   724868 kb
+exit code:      21850
+Running ../run_base_ref_ffmalloc_mt.0000/gobmk_base.ffmalloc_mt --quiet --mode gtp
+time used:      35070 ms
+cpu time used:  34996 ms
+memory used:    67324 kb
+exit code:      22025
+Running ../run_base_ref_ffmalloc_mt.0000/gobmk_base.ffmalloc_mt --quiet --mode gtp
+time used:      88404 ms
+cpu time used:  88320 ms
+memory used:    64964 kb
+exit code:      21880
+Running ../run_base_ref_ffmalloc_mt.0000/gobmk_base.ffmalloc_mt --quiet --mode gtp
+time used:      44546 ms
+cpu time used:  44448 ms
+memory used:    66960 kb
+exit code:      21907
+Running ../run_base_ref_ffmalloc_mt.0000/gobmk_base.ffmalloc_mt --quiet --mode gtp
+time used:      34296 ms
+cpu time used:  34198 ms
+memory used:    67372 kb
+exit code:      22060
+Running ../run_base_ref_ffmalloc_mt.0000/gobmk_base.ffmalloc_mt --quiet --mode gtp
+time used:      44832 ms
+cpu time used:  44771 ms
+memory used:    67168 kb
+exit code:      21855
+Running ../run_base_ref_ffmalloc_mt.0000/hmmer_base.ffmalloc_mt nph3.hmm swiss41
+time used:      50649 ms
+cpu time used:  50640 ms
+memory used:    70472 kb
+exit code:      22046
+Running ../run_base_ref_ffmalloc_mt.0000/hmmer_base.ffmalloc_mt --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:      83026 ms
+cpu time used:  83020 ms
+memory used:    41508 kb
+exit code:      21911
+Running ../run_base_ref_ffmalloc_mt.0000/sjeng_base.ffmalloc_mt ref.txt
+time used:     273568 ms
+cpu time used: 273554 ms
+memory used:   217736 kb
+exit code:      21953
+Running ../run_base_ref_ffmalloc_mt.0000/libquantum_base.ffmalloc_mt 1397 8
+time used:     259607 ms
+cpu time used: 259599 ms
+memory used:   133128 kb
+exit code:      21921
+Running ../run_base_ref_ffmalloc_mt.0000/h264ref_base.ffmalloc_mt -d foreman_ref_encoder_baseline.cfg
+time used:      27158 ms
+cpu time used:  27147 ms
+memory used:    65372 kb
+exit code:      22004
+Running ../run_base_ref_ffmalloc_mt.0000/h264ref_base.ffmalloc_mt -d foreman_ref_encoder_main.cfg
+time used:      18160 ms
+cpu time used:  18157 ms
+memory used:    55860 kb
+exit code:      21949
+Running ../run_base_ref_ffmalloc_mt.0000/h264ref_base.ffmalloc_mt -d sss_encoder_main.cfg
+time used:     160743 ms
+cpu time used: 160388 ms
+memory used:   103672 kb
+exit code:      22001
+Running ../run_base_ref_ffmalloc_mt.0000/lbm_base.ffmalloc_mt 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:     121351 ms
+cpu time used: 121343 ms
+memory used:   457516 kb
+exit code:      22033
+Running ../run_base_ref_ffmalloc_mt.0000/sphinx_livepretend_base.ffmalloc_mt ctlfile . args.an4
+time used:     254391 ms
+cpu time used: 254357 ms
+memory used:   816756 kb
+exit code:      22050

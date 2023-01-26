@@ -1,0 +1,40 @@
+Running ../run_base_ref_ffmalloc_mt.0000/namd_base.ffmalloc_mt --input namd.input --iterations 38 --output namd.out
+time used:     150513 ms
+cpu time used: 150508 ms
+memory used:   121580 kb
+exit code:      21852
+Running ../run_base_ref_ffmalloc_mt.0000/dealII_base.ffmalloc_mt 23
+time used:     579684 ms
+cpu time used: 579626 ms
+memory used:   897560 kb
+exit code:      21892
+Running ../run_base_ref_ffmalloc_mt.0000/soplex_base.ffmalloc_mt -s1 -e -m45000 pds-50.mps
+time used:      86838 ms
+cpu time used:  86831 ms
+memory used:   209000 kb
+exit code:      21934
+Running ../run_base_ref_ffmalloc_mt.0000/soplex_base.ffmalloc_mt -m3500 ref.mps
+time used:      67702 ms
+cpu time used:  67695 ms
+memory used:   633956 kb
+exit code:      22032
+Running ../run_base_ref_ffmalloc_mt.0000/povray_base.ffmalloc_mt SPEC-benchmark-ref.ini
+time used:      84703 ms
+cpu time used:  84690 ms
+memory used:    80424 kb
+exit code:      22093
+Running ../run_base_ref_ffmalloc_mt.0000/astar_base.ffmalloc_mt BigLakes2048.cfg
+time used:      87612 ms
+cpu time used:  87601 ms
+memory used:   657208 kb
+exit code:      21918
+Running ../run_base_ref_ffmalloc_mt.0000/astar_base.ffmalloc_mt rivers.cfg
+time used:     144620 ms
+cpu time used: 144585 ms
+memory used:   292736 kb
+exit code:      22083
+Running ../run_base_ref_ffmalloc_mt.0000/Xalan_base.ffmalloc_mt -v t5.xml xalanc.xsl
+time used:     294706 ms
+cpu time used: 294660 ms
+memory used:   1744712 kb
+exit code:      22022
