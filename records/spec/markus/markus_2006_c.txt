@@ -1,0 +1,170 @@
+Running ../run_base_ref_markus.0000/perlbench_base.markus -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:      87229 ms
+cpu time used: 101985 ms
+memory used:   362344 kb
+exit code:      22057
+Running ../run_base_ref_markus.0000/perlbench_base.markus -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      32306 ms
+cpu time used:  44035 ms
+memory used:   388892 kb
+exit code:      21978
+Running ../run_base_ref_markus.0000/perlbench_base.markus -I./lib splitmail.pl 1600 12 26 16 4500
+time used:      48988 ms
+cpu time used:  56369 ms
+memory used:   839752 kb
+exit code:      21998
+Running ../run_base_ref_markus.0000/bzip2_base.markus input.source 280
+time used:      53029 ms
+cpu time used:  53017 ms
+memory used:   876320 kb
+exit code:      21881
+Running ../run_base_ref_markus.0000/bzip2_base.markus chicken.jpg 30
+time used:      16571 ms
+cpu time used:  16568 ms
+memory used:   106800 kb
+exit code:      21862
+Running ../run_base_ref_markus.0000/bzip2_base.markus liberty.jpg 30
+time used:      25121 ms
+cpu time used:  25091 ms
+memory used:   106720 kb
+exit code:      21948
+Running ../run_base_ref_markus.0000/bzip2_base.markus input.program 280
+time used:      51513 ms
+cpu time used:  51508 ms
+memory used:   876424 kb
+exit code:      21890
+Running ../run_base_ref_markus.0000/bzip2_base.markus text.html 280
+time used:      56450 ms
+cpu time used:  56444 ms
+memory used:   876472 kb
+exit code:      21933
+Running ../run_base_ref_markus.0000/bzip2_base.markus input.combined 200
+time used:      40107 ms
+cpu time used:  40099 ms
+memory used:   630080 kb
+exit code:      21906
+Running ../run_base_ref_markus.0000/gcc_base.markus 166.in -o 166.s
+time used:      16807 ms
+cpu time used:  21188 ms
+memory used:   276892 kb
+exit code:      22036
+Running ../run_base_ref_markus.0000/gcc_base.markus 200.in -o 200.s
+time used:      23606 ms
+cpu time used:  27042 ms
+memory used:   523768 kb
+exit code:      22100
+Running ../run_base_ref_markus.0000/gcc_base.markus c-typeck.in -o c-typeck.s
+time used:      40072 ms
+cpu time used:  53972 ms
+memory used:   557228 kb
+exit code:      21943
+Running ../run_base_ref_markus.0000/gcc_base.markus cp-decl.in -o cp-decl.s
+time used:      28003 ms
+cpu time used:  37293 ms
+memory used:   361016 kb
+exit code:      21873
+Running ../run_base_ref_markus.0000/gcc_base.markus expr.in -o expr.s
+time used:      32011 ms
+cpu time used:  42539 ms
+memory used:   489352 kb
+exit code:      21961
+Running ../run_base_ref_markus.0000/gcc_base.markus expr2.in -o expr2.s
+time used:      42065 ms
+cpu time used:  56377 ms
+memory used:   678384 kb
+exit code:      21866
+Running ../run_base_ref_markus.0000/gcc_base.markus g23.in -o g23.s
+time used:      43972 ms
+cpu time used:  56032 ms
+memory used:   930684 kb
+exit code:      21963
+Running ../run_base_ref_markus.0000/gcc_base.markus s04.in -o s04.s
+time used:      45769 ms
+cpu time used:  61975 ms
+memory used:   909516 kb
+exit code:      21851
+Running ../run_base_ref_markus.0000/gcc_base.markus scilab.in -o scilab.s
+time used:       8162 ms
+cpu time used:   9532 ms
+memory used:   245036 kb
+exit code:      22077
+Running ../run_base_ref_markus.0000/mcf_base.markus inp.in
+time used:     133611 ms
+cpu time used: 133575 ms
+memory used:   1723780 kb
+exit code:      22078
+Running ../run_base_ref_markus.0000/milc_base.markus
+time used:     278861 ms
+cpu time used: 285661 ms
+memory used:   724844 kb
+exit code:      21882
+Running ../run_base_ref_markus.0000/gobmk_base.markus --quiet --mode gtp
+time used:      33814 ms
+cpu time used:  34385 ms
+memory used:    40880 kb
+exit code:      21984
+Running ../run_base_ref_markus.0000/gobmk_base.markus --quiet --mode gtp
+time used:      84501 ms
+cpu time used:  85293 ms
+memory used:    41884 kb
+exit code:      21970
+Running ../run_base_ref_markus.0000/gobmk_base.markus --quiet --mode gtp
+time used:      42532 ms
+cpu time used:  42732 ms
+memory used:    39988 kb
+exit code:      21928
+Running ../run_base_ref_markus.0000/gobmk_base.markus --quiet --mode gtp
+time used:      33872 ms
+cpu time used:  34191 ms
+memory used:    41164 kb
+exit code:      21902
+Running ../run_base_ref_markus.0000/gobmk_base.markus --quiet --mode gtp
+time used:      66207 ms
+cpu time used:  51067 ms
+memory used:    40316 kb
+exit code:      21934
+Running ../run_base_ref_markus.0000/hmmer_base.markus nph3.hmm swiss41
+time used:      50884 ms
+cpu time used:  53188 ms
+memory used:    39184 kb
+exit code:      22083
+Running ../run_base_ref_markus.0000/hmmer_base.markus --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     107490 ms
+cpu time used: 107793 ms
+memory used:     8824 kb
+exit code:      22061
+Running ../run_base_ref_markus.0000/sjeng_base.markus ref.txt
+time used:     270152 ms
+cpu time used: 270135 ms
+memory used:   184796 kb
+exit code:      21845
+Running ../run_base_ref_markus.0000/libquantum_base.markus 1397 8
+time used:     193741 ms
+cpu time used: 193979 ms
+memory used:   104024 kb
+exit code:      21988
+Running ../run_base_ref_markus.0000/h264ref_base.markus -d foreman_ref_encoder_baseline.cfg
+time used:      26914 ms
+cpu time used:  26924 ms
+memory used:    50348 kb
+exit code:      22038
+Running ../run_base_ref_markus.0000/h264ref_base.markus -d foreman_ref_encoder_main.cfg
+time used:      17819 ms
+cpu time used:  17829 ms
+memory used:    35900 kb
+exit code:      22043
+Running ../run_base_ref_markus.0000/h264ref_base.markus -d sss_encoder_main.cfg
+time used:     158112 ms
+cpu time used: 153814 ms
+memory used:    99872 kb
+exit code:      22089
+Running ../run_base_ref_markus.0000/lbm_base.markus 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:      93391 ms
+cpu time used:  93386 ms
+memory used:   423580 kb
+exit code:      21906
+Running ../run_base_ref_markus.0000/sphinx_livepretend_base.markus ctlfile . args.an4
+time used:     239425 ms
+cpu time used: 249225 ms
+memory used:    68952 kb
+exit code:      21942

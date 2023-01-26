@@ -1,0 +1,40 @@
+Running ../run_base_ref_markus.0000/namd_base.markus --input namd.input --iterations 38 --output namd.out
+time used:     146118 ms
+cpu time used: 146115 ms
+memory used:    52096 kb
+exit code:      21935
+Running ../run_base_ref_markus.0000/dealII_base.markus 23
+time used:     578720 ms
+cpu time used: 583481 ms
+memory used:   900188 kb
+exit code:      21941
+Running ../run_base_ref_markus.0000/soplex_base.markus -s1 -e -m45000 pds-50.mps
+time used:      86858 ms
+cpu time used:  89472 ms
+memory used:   153852 kb
+exit code:      22026
+Running ../run_base_ref_markus.0000/soplex_base.markus -m3500 ref.mps
+time used:      66255 ms
+cpu time used:  66322 ms
+memory used:   700852 kb
+exit code:      22094
+Running ../run_base_ref_markus.0000/povray_base.markus SPEC-benchmark-ref.ini
+time used:     101481 ms
+cpu time used:  87812 ms
+memory used:     8896 kb
+exit code:      21977
+Running ../run_base_ref_markus.0000/astar_base.markus BigLakes2048.cfg
+time used:      83175 ms
+cpu time used:  86493 ms
+memory used:   540640 kb
+exit code:      21897
+Running ../run_base_ref_markus.0000/astar_base.markus rivers.cfg
+time used:     141469 ms
+cpu time used: 142215 ms
+memory used:   206340 kb
+exit code:      21906
+Running ../run_base_ref_markus.0000/Xalan_base.markus -v t5.xml xalanc.xsl
+time used:     405358 ms
+cpu time used: 538739 ms
+memory used:   815384 kb
+exit code:      21904
