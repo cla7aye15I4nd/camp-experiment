@@ -1,40 +1,40 @@
 Running ../run_base_ref_camp.0000/namd_base.camp --input namd.input --iterations 38 --output namd.out
-time used:     290748 ms
-cpu time used: 290734 ms
-memory used:    57448 kb
-exit code:      22008
+time used:     285999 ms
+cpu time used: 285989 ms
+memory used:    57368 kb
+exit code:      22004
 Running ../run_base_ref_camp.0000/dealII_base.camp 23
-time used:     821518 ms
-cpu time used: 821475 ms
-memory used:   1170164 kb
-exit code:      21942
+time used:     827298 ms
+cpu time used: 826934 ms
+memory used:   1174288 kb
+exit code:      21854
 Running ../run_base_ref_camp.0000/soplex_base.camp -s1 -e -m45000 pds-50.mps
-time used:     128272 ms
-cpu time used: 128247 ms
-memory used:   204436 kb
-exit code:      21983
+time used:     104442 ms
+cpu time used: 104414 ms
+memory used:   208180 kb
+exit code:      21985
 Running ../run_base_ref_camp.0000/soplex_base.camp -m3500 ref.mps
-time used:     124198 ms
-cpu time used: 124192 ms
-memory used:   776976 kb
-exit code:      21873
+time used:     119233 ms
+cpu time used: 119204 ms
+memory used:   779048 kb
+exit code:      22071
 Running ../run_base_ref_camp.0000/povray_base.camp SPEC-benchmark-ref.ini
-time used:     173057 ms
-cpu time used: 172992 ms
+time used:     175544 ms
+cpu time used: 175195 ms
 memory used:   701144 kb
-exit code:      22042
+exit code:      21962
 Running ../run_base_ref_camp.0000/astar_base.camp BigLakes2048.cfg
-time used:     164862 ms
-cpu time used: 164849 ms
-memory used:   4708216 kb
-exit code:      21999
+time used:     162929 ms
+cpu time used: 162922 ms
+memory used:   4709760 kb
+exit code:      21908
 Running ../run_base_ref_camp.0000/astar_base.camp rivers.cfg
-time used:     236167 ms
-cpu time used: 236153 ms
-memory used:   2161564 kb
-exit code:      21894
+time used:     238416 ms
+cpu time used: 238388 ms
+memory used:   2160672 kb
+exit code:      21919
 Running ../run_base_ref_camp.0000/Xalan_base.camp -v t5.xml xalanc.xsl
-time used:     701242 ms
-cpu time used: 701203 ms
-memory used:   1509392 kb
-exit code:      21956
+time used:     702183 ms
+cpu time used: 702127 ms
+memory used:   1510936 kb
+exit code:      22062
