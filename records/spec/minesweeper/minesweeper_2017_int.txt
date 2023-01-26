@@ -1,0 +1,80 @@
+Running ../run_peak_refspeed_minesweeper.0000/perlbench_s_peak.minesweeper -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     100736 ms
+cpu time used: 109467 ms
+memory used:   296412 kb
+exit code:      32515
+Running ../run_peak_refspeed_minesweeper.0000/perlbench_s_peak.minesweeper -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      53378 ms
+cpu time used:  61014 ms
+memory used:   260416 kb
+exit code:      32621
+Running ../run_peak_refspeed_minesweeper.0000/perlbench_s_peak.minesweeper -I./lib splitmail.pl 6400 12 26 16 100 0
+time used:      64142 ms
+cpu time used:  65781 ms
+memory used:   155352 kb
+exit code:      32676
+Running ../run_peak_refspeed_minesweeper.0000/sgcc_peak.minesweeper gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_-fipa-pta.s
+time used:     144818 ms
+cpu time used: 152096 ms
+memory used:   8374848 kb
+exit code:      32616
+Running ../run_peak_refspeed_minesweeper.0000/sgcc_peak.minesweeper gcc-pp.c -O5 -finline-limit=1000 -fselective-scheduling -fselective-scheduling2 -o gcc-pp.opts-O5_-finline-limit_1000_-fselective-scheduling_-fselective-scheduling2.s
+time used:      28016 ms
+cpu time used:  48693 ms
+memory used:   2049780 kb
+exit code:      32549
+Running ../run_peak_refspeed_minesweeper.0000/sgcc_peak.minesweeper gcc-pp.c -O5 -finline-limit=24000 -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o gcc-pp.opts-O5_-finline-limit_24000_-fgcse_-fgcse-las_-fgcse-lm_-fgcse-sm.s
+time used:      20322 ms
+cpu time used:  32681 ms
+memory used:   1889992 kb
+exit code:      32546
+Running ../run_peak_refspeed_minesweeper.0000/mcf_s_peak.minesweeper inp.in
+time used:     446287 ms
+cpu time used: 446275 ms
+memory used:   4106972 kb
+exit code:      32527
+Running ../run_peak_refspeed_minesweeper.0000/omnetpp_s_peak.minesweeper -c General -r 0
+time used:     529248 ms
+cpu time used: 624564 ms
+memory used:   437220 kb
+exit code:      32607
+Running ../run_peak_refspeed_minesweeper.0000/xalancbmk_s_peak.minesweeper -v t5.xml xalanc.xsl
+time used:     385216 ms
+cpu time used: 526453 ms
+memory used:   825564 kb
+exit code:      32615
+Running ../run_peak_refspeed_minesweeper.0000/x264_s_peak.minesweeper --pass 1 --stats x264_stats.log --bitrate 1000 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:      34513 ms
+cpu time used:  34001 ms
+memory used:   166132 kb
+exit code:      32733
+Running ../run_peak_refspeed_minesweeper.0000/x264_s_peak.minesweeper --pass 2 --stats x264_stats.log --bitrate 1000 --dumpyuv 200 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     123542 ms
+cpu time used: 122562 ms
+memory used:    44836 kb
+exit code:      32731
+Running ../run_peak_refspeed_minesweeper.0000/x264_s_peak.minesweeper --seek 500 --dumpyuv 200 --frames 1250 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     124547 ms
+cpu time used: 124044 ms
+memory used:   166232 kb
+exit code:      32532
+Running ../run_peak_refspeed_minesweeper.0000/deepsjeng_s_peak.minesweeper ref.txt
+time used:     286519 ms
+cpu time used: 286396 ms
+memory used:   7047352 kb
+exit code:      32668
+Running ../run_peak_refspeed_minesweeper.0000/leela_s_peak.minesweeper ref.sgf
+time used:     842798 ms
+cpu time used: 877233 ms
+memory used:    32840 kb
+exit code:      32650
+Running ../run_peak_refspeed_minesweeper.0000/xz_s_peak.minesweeper cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4
+time used:     914146 ms
+cpu time used: 914084 ms
+memory used:   15707180 kb
+exit code:      32608
+Running ../run_peak_refspeed_minesweeper.0000/xz_s_peak.minesweeper cld.tar.xz 1400 19cf30ae51eddcbefda78dd06014b4b96281456e078ca7c13e1c0c9e6aaea8dff3efb4ad6b0456697718cede6bd5454852652806a657bb56e07d61128434b474 536995164 539938872 8
+time used:     2196895 ms
+cpu time used: 2195926 ms
+memory used:   4305272 kb
+exit code:      32702

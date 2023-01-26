@@ -1,0 +1,170 @@
+Running ../run_base_ref_minesweeper.0000/perlbench_base.minesweeper -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:      81908 ms
+cpu time used:  90528 ms
+memory used:   329196 kb
+exit code:      32558
+Running ../run_base_ref_minesweeper.0000/perlbench_base.minesweeper -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      26590 ms
+cpu time used:  41075 ms
+memory used:   628412 kb
+exit code:      32682
+Running ../run_base_ref_minesweeper.0000/perlbench_base.minesweeper -I./lib splitmail.pl 1600 12 26 16 4500
+time used:      41623 ms
+cpu time used:  47487 ms
+memory used:   886616 kb
+exit code:      32553
+Running ../run_base_ref_minesweeper.0000/bzip2_base.minesweeper input.source 280
+time used:      52433 ms
+cpu time used:  52425 ms
+memory used:   871336 kb
+exit code:      32711
+Running ../run_base_ref_minesweeper.0000/bzip2_base.minesweeper chicken.jpg 30
+time used:      15951 ms
+cpu time used:  15947 ms
+memory used:   104116 kb
+exit code:      32628
+Running ../run_base_ref_minesweeper.0000/bzip2_base.minesweeper liberty.jpg 30
+time used:      25083 ms
+cpu time used:  25078 ms
+memory used:   104176 kb
+exit code:      32690
+Running ../run_base_ref_minesweeper.0000/bzip2_base.minesweeper input.program 280
+time used:      52257 ms
+cpu time used:  52252 ms
+memory used:   871268 kb
+exit code:      32533
+Running ../run_base_ref_minesweeper.0000/bzip2_base.minesweeper text.html 280
+time used:      57891 ms
+cpu time used:  57886 ms
+memory used:   871532 kb
+exit code:      32544
+Running ../run_base_ref_minesweeper.0000/bzip2_base.minesweeper input.combined 200
+time used:      40232 ms
+cpu time used:  40229 ms
+memory used:   626404 kb
+exit code:      32590
+Running ../run_base_ref_minesweeper.0000/gcc_base.minesweeper 166.in -o 166.s
+time used:      12877 ms
+cpu time used:  15322 ms
+memory used:   417664 kb
+exit code:      32704
+Running ../run_base_ref_minesweeper.0000/gcc_base.minesweeper 200.in -o 200.s
+time used:      21660 ms
+cpu time used:  24558 ms
+memory used:   476196 kb
+exit code:      32541
+Running ../run_base_ref_minesweeper.0000/gcc_base.minesweeper c-typeck.in -o c-typeck.s
+time used:      16504 ms
+cpu time used:  22350 ms
+memory used:   2116288 kb
+exit code:      32641
+Running ../run_base_ref_minesweeper.0000/gcc_base.minesweeper cp-decl.in -o cp-decl.s
+time used:      19369 ms
+cpu time used:  25519 ms
+memory used:   1525436 kb
+exit code:      32556
+Running ../run_base_ref_minesweeper.0000/gcc_base.minesweeper expr.in -o expr.s
+time used:      20762 ms
+cpu time used:  25769 ms
+memory used:   5576408 kb
+exit code:      32688
+Running ../run_base_ref_minesweeper.0000/gcc_base.minesweeper expr2.in -o expr2.s
+time used:      18666 ms
+cpu time used:  23337 ms
+memory used:   711532 kb
+exit code:      32648
+Running ../run_base_ref_minesweeper.0000/gcc_base.minesweeper g23.in -o g23.s
+time used:      12766 ms
+cpu time used:  15226 ms
+memory used:   2398564 kb
+exit code:      32538
+Running ../run_base_ref_minesweeper.0000/gcc_base.minesweeper s04.in -o s04.s
+time used:      33044 ms
+cpu time used:  53717 ms
+memory used:   1541860 kb
+exit code:      32743
+Running ../run_base_ref_minesweeper.0000/gcc_base.minesweeper scilab.in -o scilab.s
+time used:       9111 ms
+cpu time used:  11720 ms
+memory used:   165264 kb
+exit code:      32545
+Running ../run_base_ref_minesweeper.0000/mcf_base.minesweeper inp.in
+time used:     168831 ms
+cpu time used: 168825 ms
+memory used:   1720640 kb
+exit code:      32644
+Running ../run_base_ref_minesweeper.0000/milc_base.minesweeper
+time used:     276348 ms
+cpu time used: 278309 ms
+memory used:   723896 kb
+exit code:      32610
+Running ../run_base_ref_minesweeper.0000/gobmk_base.minesweeper --quiet --mode gtp
+time used:      34878 ms
+cpu time used:  35399 ms
+memory used:    40412 kb
+exit code:      32562
+Running ../run_base_ref_minesweeper.0000/gobmk_base.minesweeper --quiet --mode gtp
+time used:      89251 ms
+cpu time used:  89875 ms
+memory used:    40616 kb
+exit code:      32657
+Running ../run_base_ref_minesweeper.0000/gobmk_base.minesweeper --quiet --mode gtp
+time used:      44832 ms
+cpu time used:  44974 ms
+memory used:    40600 kb
+exit code:      32523
+Running ../run_base_ref_minesweeper.0000/gobmk_base.minesweeper --quiet --mode gtp
+time used:      34305 ms
+cpu time used:  34529 ms
+memory used:    40388 kb
+exit code:      32686
+Running ../run_base_ref_minesweeper.0000/gobmk_base.minesweeper --quiet --mode gtp
+time used:      43573 ms
+cpu time used:  43728 ms
+memory used:    40596 kb
+exit code:      32761
+Running ../run_base_ref_minesweeper.0000/hmmer_base.minesweeper nph3.hmm swiss41
+time used:      38619 ms
+cpu time used:  40149 ms
+memory used:    41568 kb
+exit code:      32562
+Running ../run_base_ref_minesweeper.0000/hmmer_base.minesweeper --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:      83654 ms
+cpu time used:  84416 ms
+memory used:    10552 kb
+exit code:      32668
+Running ../run_base_ref_minesweeper.0000/sjeng_base.minesweeper ref.txt
+time used:     303229 ms
+cpu time used: 303204 ms
+memory used:   184328 kb
+exit code:      32700
+Running ../run_base_ref_minesweeper.0000/libquantum_base.minesweeper 1397 8
+time used:     214275 ms
+cpu time used: 214267 ms
+memory used:   103168 kb
+exit code:      32723
+Running ../run_base_ref_minesweeper.0000/h264ref_base.minesweeper -d foreman_ref_encoder_baseline.cfg
+time used:      29403 ms
+cpu time used:  29424 ms
+memory used:    38760 kb
+exit code:      32581
+Running ../run_base_ref_minesweeper.0000/h264ref_base.minesweeper -d foreman_ref_encoder_main.cfg
+time used:      18539 ms
+cpu time used:  18566 ms
+memory used:    28868 kb
+exit code:      32654
+Running ../run_base_ref_minesweeper.0000/h264ref_base.minesweeper -d sss_encoder_main.cfg
+time used:     155852 ms
+cpu time used: 155606 ms
+memory used:    85880 kb
+exit code:      32524
+Running ../run_base_ref_minesweeper.0000/lbm_base.minesweeper 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:     103143 ms
+cpu time used: 103139 ms
+memory used:   422908 kb
+exit code:      32614
+Running ../run_base_ref_minesweeper.0000/sphinx_livepretend_base.minesweeper ctlfile . args.an4
+time used:     238476 ms
+cpu time used: 252741 ms
+memory used:    71812 kb
+exit code:      32613
