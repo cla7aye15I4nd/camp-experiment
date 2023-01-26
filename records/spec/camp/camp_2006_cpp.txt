@@ -9,15 +9,15 @@ cpu time used: 821475 ms
 memory used:   1170164 kb
 exit code:      21942
 Running ../run_base_ref_camp.0000/soplex_base.camp -s1 -e -m45000 pds-50.mps
-time used:     105058 ms
-cpu time used: 105044 ms
-memory used:   207208 kb
+time used:     128272 ms
+cpu time used: 128247 ms
+memory used:   204436 kb
 exit code:      21983
 Running ../run_base_ref_camp.0000/soplex_base.camp -m3500 ref.mps
-time used:     118179 ms
-cpu time used: 118164 ms
-memory used:   779116 kb
-exit code:      21889
+time used:     124198 ms
+cpu time used: 124192 ms
+memory used:   776976 kb
+exit code:      21873
 Running ../run_base_ref_camp.0000/povray_base.camp SPEC-benchmark-ref.ini
 time used:     173057 ms
 cpu time used: 172992 ms
