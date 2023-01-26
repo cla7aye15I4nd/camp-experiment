@@ -69,10 +69,10 @@ cpu time used: 820021 ms
 memory used:   204308 kb
 exit code:      21980
 Running ../run_peak_refspeed_camp.0000/xz_s_peak.camp cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4
-time used:       6092 ms
-cpu time used:   4452 ms
-memory used:   14599448 kb
-exit code:      21868
+time used:     1141466 ms
+cpu time used: 1141394 ms
+memory used:   15818720 kb
+exit code:      22036
 Running ../run_peak_refspeed_camp.0000/xz_s_peak.camp cld.tar.xz 1400 19cf30ae51eddcbefda78dd06014b4b96281456e078ca7c13e1c0c9e6aaea8dff3efb4ad6b0456697718cede6bd5454852652806a657bb56e07d61128434b474 536995164 539938872 8
 time used:     1516004 ms
 cpu time used: 1515926 ms
