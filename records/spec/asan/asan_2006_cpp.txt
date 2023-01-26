@@ -1,40 +1,40 @@
 Running ../run_base_ref_asan.0000/namd_base.asan --input namd.input --iterations 38 --output namd.out
-time used:     269719 ms
-cpu time used: 269707 ms
-memory used:    60828 kb
-exit code:      21878
+time used:     273638 ms
+cpu time used: 273624 ms
+memory used:    60972 kb
+exit code:      21886
 Running ../run_base_ref_asan.0000/dealII_base.asan 23
-time used:     910818 ms
-cpu time used: 910696 ms
-memory used:   1803356 kb
-exit code:      21934
+time used:     921139 ms
+cpu time used: 920922 ms
+memory used:   1803312 kb
+exit code:      21901
 Running ../run_base_ref_asan.0000/soplex_base.asan -s1 -e -m45000 pds-50.mps
-time used:     103842 ms
-cpu time used: 103833 ms
-memory used:   426720 kb
-exit code:      22075
+time used:     103568 ms
+cpu time used: 103557 ms
+memory used:   426844 kb
+exit code:      21872
 Running ../run_base_ref_asan.0000/soplex_base.asan -m3500 ref.mps
-time used:      90622 ms
-cpu time used:  90581 ms
-memory used:   838340 kb
-exit code:      22093
+time used:      91637 ms
+cpu time used:  91603 ms
+memory used:   838180 kb
+exit code:      21934
 Running ../run_base_ref_asan.0000/povray_base.asan SPEC-benchmark-ref.ini
-time used:     206503 ms
-cpu time used: 206273 ms
-memory used:   293584 kb
-exit code:      21873
+time used:     209645 ms
+cpu time used: 209266 ms
+memory used:   293576 kb
+exit code:      21987
 Running ../run_base_ref_asan.0000/astar_base.asan BigLakes2048.cfg
-time used:     110013 ms
-cpu time used: 110006 ms
-memory used:   840580 kb
-exit code:      21947
+time used:     109814 ms
+cpu time used: 109806 ms
+memory used:   840676 kb
+exit code:      21899
 Running ../run_base_ref_asan.0000/astar_base.asan rivers.cfg
-time used:     187643 ms
-cpu time used: 187634 ms
-memory used:   647412 kb
-exit code:      21961
+time used:     190178 ms
+cpu time used: 190146 ms
+memory used:   647484 kb
+exit code:      21906
 Running ../run_base_ref_asan.0000/Xalan_base.asan -v t5.xml xalanc.xsl
-time used:     785543 ms
-cpu time used: 785493 ms
-memory used:   1382460 kb
-exit code:      21868
+time used:     788163 ms
+cpu time used: 788041 ms
+memory used:   1373384 kb
+exit code:      22045

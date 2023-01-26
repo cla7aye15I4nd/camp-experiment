@@ -39,35 +39,35 @@ cpu time used: 874073 ms
 memory used:   1231320 kb
 exit code:      22005
 Running ../run_peak_refspeed_asan.0000/xalancbmk_s_peak.asan -v t5.xml xalanc.xsl
-time used:     631259 ms
-cpu time used: 631228 ms
-memory used:   2863436 kb
-exit code:      21937
+time used:     631691 ms
+cpu time used: 631621 ms
+memory used:   2865812 kb
+exit code:      21982
 Running ../run_peak_refspeed_asan.0000/x264_s_peak.asan --pass 1 --stats x264_stats.log --bitrate 1000 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
-time used:      59311 ms
-cpu time used:  59245 ms
-memory used:   194300 kb
-exit code:      22040
+time used:      61229 ms
+cpu time used:  60207 ms
+memory used:   194280 kb
+exit code:      21914
 Running ../run_peak_refspeed_asan.0000/x264_s_peak.asan --pass 2 --stats x264_stats.log --bitrate 1000 --dumpyuv 200 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
-time used:     208123 ms
-cpu time used: 208051 ms
-memory used:    53984 kb
-exit code:      21883
+time used:     210562 ms
+cpu time used: 210488 ms
+memory used:    54056 kb
+exit code:      21870
 Running ../run_peak_refspeed_asan.0000/x264_s_peak.asan --seek 500 --dumpyuv 200 --frames 1250 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
-time used:     209463 ms
-cpu time used: 209455 ms
-memory used:   193256 kb
-exit code:      21973
+time used:     212815 ms
+cpu time used: 212283 ms
+memory used:   193244 kb
+exit code:      21983
 Running ../run_peak_refspeed_asan.0000/deepsjeng_s_peak.asan ref.txt
 time used:     426609 ms
 cpu time used: 426592 ms
 memory used:   7049360 kb
 exit code:      22055
 Running ../run_peak_refspeed_asan.0000/leela_s_peak.asan ref.sgf
-time used:     903752 ms
-cpu time used: 903714 ms
-memory used:   1019528 kb
-exit code:      21914
+time used:     914214 ms
+cpu time used: 914125 ms
+memory used:   1019872 kb
+exit code:      22016
 Running ../run_peak_refspeed_asan.0000/xz_s_peak.asan cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4
 time used:     1034273 ms
 cpu time used: 1034031 ms
