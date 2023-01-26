@@ -1,0 +1,80 @@
+Running ../run_peak_refspeed_ffmalloc_st.0000/perlbench_s_peak.ffmalloc_st -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:      90625 ms
+cpu time used:  90622 ms
+memory used:   1128732 kb
+exit code:      21972
+Running ../run_peak_refspeed_ffmalloc_st.0000/perlbench_s_peak.ffmalloc_st -I./lib diffmail.pl 4 800 10 17 19 300
+time used:      51021 ms
+cpu time used:  51019 ms
+memory used:   181492 kb
+exit code:      21862
+Running ../run_peak_refspeed_ffmalloc_st.0000/perlbench_s_peak.ffmalloc_st -I./lib splitmail.pl 6400 12 26 16 100 0
+time used:      64608 ms
+cpu time used:  64602 ms
+memory used:   303008 kb
+exit code:      22049
+Running ../run_peak_refspeed_ffmalloc_st.0000/sgcc_peak.ffmalloc_st gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_-fipa-pta.s
+time used:     294957 ms
+cpu time used: 294868 ms
+memory used:   8261356 kb
+exit code:      21916
+Running ../run_peak_refspeed_ffmalloc_st.0000/sgcc_peak.ffmalloc_st gcc-pp.c -O5 -finline-limit=1000 -fselective-scheduling -fselective-scheduling2 -o gcc-pp.opts-O5_-finline-limit_1000_-fselective-scheduling_-fselective-scheduling2.s
+time used:      45308 ms
+cpu time used:  45199 ms
+memory used:   3829576 kb
+exit code:      22050
+Running ../run_peak_refspeed_ffmalloc_st.0000/sgcc_peak.ffmalloc_st gcc-pp.c -O5 -finline-limit=24000 -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o gcc-pp.opts-O5_-finline-limit_24000_-fgcse_-fgcse-las_-fgcse-lm_-fgcse-sm.s
+time used:      47370 ms
+cpu time used:  47338 ms
+memory used:   3985104 kb
+exit code:      22089
+Running ../run_peak_refspeed_ffmalloc_st.0000/mcf_s_peak.ffmalloc_st inp.in
+time used:     465831 ms
+cpu time used: 465822 ms
+memory used:   4063216 kb
+exit code:      22046
+Running ../run_peak_refspeed_ffmalloc_st.0000/omnetpp_s_peak.ffmalloc_st -c General -r 0
+time used:     604325 ms
+cpu time used: 604312 ms
+memory used:   4400900 kb
+exit code:      21864
+Running ../run_peak_refspeed_ffmalloc_st.0000/xalancbmk_s_peak.ffmalloc_st -v t5.xml xalanc.xsl
+time used:     327160 ms
+cpu time used: 327150 ms
+memory used:   1673608 kb
+exit code:      22043
+Running ../run_peak_refspeed_ffmalloc_st.0001/x264_s_peak.ffmalloc_st --pass 1 --stats x264_stats.log --bitrate 1000 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:      34876 ms
+cpu time used:  34517 ms
+memory used:   182548 kb
+exit code:      22048
+Running ../run_peak_refspeed_ffmalloc_st.0001/x264_s_peak.ffmalloc_st --pass 2 --stats x264_stats.log --bitrate 1000 --dumpyuv 200 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     122077 ms
+cpu time used: 122064 ms
+memory used:    55104 kb
+exit code:      22100
+Running ../run_peak_refspeed_ffmalloc_st.0001/x264_s_peak.ffmalloc_st --seek 500 --dumpyuv 200 --frames 1250 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     124154 ms
+cpu time used: 123785 ms
+memory used:   179420 kb
+exit code:      22095
+Running ../run_peak_refspeed_ffmalloc_st.0000/deepsjeng_s_peak.ffmalloc_st ref.txt
+time used:     288965 ms
+cpu time used: 288957 ms
+memory used:   7054632 kb
+exit code:      21911
+Running ../run_peak_refspeed_ffmalloc_st.0000/leela_s_peak.ffmalloc_st ref.sgf
+time used:     846284 ms
+cpu time used: 846190 ms
+memory used:    44172 kb
+exit code:      22054
+Running ../run_peak_refspeed_ffmalloc_st.0000/xz_s_peak.ffmalloc_st cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4
+time used:      991135 ms
+cpu time used:  991125 ms
+memory used:   15711940 kb
+exit code:      21981
+Running ../run_peak_refspeed_ffmalloc_st.0000/xz_s_peak.ffmalloc_st cld.tar.xz 1400 19cf30ae51eddcbefda78dd06014b4b96281456e078ca7c13e1c0c9e6aaea8dff3efb4ad6b0456697718cede6bd5454852652806a657bb56e07d61128434b474 536995164 539938872 8
+time used:     1468927 ms
+cpu time used: 1468437 ms
+memory used:   4310676 kb
+exit code:      21950
