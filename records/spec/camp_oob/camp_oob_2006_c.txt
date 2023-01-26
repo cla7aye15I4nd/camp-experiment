@@ -1,170 +1,170 @@
 Running ../run_base_ref_camp_oob.0000/perlbench_base.camp_oob -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
-time used:     149815 ms
-cpu time used: 149805 ms
-memory used:   247916 kb
-exit code:      21980
+time used:     152344 ms
+cpu time used: 152323 ms
+memory used:   247716 kb
+exit code:      22036
 Running ../run_base_ref_camp_oob.0000/perlbench_base.camp_oob -I./lib diffmail.pl 4 800 10 17 19 300
-time used:      47014 ms
-cpu time used:  47009 ms
-memory used:   347248 kb
-exit code:      22060
+time used:      48435 ms
+cpu time used:  48427 ms
+memory used:   346952 kb
+exit code:      21986
 Running ../run_base_ref_camp_oob.0000/perlbench_base.camp_oob -I./lib splitmail.pl 1600 12 26 16 4500
-time used:      95226 ms
-cpu time used:  95217 ms
-memory used:   678740 kb
-exit code:      22011
-Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob input.source 280
-time used:      73353 ms
-cpu time used:  73346 ms
-memory used:   878244 kb
-exit code:      22019
-Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob chicken.jpg 30
-time used:      20624 ms
-cpu time used:  20619 ms
-memory used:   109196 kb
-exit code:      21930
-Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob liberty.jpg 30
-time used:      38445 ms
-cpu time used:  38441 ms
-memory used:   108628 kb
-exit code:      22011
-Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob input.program 280
-time used:      69999 ms
-cpu time used:  69992 ms
-memory used:   878696 kb
-exit code:      21893
-Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob text.html 280
-time used:      94619 ms
-cpu time used:  94611 ms
-memory used:   878260 kb
-exit code:      22063
-Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob input.combined 200
-time used:      55243 ms
-cpu time used:  55236 ms
-memory used:   631932 kb
-exit code:      21866
-Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob 166.in -o 166.s
-time used:       8793 ms
-cpu time used:   8789 ms
-memory used:   263980 kb
-exit code:      22056
-Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob 200.in -o 200.s
-time used:      17939 ms
-cpu time used:  17922 ms
-memory used:   300652 kb
-exit code:      22080
-Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob c-typeck.in -o c-typeck.s
-time used:      14291 ms
-cpu time used:  14286 ms
-memory used:   471736 kb
-exit code:      21991
-Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob cp-decl.in -o cp-decl.s
-time used:      10660 ms
-cpu time used:  10656 ms
-memory used:   374624 kb
-exit code:      21882
-Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob expr.in -o expr.s
-time used:      12062 ms
-cpu time used:  12058 ms
-memory used:   497204 kb
-exit code:      21957
-Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob expr2.in -o expr2.s
-time used:      16939 ms
-cpu time used:  16934 ms
-memory used:   670316 kb
+time used:      95792 ms
+cpu time used:  95780 ms
+memory used:   680136 kb
 exit code:      21993
+Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob input.source 280
+time used:      73326 ms
+cpu time used:  73304 ms
+memory used:   878104 kb
+exit code:      22077
+Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob chicken.jpg 30
+time used:      21034 ms
+cpu time used:  21026 ms
+memory used:   108468 kb
+exit code:      21875
+Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob liberty.jpg 30
+time used:      39228 ms
+cpu time used:  39222 ms
+memory used:   108312 kb
+exit code:      22037
+Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob input.program 280
+time used:      70818 ms
+cpu time used:  70808 ms
+memory used:   878780 kb
+exit code:      22090
+Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob text.html 280
+time used:      95577 ms
+cpu time used:  95555 ms
+memory used:   878136 kb
+exit code:      21950
+Running ../run_base_ref_camp_oob.0001/bzip2_base.camp_oob input.combined 200
+time used:      56152 ms
+cpu time used:  56137 ms
+memory used:   632008 kb
+exit code:      22016
+Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob 166.in -o 166.s
+time used:       8929 ms
+cpu time used:   8853 ms
+memory used:   281544 kb
+exit code:      22042
+Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob 200.in -o 200.s
+time used:      18071 ms
+cpu time used:  18040 ms
+memory used:   298720 kb
+exit code:      21925
+Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob c-typeck.in -o c-typeck.s
+time used:      14412 ms
+cpu time used:  14405 ms
+memory used:   472592 kb
+exit code:      22074
+Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob cp-decl.in -o cp-decl.s
+time used:      10581 ms
+cpu time used:  10574 ms
+memory used:   376512 kb
+exit code:      21958
+Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob expr.in -o expr.s
+time used:      11982 ms
+cpu time used:  11962 ms
+memory used:   502296 kb
+exit code:      22059
+Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob expr2.in -o expr2.s
+time used:      17014 ms
+cpu time used:  16982 ms
+memory used:   669264 kb
+exit code:      21939
 Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob g23.in -o g23.s
-time used:      22105 ms
-cpu time used:  22099 ms
-memory used:   887184 kb
-exit code:      22051
+time used:      21900 ms
+cpu time used:  21888 ms
+memory used:   887292 kb
+exit code:      21935
 Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob s04.in -o s04.s
-time used:      19410 ms
-cpu time used:  19405 ms
-memory used:   903792 kb
-exit code:      21855
+time used:      19506 ms
+cpu time used:  19499 ms
+memory used:   900748 kb
+exit code:      22005
 Running ../run_base_ref_camp_oob.0000/gcc_base.camp_oob scilab.in -o scilab.s
-time used:       6880 ms
-cpu time used:   6874 ms
-memory used:   121172 kb
-exit code:      22071
+time used:       7035 ms
+cpu time used:   7023 ms
+memory used:   121396 kb
+exit code:      22062
 Running ../run_base_ref_camp_oob.0000/mcf_base.camp_oob inp.in
-time used:     135155 ms
-cpu time used: 135145 ms
-memory used:   1727940 kb
-exit code:      22085
+time used:     135842 ms
+cpu time used: 135832 ms
+memory used:   1727840 kb
+exit code:      21965
 Running ../run_base_ref_camp_oob.0000/milc_base.camp_oob
-time used:     254608 ms
-cpu time used: 254591 ms
-memory used:   725712 kb
-exit code:      21955
+time used:     244498 ms
+cpu time used: 244491 ms
+memory used:   725340 kb
+exit code:      22031
 Running ../run_base_ref_camp_oob.0000/gobmk_base.camp_oob --quiet --mode gtp
-time used:      37218 ms
-cpu time used:  37211 ms
-memory used:    37932 kb
-exit code:      22048
+time used:      37742 ms
+cpu time used:  37664 ms
+memory used:    37496 kb
+exit code:      21878
 Running ../run_base_ref_camp_oob.0000/gobmk_base.camp_oob --quiet --mode gtp
-time used:      93917 ms
-cpu time used:  93908 ms
-memory used:    37832 kb
-exit code:      22007
+time used:      95134 ms
+cpu time used:  94960 ms
+memory used:    37724 kb
+exit code:      21954
 Running ../run_base_ref_camp_oob.0000/gobmk_base.camp_oob --quiet --mode gtp
-time used:      45042 ms
-cpu time used:  45035 ms
-memory used:    37352 kb
+time used:      45712 ms
+cpu time used:  45626 ms
+memory used:    37456 kb
+exit code:      21980
+Running ../run_base_ref_camp_oob.0000/gobmk_base.camp_oob --quiet --mode gtp
+time used:      36882 ms
+cpu time used:  36768 ms
+memory used:    37176 kb
+exit code:      22088
+Running ../run_base_ref_camp_oob.0000/gobmk_base.camp_oob --quiet --mode gtp
+time used:      49618 ms
+cpu time used:  49524 ms
+memory used:    37476 kb
 exit code:      21999
-Running ../run_base_ref_camp_oob.0000/gobmk_base.camp_oob --quiet --mode gtp
-time used:      36189 ms
-cpu time used:  36183 ms
-memory used:    37324 kb
-exit code:      21973
-Running ../run_base_ref_camp_oob.0000/gobmk_base.camp_oob --quiet --mode gtp
-time used:      48834 ms
-cpu time used:  48826 ms
-memory used:    37488 kb
-exit code:      21985
 Running ../run_base_ref_camp_oob.0000/hmmer_base.camp_oob nph3.hmm swiss41
-time used:     104624 ms
-cpu time used: 104617 ms
-memory used:    54076 kb
-exit code:      21922
+time used:     106666 ms
+cpu time used: 106660 ms
+memory used:    53868 kb
+exit code:      21888
 Running ../run_base_ref_camp_oob.0000/hmmer_base.camp_oob --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
-time used:     225043 ms
-cpu time used: 225033 ms
-memory used:    16308 kb
-exit code:      22048
+time used:     228960 ms
+cpu time used: 228953 ms
+memory used:    16392 kb
+exit code:      21951
 Running ../run_base_ref_camp_oob.0000/sjeng_base.camp_oob ref.txt
-time used:     280721 ms
-cpu time used: 280709 ms
-memory used:   187344 kb
-exit code:      21968
+time used:     282634 ms
+cpu time used: 282602 ms
+memory used:   187264 kb
+exit code:      22068
 Running ../run_base_ref_camp_oob.0000/libquantum_base.camp_oob 1397 8
-time used:     193498 ms
-cpu time used: 193483 ms
-memory used:   127748 kb
-exit code:      21853
+time used:     185432 ms
+cpu time used: 185424 ms
+memory used:   128088 kb
+exit code:      21903
 Running ../run_base_ref_camp_oob.0000/h264ref_base.camp_oob -d foreman_ref_encoder_baseline.cfg
-time used:      67928 ms
-cpu time used:  67921 ms
-memory used:    37932 kb
-exit code:      22008
+time used:      68962 ms
+cpu time used:  68914 ms
+memory used:    38168 kb
+exit code:      22040
 Running ../run_base_ref_camp_oob.0000/h264ref_base.camp_oob -d foreman_ref_encoder_main.cfg
-time used:      40004 ms
-cpu time used:  39998 ms
-memory used:    29436 kb
-exit code:      22078
+time used:      40926 ms
+cpu time used:  40921 ms
+memory used:    28244 kb
+exit code:      21964
 Running ../run_base_ref_camp_oob.0000/h264ref_base.camp_oob -d sss_encoder_main.cfg
-time used:     331998 ms
-cpu time used: 331985 ms
-memory used:   102056 kb
-exit code:      22026
+time used:     338549 ms
+cpu time used: 337206 ms
+memory used:   102224 kb
+exit code:      21992
 Running ../run_base_ref_camp_oob.0000/lbm_base.camp_oob 3000 reference.dat 0 0 100_100_130_ldc.of
-time used:      90129 ms
-cpu time used:  90120 ms
-memory used:   427224 kb
-exit code:      21917
+time used:      91770 ms
+cpu time used:  91745 ms
+memory used:   427116 kb
+exit code:      21959
 Running ../run_base_ref_camp_oob.0000/sphinx_livepretend_base.camp_oob ctlfile . args.an4
-time used:     443780 ms
-cpu time used: 443759 ms
-memory used:    54712 kb
-exit code:      21973
+time used:     446402 ms
+cpu time used: 446332 ms
+memory used:    54924 kb
+exit code:      22100
