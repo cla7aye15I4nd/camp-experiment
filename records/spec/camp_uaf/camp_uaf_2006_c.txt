@@ -1,170 +1,170 @@
 Running ../run_base_ref_camp_uaf.0000/perlbench_base.camp_uaf -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
-time used:     179224 ms
-cpu time used: 179182 ms
-memory used:   5154488 kb
-exit code:      22022
-Running ../run_base_ref_camp_uaf.0000/perlbench_base.camp_uaf -I./lib diffmail.pl 4 800 10 17 19 300
-time used:     129877 ms
-cpu time used: 129839 ms
-memory used:   13173076 kb
-exit code:      21849
-Running ../run_base_ref_camp_uaf.0000/perlbench_base.camp_uaf -I./lib splitmail.pl 1600 12 26 16 4500
-time used:      73895 ms
-cpu time used:  73882 ms
-memory used:   2302404 kb
-exit code:      22074
-Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf input.source 280
-time used:      50055 ms
-cpu time used:  50032 ms
-memory used:   878088 kb
-exit code:      21980
-Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf chicken.jpg 30
-time used:      14421 ms
-cpu time used:  14413 ms
-memory used:   108572 kb
-exit code:      22042
-Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf liberty.jpg 30
-time used:      23065 ms
-cpu time used:  23059 ms
-memory used:   108404 kb
-exit code:      22047
-Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf input.program 280
-time used:      49162 ms
-cpu time used:  49153 ms
-memory used:   878864 kb
-exit code:      22063
-Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf text.html 280
-time used:      54855 ms
-cpu time used:  54848 ms
-memory used:   878344 kb
-exit code:      21982
-Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf input.combined 200
-time used:      38262 ms
-cpu time used:  38254 ms
-memory used:   632412 kb
-exit code:      22016
-Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf 166.in -o 166.s
-time used:      11809 ms
-cpu time used:  11780 ms
-memory used:   579968 kb
-exit code:      21971
-Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf 200.in -o 200.s
-time used:      23549 ms
-cpu time used:  23541 ms
-memory used:   1699232 kb
-exit code:      21891
-Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf c-typeck.in -o c-typeck.s
-time used:      18380 ms
-cpu time used:  18358 ms
-memory used:   965968 kb
-exit code:      22072
-Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf cp-decl.in -o cp-decl.s
-time used:      12579 ms
-cpu time used:  12572 ms
-memory used:   599248 kb
-exit code:      22070
-Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf expr.in -o expr.s
-time used:      14024 ms
-cpu time used:  14017 ms
-memory used:   833784 kb
-exit code:      22043
-Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf expr2.in -o expr2.s
-time used:      21008 ms
-cpu time used:  20985 ms
-memory used:   1224980 kb
-exit code:      22099
-Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf g23.in -o g23.s
-time used:      26330 ms
-cpu time used:  26314 ms
-memory used:   1483432 kb
+time used:     176176 ms
+cpu time used: 176129 ms
+memory used:   5155240 kb
 exit code:      22085
+Running ../run_base_ref_camp_uaf.0000/perlbench_base.camp_uaf -I./lib diffmail.pl 4 800 10 17 19 300
+time used:     129639 ms
+cpu time used: 129599 ms
+memory used:   13161028 kb
+exit code:      21861
+Running ../run_base_ref_camp_uaf.0000/perlbench_base.camp_uaf -I./lib splitmail.pl 1600 12 26 16 4500
+time used:      73203 ms
+cpu time used:  73140 ms
+memory used:   2302676 kb
+exit code:      21909
+Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf input.source 280
+time used:      49615 ms
+cpu time used:  49602 ms
+memory used:   878896 kb
+exit code:      21899
+Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf chicken.jpg 30
+time used:      14329 ms
+cpu time used:  14301 ms
+memory used:   108388 kb
+exit code:      21894
+Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf liberty.jpg 30
+time used:      22854 ms
+cpu time used:  22829 ms
+memory used:   108220 kb
+exit code:      21969
+Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf input.program 280
+time used:      48935 ms
+cpu time used:  48926 ms
+memory used:   878364 kb
+exit code:      21872
+Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf text.html 280
+time used:      54387 ms
+cpu time used:  54362 ms
+memory used:   878100 kb
+exit code:      21920
+Running ../run_base_ref_camp_uaf.0000/bzip2_base.camp_uaf input.combined 200
+time used:      37982 ms
+cpu time used:  37921 ms
+memory used:   632240 kb
+exit code:      22000
+Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf 166.in -o 166.s
+time used:      11433 ms
+cpu time used:  11422 ms
+memory used:   579056 kb
+exit code:      22055
+Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf 200.in -o 200.s
+time used:      23081 ms
+cpu time used:  23071 ms
+memory used:   1700436 kb
+exit code:      21859
+Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf c-typeck.in -o c-typeck.s
+time used:      18129 ms
+cpu time used:  18101 ms
+memory used:   964216 kb
+exit code:      22014
+Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf cp-decl.in -o cp-decl.s
+time used:      12347 ms
+cpu time used:  12338 ms
+memory used:   600088 kb
+exit code:      22088
+Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf expr.in -o expr.s
+time used:      13786 ms
+cpu time used:  13765 ms
+memory used:   837612 kb
+exit code:      21879
+Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf expr2.in -o expr2.s
+time used:      20559 ms
+cpu time used:  20540 ms
+memory used:   1232552 kb
+exit code:      21921
+Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf g23.in -o g23.s
+time used:      25755 ms
+cpu time used:  25746 ms
+memory used:   1489380 kb
+exit code:      22010
 Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf s04.in -o s04.s
-time used:      23334 ms
-cpu time used:  23327 ms
-memory used:   1257320 kb
-exit code:      22044
+time used:      22919 ms
+cpu time used:  22909 ms
+memory used:   1261972 kb
+exit code:      22022
 Running ../run_base_ref_camp_uaf.0000/gcc_base.camp_uaf scilab.in -o scilab.s
-time used:       9450 ms
-cpu time used:   9442 ms
-memory used:   712688 kb
-exit code:      21938
+time used:       9303 ms
+cpu time used:   9280 ms
+memory used:   712464 kb
+exit code:      21887
 Running ../run_base_ref_camp_uaf.0000/mcf_base.camp_uaf inp.in
-time used:     159932 ms
-cpu time used: 159916 ms
-memory used:   2620400 kb
-exit code:      22067
+time used:     157157 ms
+cpu time used: 157140 ms
+memory used:   2620696 kb
+exit code:      22027
 Running ../run_base_ref_camp_uaf.0000/milc_base.camp_uaf
-time used:     264044 ms
-cpu time used: 264037 ms
-memory used:   3437932 kb
-exit code:      21907
+time used:     254926 ms
+cpu time used: 254907 ms
+memory used:   3437968 kb
+exit code:      21847
 Running ../run_base_ref_camp_uaf.0000/gobmk_base.camp_uaf --quiet --mode gtp
-time used:      35703 ms
-cpu time used:  35614 ms
-memory used:    90592 kb
-exit code:      21936
+time used:      34855 ms
+cpu time used:  34782 ms
+memory used:    90572 kb
+exit code:      22096
 Running ../run_base_ref_camp_uaf.0000/gobmk_base.camp_uaf --quiet --mode gtp
-time used:      90671 ms
-cpu time used:  90507 ms
-memory used:    91360 kb
-exit code:      21868
+time used:      88302 ms
+cpu time used:  88144 ms
+memory used:    91372 kb
+exit code:      22058
 Running ../run_base_ref_camp_uaf.0000/gobmk_base.camp_uaf --quiet --mode gtp
-time used:      42756 ms
-cpu time used:  42634 ms
-memory used:    83016 kb
-exit code:      21942
+time used:      41851 ms
+cpu time used:  41790 ms
+memory used:    83076 kb
+exit code:      21856
 Running ../run_base_ref_camp_uaf.0000/gobmk_base.camp_uaf --quiet --mode gtp
-time used:      35160 ms
-cpu time used:  35062 ms
-memory used:    90796 kb
-exit code:      22082
+time used:      34425 ms
+cpu time used:  34313 ms
+memory used:    90824 kb
+exit code:      22008
 Running ../run_base_ref_camp_uaf.0000/gobmk_base.camp_uaf --quiet --mode gtp
-time used:      46899 ms
-cpu time used:  46833 ms
-memory used:    89552 kb
-exit code:      22072
+time used:      45958 ms
+cpu time used:  45867 ms
+memory used:    89708 kb
+exit code:      22013
 Running ../run_base_ref_camp_uaf.0000/hmmer_base.camp_uaf nph3.hmm swiss41
-time used:      48184 ms
-cpu time used:  48177 ms
-memory used:    56168 kb
-exit code:      21974
+time used:      47871 ms
+cpu time used:  47864 ms
+memory used:    56100 kb
+exit code:      21969
 Running ../run_base_ref_camp_uaf.0000/hmmer_base.camp_uaf --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
-time used:     104904 ms
-cpu time used: 104897 ms
-memory used:    16656 kb
-exit code:      21893
+time used:     103132 ms
+cpu time used: 103124 ms
+memory used:    16732 kb
+exit code:      21879
 Running ../run_base_ref_camp_uaf.0000/sjeng_base.camp_uaf ref.txt
-time used:     257013 ms
-cpu time used: 256995 ms
-memory used:   187344 kb
-exit code:      22092
+time used:     251180 ms
+cpu time used: 251161 ms
+memory used:   187332 kb
+exit code:      22057
 Running ../run_base_ref_camp_uaf.0000/libquantum_base.camp_uaf 1397 8
-time used:     165194 ms
-cpu time used: 165177 ms
-memory used:   127740 kb
-exit code:      22025
+time used:     157572 ms
+cpu time used: 157557 ms
+memory used:   127496 kb
+exit code:      21906
 Running ../run_base_ref_camp_uaf.0000/h264ref_base.camp_uaf -d foreman_ref_encoder_baseline.cfg
-time used:      26266 ms
-cpu time used:  26240 ms
-memory used:    47624 kb
-exit code:      21987
+time used:      25982 ms
+cpu time used:  25973 ms
+memory used:    46572 kb
+exit code:      22033
 Running ../run_base_ref_camp_uaf.0000/h264ref_base.camp_uaf -d foreman_ref_encoder_main.cfg
-time used:      17509 ms
-cpu time used:  17505 ms
-memory used:    35860 kb
-exit code:      21997
+time used:      17360 ms
+cpu time used:  17354 ms
+memory used:    35004 kb
+exit code:      22062
 Running ../run_base_ref_camp_uaf.0000/h264ref_base.camp_uaf -d sss_encoder_main.cfg
-time used:     149442 ms
-cpu time used: 149092 ms
-memory used:   118488 kb
-exit code:      21986
+time used:     148296 ms
+cpu time used: 147940 ms
+memory used:   118840 kb
+exit code:      22065
 Running ../run_base_ref_camp_uaf.0000/lbm_base.camp_uaf 3000 reference.dat 0 0 100_100_130_ldc.of
-time used:      91820 ms
-cpu time used:  91812 ms
-memory used:   426976 kb
-exit code:      21885
+time used:      91024 ms
+cpu time used:  91012 ms
+memory used:   426940 kb
+exit code:      21930
 Running ../run_base_ref_camp_uaf.0000/sphinx_livepretend_base.camp_uaf ctlfile . args.an4
-time used:     230795 ms
-cpu time used: 230765 ms
-memory used:   2296224 kb
-exit code:      21874
+time used:     227390 ms
+cpu time used: 227327 ms
+memory used:   2297140 kb
+exit code:      22092

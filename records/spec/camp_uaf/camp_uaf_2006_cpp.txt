@@ -1,40 +1,40 @@
 Running ../run_base_ref_camp_uaf.0000/namd_base.camp_uaf --input namd.input --iterations 38 --output namd.out
-time used:     147962 ms
-cpu time used: 147957 ms
-memory used:    57548 kb
-exit code:      21986
+time used:     146857 ms
+cpu time used: 146846 ms
+memory used:    57488 kb
+exit code:      22031
 Running ../run_base_ref_camp_uaf.0000/dealII_base.camp_uaf 23
-time used:     583682 ms
-cpu time used: 583662 ms
-memory used:   1170100 kb
-exit code:      21957
+time used:     589127 ms
+cpu time used: 588877 ms
+memory used:   1170572 kb
+exit code:      22011
 Running ../run_base_ref_camp_uaf.0000/soplex_base.camp_uaf -s1 -e -m45000 pds-50.mps
-time used:      69596 ms
-cpu time used:  69590 ms
-memory used:   207084 kb
-exit code:      22096
+time used:      65343 ms
+cpu time used:  65310 ms
+memory used:   207692 kb
+exit code:      21891
 Running ../run_base_ref_camp_uaf.0000/soplex_base.camp_uaf -m3500 ref.mps
-time used:      65431 ms
-cpu time used:  65420 ms
-memory used:   808440 kb
-exit code:      22053
+time used:      63655 ms
+cpu time used:  63644 ms
+memory used:   778960 kb
+exit code:      22036
 Running ../run_base_ref_camp_uaf.0000/povray_base.camp_uaf SPEC-benchmark-ref.ini
-time used:     117096 ms
-cpu time used: 117042 ms
-memory used:   701292 kb
-exit code:      22019
+time used:     116900 ms
+cpu time used: 116779 ms
+memory used:   700728 kb
+exit code:      21930
 Running ../run_base_ref_camp_uaf.0000/astar_base.camp_uaf BigLakes2048.cfg
-time used:     160714 ms
-cpu time used: 160708 ms
-memory used:   4708472 kb
-exit code:      22043
+time used:     142273 ms
+cpu time used: 142262 ms
+memory used:   4704488 kb
+exit code:      21853
 Running ../run_base_ref_camp_uaf.0000/astar_base.camp_uaf rivers.cfg
-time used:     176634 ms
-cpu time used: 176620 ms
-memory used:   2161620 kb
-exit code:      22058
+time used:     171131 ms
+cpu time used: 171125 ms
+memory used:   2158996 kb
+exit code:      22079
 Running ../run_base_ref_camp_uaf.0000/Xalan_base.camp_uaf -v t5.xml xalanc.xsl
-time used:     440150 ms
-cpu time used: 440133 ms
-memory used:   1512412 kb
-exit code:      22069
+time used:     437768 ms
+cpu time used: 437719 ms
+memory used:   1509132 kb
+exit code:      21969
