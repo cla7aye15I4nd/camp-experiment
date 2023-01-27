@@ -1,0 +1,35 @@
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/namd_base.native --input namd.input --iterations 38 --output namd.out
+time used:     6279139 ms
+cpu time used: 6279105 ms
+memory used:   112768 kb
+exit code:      21881
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/soplex_base.native -s1 -e -m45000 pds-50.mps
+time used:     718047 ms
+cpu time used: 718001 ms
+memory used:   270332 kb
+exit code:      21950
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/soplex_base.native -m3500 ref.mps
+time used:     1469141 ms
+cpu time used: 1469091 ms
+memory used:   791988 kb
+exit code:      21970
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/povray_base.native SPEC-benchmark-ref.ini
+time used:     4582456 ms
+cpu time used: 4582257 ms
+memory used:   170008 kb
+exit code:      22066
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/astar_base.native BigLakes2048.cfg
+time used:     960458 ms
+cpu time used: 960423 ms
+memory used:   544580 kb
+exit code:      22062
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/astar_base.native rivers.cfg
+time used:     1618081 ms
+cpu time used: 1618044 ms
+memory used:   271428 kb
+exit code:      21899
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/Xalan_base.native -v t5.xml xalanc.xsl
+time used:     13675162 ms
+cpu time used: 13674562 ms
+memory used:   848896 kb
+exit code:      22080

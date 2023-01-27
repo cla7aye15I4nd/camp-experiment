@@ -1,0 +1,80 @@
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/perlbench_s_peak.native -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     2818401 ms
+cpu time used: 2818211 ms
+memory used:   528080 kb
+exit code:      21864
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/perlbench_s_peak.native -I./lib diffmail.pl 4 800 10 17 19 300
+time used:     2301841 ms
+cpu time used: 2301795 ms
+memory used:   444764 kb
+exit code:      22015
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/perlbench_s_peak.native -I./lib splitmail.pl 6400 12 26 16 100 0
+time used:     1932457 ms
+cpu time used: 1932364 ms
+memory used:   303448 kb
+exit code:      22019
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/sgcc_peak.native gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_-fipa-pta.s
+time used:     5149260 ms
+cpu time used: 5149002 ms
+memory used:   10155268 kb
+exit code:      22012
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/sgcc_peak.native gcc-pp.c -O5 -finline-limit=1000 -fselective-scheduling -fselective-scheduling2 -o gcc-pp.opts-O5_-finline-limit_1000_-fselective-scheduling_-fselective-scheduling2.s
+time used:     3321316 ms
+cpu time used: 3321150 ms
+memory used:   4446400 kb
+exit code:      21923
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/sgcc_peak.native gcc-pp.c -O5 -finline-limit=24000 -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o gcc-pp.opts-O5_-finline-limit_24000_-fgcse_-fgcse-las_-fgcse-lm_-fgcse-sm.s
+time used:     3019044 ms
+cpu time used: 3018944 ms
+memory used:   4420156 kb
+exit code:      22010
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/mcf_s_peak.native inp.in
+time used:     3171475 ms
+cpu time used: 3171370 ms
+memory used:   5198504 kb
+exit code:      22003
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/omnetpp_s_peak.native -c General -r 0
+time used:     17124509 ms
+cpu time used: 17123745 ms
+memory used:   761652 kb
+exit code:      22089
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/xalancbmk_s_peak.native -v t5.xml xalanc.xsl
+time used:     15271377 ms
+cpu time used: 15270389 ms
+memory used:   1067048 kb
+exit code:      21982
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/x264_s_peak.native --pass 1 --stats x264_stats.log --bitrate 1000 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     782374 ms
+cpu time used: 780331 ms
+memory used:   252952 kb
+exit code:      21984
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/x264_s_peak.native --pass 2 --stats x264_stats.log --bitrate 1000 --dumpyuv 200 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     2559138 ms
+cpu time used: 2554720 ms
+memory used:   104796 kb
+exit code:      22052
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/x264_s_peak.native --seek 500 --dumpyuv 200 --frames 1250 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     2637897 ms
+cpu time used: 2636392 ms
+memory used:   254152 kb
+exit code:      21935
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/deepsjeng_s_peak.native ref.txt
+time used:     8713484 ms
+cpu time used: 8713525 ms
+memory used:   8855640 kb
+exit code:      21920
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/leela_s_peak.native ref.sgf
+time used:     33221799 ms
+cpu time used: 33220349 ms
+memory used:   126088 kb
+exit code:      22024
+Running /usr/bin/valgrind --leak-check=no ../run_peak_refspeed_native.0000/xz_s_peak.native cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4
+time used:     10580714 ms
+cpu time used: 10580648 ms
+memory used:   19687040 kb
+exit code:      22057
+Running /usr/bin/valgrind --leak-check=no  ../run_peak_refspeed_native.0000/xz_s_peak.native cld.tar.xz 1400 19cf30ae51eddcbefda78dd06014b4b96281456e078ca7c13e1c0c9e6aaea8dff3efb4ad6b456697718cede6bd5454852652806a657bb56e07d61128434b474 536995164 539938872 8
+time used:     7023415 ms
+cpu time used: 7023377 ms
+memory used:   5405020 kb
+exit code:      21889

@@ -1,0 +1,170 @@
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/perlbench_base.native -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     2217522 ms
+cpu time used: 2217439 ms
+memory used:   647280 kb
+exit code:      22093
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/perlbench_base.native -I./lib diffmail.pl 4 800 10 17 19 300
+time used:     1157168 ms
+cpu time used: 1157116 ms
+memory used:   1257384 kb
+exit code:      22025
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/perlbench_base.native -I./lib splitmail.pl 1600 12 26 16 4500
+time used:     1286257 ms
+cpu time used: 1286196 ms
+memory used:   1446372 kb
+exit code:      22083
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/bzip2_base.native input.source 280
+time used:     421275 ms
+cpu time used: 421233 ms
+memory used:   1144212 kb
+exit code:      21963
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/bzip2_base.native chicken.jpg 30
+time used:     190313 ms
+cpu time used: 190306 ms
+memory used:   187084 kb
+exit code:      21978
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/bzip2_base.native liberty.jpg 30
+time used:     385658 ms
+cpu time used: 385637 ms
+memory used:   188288 kb
+exit code:      21846
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/bzip2_base.native input.program 280
+time used:     502916 ms
+cpu time used: 502858 ms
+memory used:   1148224 kb
+exit code:      21986
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/bzip2_base.native text.html 280
+time used:     562502 ms
+cpu time used: 562484 ms
+memory used:   1149096 kb
+exit code:      21884
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/bzip2_base.native input.combined 200
+time used:     342108 ms
+cpu time used: 342090 ms
+memory used:   837576 kb
+exit code:      22097
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gcc_base.native 166.in -o 166.s
+time used:     162525 ms
+cpu time used: 162491 ms
+memory used:   431056 kb
+exit code:      21921
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gcc_base.native 200.in -o 200.s
+time used:     390758 ms
+cpu time used: 390742 ms
+memory used:   459392 kb
+exit code:      21961
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gcc_base.native c-typeck.in -o c-typeck.s
+time used:     248339 ms
+cpu time used: 248306 ms
+memory used:   709676 kb
+exit code:      21933
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gcc_base.native cp-decl.in -o cp-decl.s
+time used:     183102 ms
+cpu time used: 183084 ms
+memory used:   584904 kb
+exit code:      21852
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gcc_base.native expr.in -o expr.s
+time used:     182173 ms
+cpu time used: 182159 ms
+memory used:   722464 kb
+exit code:      22093
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gcc_base.native expr2.in -o expr2.s
+time used:     255689 ms
+cpu time used: 255665 ms
+memory used:   936476 kb
+exit code:      22081
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gcc_base.native g23.in -o g23.s
+time used:     279633 ms
+cpu time used: 279610 ms
+memory used:   1236028 kb
+exit code:      22027
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gcc_base.native s04.in -o s04.s
+time used:     271726 ms
+cpu time used: 271717 ms
+memory used:   1264904 kb
+exit code:      21921
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gcc_base.native scilab.in -o scilab.s
+time used:     175479 ms
+cpu time used: 175470 ms
+memory used:   242340 kb
+exit code:      21964
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/mcf_base.native inp.in
+time used:     517329 ms
+cpu time used: 517298 ms
+memory used:   1767380 kb
+exit code:      21846
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/milc_base.native
+time used:     3142998 ms
+cpu time used: 3142936 ms
+memory used:   793424 kb
+exit code:      21939
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:     793444 ms
+cpu time used: 793171 ms
+memory used:   124000 kb
+exit code:      21961
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:     2089410 ms
+cpu time used: 2089142 ms
+memory used:   124612 kb
+exit code:      21862
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:     811885 ms
+cpu time used: 811624 ms
+memory used:   121764 kb
+exit code:      22039
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:     833611 ms
+cpu time used: 833199 ms
+memory used:   123400 kb
+exit code:      22047
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/gobmk_base.native --quiet --mode gtp
+time used:     1120108 ms
+cpu time used: 1119887 ms
+memory used:   124540 kb
+exit code:      21976
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/hmmer_base.native nph3.hmm swiss41
+time used:     858640 ms
+cpu time used: 858626 ms
+memory used:   120916 kb
+exit code:      21848
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/hmmer_base.native --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     1843945 ms
+cpu time used: 1843874 ms
+memory used:    87232 kb
+exit code:      21879
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/sjeng_base.native ref.txt
+time used:     6237626 ms
+cpu time used: 6237223 ms
+memory used:   271416 kb
+exit code:      21874
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/libquantum_base.native 1397 8
+time used:     1065518 ms
+cpu time used: 1065466 ms
+memory used:   190148 kb
+exit code:      21941
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/h264ref_base.native -d foreman_ref_encoder_baseline.cfg
+time used:     586580 ms
+cpu time used: 586525 ms
+memory used:   110776 kb
+exit code:      21882
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/h264ref_base.native -d foreman_ref_encoder_main.cfg
+time used:     505566 ms
+cpu time used: 505543 ms
+memory used:   102264 kb
+exit code:      21948
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/h264ref_base.native -d sss_encoder_main.cfg
+time used:     4343340 ms
+cpu time used: 4342145 ms
+memory used:   157136 kb
+exit code:      21902
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/lbm_base.native 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:     4962486 ms
+cpu time used: 4962369 ms
+memory used:   573976 kb
+exit code:      22028
+Running /usr/bin/valgrind --leak-check=no ../run_base_ref_native.0000/sphinx_livepretend_base.native ctlfile . args.an4
+time used:     9763568 ms
+cpu time used: 9763358 ms
+memory used:   186664 kb
+exit code:      21911
