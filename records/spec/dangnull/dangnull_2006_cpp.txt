@@ -1,0 +1,40 @@
+Running ../run_base_ref_dangnull.0000/namd_base.dangnull --input namd.input --iterations 38 --output namd.out
+time used:     150434 ms
+cpu time used: 150417 ms
+memory used:    60744 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/dealII_base.dangnull 23
+time used:     861128 ms
+cpu time used: 857088 ms
+memory used:   3812484 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/soplex_base.dangnull -s1 -e -m45000 pds-50.mps
+time used:      96782 ms
+cpu time used:  96771 ms
+memory used:   140456 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/soplex_base.dangnull -m3500 ref.mps
+time used:      77524 ms
+cpu time used:  77518 ms
+memory used:   446956 kb
+exit code:      32765
+Running ../run_base_ref_dangnull.0000/povray_base.dangnull SPEC-benchmark-ref.ini
+time used:     254463 ms
+cpu time used: 254432 ms
+memory used:    54676 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/astar_base.dangnull BigLakes2048.cfg
+time used:     161625 ms
+cpu time used: 158123 ms
+memory used:   3448708 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/astar_base.dangnull rivers.cfg
+time used:     197138 ms
+cpu time used: 197127 ms
+memory used:   1479344 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/Xalan_base.dangnull -v t5.xml xalanc.xsl
+time used:     730124 ms
+cpu time used: 674028 ms
+memory used:   11118784 kb
+exit code:      32767

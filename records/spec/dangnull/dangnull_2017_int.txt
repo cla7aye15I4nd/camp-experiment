@@ -1,0 +1,80 @@
+Running ../run_peak_refspeed_dangnull.0000/perlbench_s_peak.dangnull -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     253362 ms
+cpu time used: 253346 ms
+memory used:   4273100 kb
+exit code:      32766
+Running ../run_peak_refspeed_dangnull.0000/perlbench_s_peak.dangnull -I./lib diffmail.pl 4 800 10 17 19 300
+time used:     241652 ms
+cpu time used: 241641 ms
+memory used:   2575068 kb
+exit code:      32767
+Running ../run_peak_refspeed_dangnull.0000/perlbench_s_peak.dangnull -I./lib splitmail.pl 6400 12 26 16 100 0
+time used:     172890 ms
+cpu time used: 172878 ms
+memory used:   1368028 kb
+exit code:      32766
+Running ../run_peak_refspeed_dangnull.0000/sgcc_peak.dangnull gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_-fipa-pta.s
+time used:        121 ms
+cpu time used:     16 ms
+memory used:    26612 kb
+exit code:      32764
+Running ../run_peak_refspeed_dangnull.0000/sgcc_peak.dangnull gcc-pp.c -O5 -finline-limit=1000 -fselective-scheduling -fselective-scheduling2 -o gcc-pp.opts-O5_-finline-limit_1000_-fselective-scheduling_-fselective-scheduling2.s
+time used:        114 ms
+cpu time used:     16 ms
+memory used:    26640 kb
+exit code:      32766
+Running ../run_peak_refspeed_dangnull.0000/sgcc_peak.dangnull gcc-pp.c -O5 -finline-limit=24000 -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o gcc-pp.opts-O5_-finline-limit_24000_-fgcse_-fgcse-las_-fgcse-lm_-fgcse-sm.s
+time used:        110 ms
+cpu time used:     16 ms
+memory used:    26756 kb
+exit code:      32764
+Running ../run_peak_refspeed_dangnull.0000/mcf_s_peak.dangnull inp.in
+time used:     556258 ms
+cpu time used: 556229 ms
+memory used:   4059524 kb
+exit code:      32765
+Running ../run_peak_refspeed_dangnull.0000/omnetpp_s_peak.dangnull -c General -r 0
+time used:     1560968 ms
+cpu time used: 1539454 ms
+memory used:   23037116 kb
+exit code:      32766
+Running ../run_peak_refspeed_dangnull.0000/xalancbmk_s_peak.dangnull -v t5.xml xalanc.xsl
+time used:     979809 ms
+cpu time used: 979779 ms
+memory used:   12699412 kb
+exit code:      32766
+Running ../run_peak_refspeed_dangnull.0000/x264_s_peak.dangnull --pass 1 --stats x264_stats.log --bitrate 1000 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:      31627 ms
+cpu time used:  31118 ms
+memory used:   252740 kb
+exit code:      32767
+Running ../run_peak_refspeed_dangnull.0000/x264_s_peak.dangnull --pass 2 --stats x264_stats.log --bitrate 1000 --dumpyuv 200 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     114144 ms
+cpu time used: 114140 ms
+memory used:    47584 kb
+exit code:      32767
+Running ../run_peak_refspeed_dangnull.0000/x264_s_peak.dangnull --seek 500 --dumpyuv 200 --frames 1250 -o BuckBunny_New.264 BuckBunny.yuv 1280x720
+time used:     115297 ms
+cpu time used: 114822 ms
+memory used:   252748 kb
+exit code:      32765
+Running ../run_peak_refspeed_dangnull.0000/deepsjeng_s_peak.dangnull ref.txt
+time used:     254739 ms
+cpu time used: 254732 ms
+memory used:   7048648 kb
+exit code:      32764
+Running ../run_peak_refspeed_dangnull.0000/leela_s_peak.dangnull ref.sgf
+time used:     803304 ms
+cpu time used: 803264 ms
+memory used:   4928776 kb
+exit code:      32765
+Running ../run_peak_refspeed_dangnull.0000/xz_s_peak.dangnull cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4
+time used:     789894 ms
+cpu time used: 789863 ms
+memory used:   15713832 kb
+exit code:      32767
+Running ../run_peak_refspeed_dangnull.0000/xz_s_peak.dangnull cld.tar.xz 1400 19cf30ae51eddcbefda78dd06014b4b96281456e078ca7c13e1c0c9e6aaea8dff3efb4ad6b0456697718cede6bd5454852652806a657bb56e07d61128434b474 536995164 539938872 8
+time used:     1245984 ms
+cpu time used: 1245960 ms
+memory used:   4305684 kb
+exit code:      32765

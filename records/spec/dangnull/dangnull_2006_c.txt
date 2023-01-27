@@ -1,0 +1,170 @@
+Running ../run_base_ref_dangnull.0000/perlbench_base.dangnull -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     256549 ms
+cpu time used: 256536 ms
+memory used:   4212552 kb
+exit code:      32765
+Running ../run_base_ref_dangnull.0000/perlbench_base.dangnull -I./lib diffmail.pl 4 800 10 17 19 300
+time used:     127696 ms
+cpu time used: 127692 ms
+memory used:   2851168 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/perlbench_base.dangnull -I./lib splitmail.pl 1600 12 26 16 4500
+time used:     100680 ms
+cpu time used: 100677 ms
+memory used:   8462260 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/bzip2_base.dangnull input.source 280
+time used:      53397 ms
+cpu time used:  53393 ms
+memory used:   873704 kb
+exit code:      32765
+Running ../run_base_ref_dangnull.0000/bzip2_base.dangnull chicken.jpg 30
+time used:      16284 ms
+cpu time used:  16282 ms
+memory used:   106252 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/bzip2_base.dangnull liberty.jpg 30
+time used:      26026 ms
+cpu time used:  26024 ms
+memory used:   106320 kb
+exit code:      32764
+Running ../run_base_ref_dangnull.0000/bzip2_base.dangnull input.program 280
+time used:      54612 ms
+cpu time used:  54609 ms
+memory used:   873668 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/bzip2_base.dangnull text.html 280
+time used:      60337 ms
+cpu time used:  60334 ms
+memory used:   873804 kb
+exit code:      32764
+Running ../run_base_ref_dangnull.0000/bzip2_base.dangnull input.combined 200
+time used:      40933 ms
+cpu time used:  40929 ms
+memory used:   628608 kb
+exit code:      32765
+Running ../run_base_ref_dangnull.0000/gcc_base.dangnull 166.in -o 166.s
+time used:      18594 ms
+cpu time used:  18592 ms
+memory used:   746796 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/gcc_base.dangnull 200.in -o 200.s
+time used:      36983 ms
+cpu time used:  36969 ms
+memory used:   894480 kb
+exit code:      32764
+Running ../run_base_ref_dangnull.0000/gcc_base.dangnull c-typeck.in -o c-typeck.s
+time used:      29822 ms
+cpu time used:  29816 ms
+memory used:   1278796 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/gcc_base.dangnull cp-decl.in -o cp-decl.s
+time used:      20862 ms
+cpu time used:  20860 ms
+memory used:   1218328 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/gcc_base.dangnull expr.in -o expr.s
+time used:      22128 ms
+cpu time used:  22122 ms
+memory used:   1351496 kb
+exit code:      32765
+Running ../run_base_ref_dangnull.0000/gcc_base.dangnull expr2.in -o expr2.s
+time used:      34540 ms
+cpu time used:  34537 ms
+memory used:   1864072 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/gcc_base.dangnull g23.in -o g23.s
+time used:      46020 ms
+cpu time used:  46017 ms
+memory used:   3824956 kb
+exit code:      32764
+Running ../run_base_ref_dangnull.0000/gcc_base.dangnull s04.in -o s04.s
+time used:      38284 ms
+cpu time used:  38282 ms
+memory used:   1419968 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/gcc_base.dangnull scilab.in -o scilab.s
+time used:      14665 ms
+cpu time used:  14656 ms
+memory used:   559268 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/mcf_base.dangnull inp.in
+time used:     225440 ms
+cpu time used: 225437 ms
+memory used:   1721196 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/milc_base.dangnull
+time used:     248434 ms
+cpu time used: 248420 ms
+memory used:   700128 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/gobmk_base.dangnull --quiet --mode gtp
+time used:      49478 ms
+cpu time used:  49466 ms
+memory used:    49008 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/gobmk_base.dangnull --quiet --mode gtp
+time used:     130215 ms
+cpu time used: 130208 ms
+memory used:    52156 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/gobmk_base.dangnull --quiet --mode gtp
+time used:      57267 ms
+cpu time used:  57237 ms
+memory used:    40640 kb
+exit code:      32765
+Running ../run_base_ref_dangnull.0000/gobmk_base.dangnull --quiet --mode gtp
+time used:      50494 ms
+cpu time used:  50490 ms
+memory used:    43040 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/gobmk_base.dangnull --quiet --mode gtp
+time used:      69953 ms
+cpu time used:  69948 ms
+memory used:    40356 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/hmmer_base.dangnull nph3.hmm swiss41
+time used:      52013 ms
+cpu time used:  52005 ms
+memory used:   246412 kb
+exit code:      32765
+Running ../run_base_ref_dangnull.0000/hmmer_base.dangnull --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     111004 ms
+cpu time used: 110976 ms
+memory used:   161712 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/sjeng_base.dangnull ref.txt
+time used:     299501 ms
+cpu time used: 278934 ms
+memory used:   183016 kb
+exit code:      32766
+Running ../run_base_ref_dangnull.0000/libquantum_base.dangnull 1397 8
+time used:     169744 ms
+cpu time used: 169740 ms
+memory used:   103104 kb
+exit code:      32764
+Running ../run_base_ref_dangnull.0000/h264ref_base.dangnull -d foreman_ref_encoder_baseline.cfg
+time used:      26053 ms
+cpu time used:  26048 ms
+memory used:   190964 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/h264ref_base.dangnull -d foreman_ref_encoder_main.cfg
+time used:      18076 ms
+cpu time used:  18074 ms
+memory used:   132648 kb
+exit code:      32764
+Running ../run_base_ref_dangnull.0000/h264ref_base.dangnull -d sss_encoder_main.cfg
+time used:     153988 ms
+cpu time used: 153659 ms
+memory used:   195016 kb
+exit code:      32767
+Running ../run_base_ref_dangnull.0000/lbm_base.dangnull 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:     129438 ms
+cpu time used: 129434 ms
+memory used:   423264 kb
+exit code:      32764
+Running ../run_base_ref_dangnull.0000/sphinx_livepretend_base.dangnull ctlfile . args.an4
+time used:     267288 ms
+cpu time used: 267240 ms
+memory used:   818784 kb
+exit code:      32765
