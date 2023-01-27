@@ -1,0 +1,165 @@
+Running ../run_base_ref_softbound.0000/perlbench_base.softbound -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:        782 ms
+cpu time used:    107 ms
+memory used:     5300 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/perlbench_base.softbound -I./lib diffmail.pl 4 800 10 17 19 300
+time used:        802 ms
+cpu time used:    127 ms
+memory used:     5168 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/perlbench_base.softbound -I./lib splitmail.pl 1600 12 26 16 4500
+time used:        876 ms
+cpu time used:    125 ms
+memory used:     5208 kb
+exit code:      32766
+Running ../run_base_ref_softbound.0000/bzip2_base.softbound input.source 280
+time used:     214747 ms
+cpu time used: 214735 ms
+memory used:   2015944 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/bzip2_base.softbound chicken.jpg 30
+time used:      64657 ms
+cpu time used:  64654 ms
+memory used:   224568 kb
+exit code:      32764
+Running ../run_base_ref_softbound.0000/bzip2_base.softbound liberty.jpg 30
+time used:     114508 ms
+cpu time used: 114505 ms
+memory used:   224592 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/bzip2_base.softbound input.program 280
+time used:     231952 ms
+cpu time used: 231948 ms
+memory used:   2015980 kb
+exit code:      32765
+Running ../run_base_ref_softbound.0000/bzip2_base.softbound text.html 280
+time used:     289532 ms
+cpu time used: 289527 ms
+memory used:   2015976 kb
+exit code:      32765
+Running ../run_base_ref_softbound.0000/bzip2_base.softbound input.combined 200
+time used:     165189 ms
+cpu time used: 165182 ms
+memory used:   1443380 kb
+exit code:      32766
+Running ../run_base_ref_softbound.0000/gcc_base.softbound 166.in -o 166.s
+time used:       1353 ms
+cpu time used:    326 ms
+memory used:    18564 kb
+exit code:      32766
+Running ../run_base_ref_softbound.0000/gcc_base.softbound 200.in -o 200.s
+time used:       1150 ms
+cpu time used:    321 ms
+memory used:    18556 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/gcc_base.softbound c-typeck.in -o c-typeck.s
+time used:       1172 ms
+cpu time used:    319 ms
+memory used:    18596 kb
+exit code:      32766
+Running ../run_base_ref_softbound.0000/gcc_base.softbound cp-decl.in -o cp-decl.s
+time used:       1182 ms
+cpu time used:    315 ms
+memory used:    18564 kb
+exit code:      32765
+Running ../run_base_ref_softbound.0000/gcc_base.softbound expr.in -o expr.s
+time used:       1168 ms
+cpu time used:    318 ms
+memory used:    18592 kb
+exit code:      32764
+Running ../run_base_ref_softbound.0000/gcc_base.softbound expr2.in -o expr2.s
+time used:       1209 ms
+cpu time used:    328 ms
+memory used:    18532 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/gcc_base.softbound g23.in -o g23.s
+time used:       1147 ms
+cpu time used:    303 ms
+memory used:    18588 kb
+exit code:      32765
+Running ../run_base_ref_softbound.0000/gcc_base.softbound s04.in -o s04.s
+time used:       1173 ms
+cpu time used:    314 ms
+memory used:    18568 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/gcc_base.softbound scilab.in -o scilab.s
+time used:       1088 ms
+cpu time used:    300 ms
+memory used:    18624 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/mcf_base.softbound inp.in
+time used:     941210 ms
+cpu time used: 941175 ms
+memory used:   8583356 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/milc_base.softbound
+time used:     823018 ms
+cpu time used: 822996 ms
+memory used:   1357180 kb
+exit code:      32764
+Running ../run_base_ref_softbound.0000/gobmk_base.softbound --quiet --mode gtp
+time used:     138507 ms
+cpu time used: 138370 ms
+memory used:   313500 kb
+exit code:      32766
+Running ../run_base_ref_softbound.0000/gobmk_base.softbound --quiet --mode gtp
+time used:     363522 ms
+cpu time used: 362503 ms
+memory used:   335008 kb
+exit code:      32765
+Running ../run_base_ref_softbound.0000/gobmk_base.softbound --quiet --mode gtp
+time used:     178574 ms
+cpu time used: 178339 ms
+memory used:   242788 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/gobmk_base.softbound --quiet --mode gtp
+time used:     145996 ms
+cpu time used: 145653 ms
+memory used:   265180 kb
+exit code:      32765
+Running ../run_base_ref_softbound.0000/gobmk_base.softbound --quiet --mode gtp
+time used:     196969 ms
+cpu time used: 196822 ms
+memory used:   224168 kb
+exit code:      32765
+Running ../run_base_ref_softbound.0000/hmmer_base.softbound nph3.hmm swiss41
+time used:       1065 ms
+cpu time used:    215 ms
+memory used:    21356 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/hmmer_base.softbound --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     891980 ms
+cpu time used: 891958 ms
+memory used:    40208 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/sjeng_base.softbound ref.txt
+time used:     935637 ms
+cpu time used: 932823 ms
+memory used:   189636 kb
+exit code:      32765
+Running ../run_base_ref_softbound.0000/h264ref_base.softbound -d foreman_ref_encoder_baseline.cfg
+time used:       1172 ms
+cpu time used:    401 ms
+memory used:    22088 kb
+exit code:      32766
+Running ../run_base_ref_softbound.0000/h264ref_base.softbound -d foreman_ref_encoder_main.cfg
+time used:        871 ms
+cpu time used:    135 ms
+memory used:    13676 kb
+exit code:      32767
+Running ../run_base_ref_softbound.0000/h264ref_base.softbound -d sss_encoder_main.cfg
+time used:        929 ms
+cpu time used:    149 ms
+memory used:    18244 kb
+exit code:      32765
+Running ../run_base_ref_softbound.0000/lbm_base.softbound 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:     224260 ms
+cpu time used: 224229 ms
+memory used:   420472 kb
+exit code:      32764
+Running ../run_base_ref_softbound.0000/sphinx_livepretend_base.softbound ctlfile . args.an4
+time used:       1532 ms
+cpu time used:    653 ms
+memory used:   104188 kb
+exit code:      32767
