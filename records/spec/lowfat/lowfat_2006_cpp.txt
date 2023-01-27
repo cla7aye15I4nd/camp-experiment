@@ -1,0 +1,40 @@
+Running ../run_base_ref_lowfat.0000/namd_base.lowfat --input namd.input --iterations 38 --output namd.out
+time used:     345981 ms
+cpu time used: 345964 ms
+memory used:    51068 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/dealII_base.lowfat 23
+time used:     613930 ms
+cpu time used: 613866 ms
+memory used:   843072 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/soplex_base.lowfat -s1 -e -m45000 pds-50.mps
+time used:     375930 ms
+cpu time used: 375792 ms
+memory used:   5588360 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/soplex_base.lowfat -m3500 ref.mps
+time used:     661032 ms
+cpu time used: 620410 ms
+memory used:   12215032 kb
+exit code:      32767
+Running ../run_base_ref_lowfat.0000/povray_base.lowfat SPEC-benchmark-ref.ini
+time used:     182617 ms
+cpu time used: 182601 ms
+memory used:     8908 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/astar_base.lowfat BigLakes2048.cfg
+time used:     130167 ms
+cpu time used: 130138 ms
+memory used:   347456 kb
+exit code:      32767
+Running ../run_base_ref_lowfat.0000/astar_base.lowfat rivers.cfg
+time used:     238311 ms
+cpu time used: 238275 ms
+memory used:   139076 kb
+exit code:      32767
+Running ../run_base_ref_lowfat.0000/Xalan_base.lowfat -v t5.xml xalanc.xsl
+time used:     193374 ms
+cpu time used: 193324 ms
+memory used:   491276 kb
+exit code:      32767

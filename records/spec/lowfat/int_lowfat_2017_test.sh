@@ -16,7 +16,7 @@ cd /home/moe/cpu2017/benchspec/CPU/605.mcf_s/run/run_peak_refspeed_lowfat.0000
 /home/moe/camp-experiment/spec/spectest ../run_peak_refspeed_lowfat.0000/mcf_s_peak.lowfat inp.in
 
 cd /home/moe/cpu2017/benchspec/CPU/620.omnetpp_s/run/run_peak_refspeed_lowfat.0000
-/home/moe/camp-experiment/spec/spectest ../run_peak_refspeed_lowfat.0000/omnetpp_s_peak.lowfat -c General -r 0
+/home/moe//spectest ../run_peak_refspeed_lowfat.0000/omnetpp_s_peak.lowfat -c General -r 0
 
 cd /home/moe/cpu2017/benchspec/CPU/623.xalancbmk_s/run/run_peak_refspeed_lowfat.0000
 /home/moe/camp-experiment/spec/spectest ../run_peak_refspeed_lowfat.0000/xalancbmk_s_peak.lowfat -v t5.xml xalanc.xsl

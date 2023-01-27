@@ -1,0 +1,55 @@
+Running ../run_peak_refspeed_lowfat.0000/perlbench_s_peak.lowfat -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     1335616 ms
+cpu time used: 1334027 ms
+memory used:   13535876 kb
+exit code:      32764
+Running ../run_peak_refspeed_lowfat.0000/perlbench_s_peak.lowfat -I./lib diffmail.pl 4 800 10 17 19 300
+time used:     1372449 ms
+cpu time used: 1298440 ms
+memory used:   13432384 kb
+exit code:      32767
+Running ../run_peak_refspeed_lowfat.0000/perlbench_s_peak.lowfat -I./lib splitmail.pl 6400 12 26 16 100 0
+time used:     1919037 ms
+cpu time used: 1903406 ms
+memory used:   20125808 kb
+exit code:      32767
+Running ../run_peak_refspeed_lowfat.0000/sgcc_peak.lowfat gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_-fipa-pta.s
+time used:     597969 ms
+cpu time used: 408216 ms
+memory used:   9527740 kb
+exit code:      32764
+Running ../run_peak_refspeed_lowfat.0000/sgcc_peak.lowfat gcc-pp.c -O5 -finline-limit=1000 -fselective-scheduling -fselective-scheduling2 -o gcc-pp.opts-O5_-finline-limit_1000_-fselective-scheduling_-fselective-scheduling2.s
+time used:     201984 ms
+cpu time used: 120256 ms
+memory used:   2085064 kb
+exit code:      32766
+Running ../run_peak_refspeed_lowfat.0000/sgcc_peak.lowfat gcc-pp.c -O5 -finline-limit=24000 -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o gcc-pp.opts-O5_-finline-limit_24000_-fgcse_-fgcse-las_-fgcse-lm_-fgcse-sm.s
+time used:     194933 ms
+cpu time used: 121988 ms
+memory used:   2150472 kb
+exit code:      32765
+Running ../run_peak_refspeed_lowfat.0000/mcf_s_peak.lowfat inp.in
+time used:     615417 ms
+cpu time used: 615359 ms
+memory used:   4056676 kb
+exit code:      32766
+Running ../run_peak_refspeed_lowfat.0000/omnetpp_s_peak.lowfat -c General -r 0
+time used:     443638 ms
+cpu time used: 443600 ms
+memory used:   256332 kb
+exit code:      32764
+Running ../run_peak_refspeed_lowfat.0000/xalancbmk_s_peak.lowfat -v t5.xml xalanc.xsl
+time used:     279035 ms
+cpu time used: 278980 ms
+memory used:   530060 kb
+exit code:      32765
+Running ../run_peak_refspeed_lowfat.0000/deepsjeng_s_peak.lowfat ref.txt
+time used:     407223 ms
+cpu time used: 407205 ms
+memory used:   7046548 kb
+exit code:      32766
+Running ../run_peak_refspeed_lowfat.0000/leela_s_peak.lowfat ref.sgf
+time used:     872995 ms
+cpu time used: 872969 ms
+memory used:    23064 kb
+exit code:      32766
