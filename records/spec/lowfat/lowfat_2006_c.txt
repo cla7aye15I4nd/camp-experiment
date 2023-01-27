@@ -1,0 +1,170 @@
+Running ../run_base_ref_lowfat.0000/perlbench_base.lowfat -I./lib checkspam.pl 2500 5 25 11 150 1 1 1 1
+time used:     350604 ms
+cpu time used: 350577 ms
+memory used:   2147440 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/perlbench_base.lowfat -I./lib diffmail.pl 4 800 10 17 19 300
+time used:     435177 ms
+cpu time used: 435162 ms
+memory used:   4099588 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/perlbench_base.lowfat -I./lib splitmail.pl 1600 12 26 16 4500
+time used:     108974 ms
+cpu time used: 108970 ms
+memory used:   892040 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/bzip2_base.lowfat input.source 280
+time used:      88387 ms
+cpu time used:  88383 ms
+memory used:   869168 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/bzip2_base.lowfat chicken.jpg 30
+time used:      26215 ms
+cpu time used:  26214 ms
+memory used:   101720 kb
+exit code:      32767
+Running ../run_base_ref_lowfat.0000/bzip2_base.lowfat liberty.jpg 30
+time used:      43896 ms
+cpu time used:  43894 ms
+memory used:   101740 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/bzip2_base.lowfat input.program 280
+time used:      93547 ms
+cpu time used:  93532 ms
+memory used:   869120 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/bzip2_base.lowfat text.html 280
+time used:     114348 ms
+cpu time used: 114342 ms
+memory used:   869032 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/bzip2_base.lowfat input.combined 200
+time used:      67646 ms
+cpu time used:  67643 ms
+memory used:   624140 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/gcc_base.lowfat 166.in -o 166.s
+time used:     3532862 ms
+cpu time used: 3515719 ms
+memory used:   23869344 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/gcc_base.lowfat 200.in -o 200.s
+time used:     2657802 ms
+cpu time used: 2657656 ms
+memory used:   19511988 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/gcc_base.lowfat c-typeck.in -o c-typeck.s
+time used:     3307049 ms
+cpu time used: 3278656 ms
+memory used:   23727576 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/gcc_base.lowfat cp-decl.in -o cp-decl.s
+time used:     1670346 ms
+cpu time used: 1666747 ms
+memory used:   11511808 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/gcc_base.lowfat expr.in -o expr.s
+time used:     1203034 ms
+cpu time used: 1156385 ms
+memory used:   7929508 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/gcc_base.lowfat expr2.in -o expr2.s
+time used:     2712807 ms
+cpu time used: 2663420 ms
+memory used:   18768228 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/gcc_base.lowfat g23.in -o g23.s
+time used:     1336787 ms
+cpu time used: 1336728 ms
+memory used:   9968480 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/gcc_base.lowfat s04.in -o s04.s
+time used:     2757576 ms
+cpu time used: 2756521 ms
+memory used:   17612928 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/gcc_base.lowfat scilab.in -o scilab.s
+time used:     2027837 ms
+cpu time used: 2019315 ms
+memory used:   14481024 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/mcf_base.lowfat inp.in
+time used:     194507 ms
+cpu time used: 194494 ms
+memory used:   1718096 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/milc_base.lowfat
+time used:     472992 ms
+cpu time used: 472973 ms
+memory used:   705412 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/gobmk_base.lowfat --quiet --mode gtp
+time used:      39973 ms
+cpu time used:  39901 ms
+memory used:    31764 kb
+exit code:      32767
+Running ../run_base_ref_lowfat.0000/gobmk_base.lowfat --quiet --mode gtp
+time used:     101917 ms
+cpu time used: 101787 ms
+memory used:    31936 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/gobmk_base.lowfat --quiet --mode gtp
+time used:      54268 ms
+cpu time used:  54133 ms
+memory used:    31304 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/gobmk_base.lowfat --quiet --mode gtp
+time used:      39335 ms
+cpu time used:  39227 ms
+memory used:    31452 kb
+exit code:      32767
+Running ../run_base_ref_lowfat.0000/gobmk_base.lowfat --quiet --mode gtp
+time used:      53536 ms
+cpu time used:  53452 ms
+memory used:    31240 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/hmmer_base.lowfat nph3.hmm swiss41
+time used:     151593 ms
+cpu time used: 151362 ms
+memory used:    28796 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/hmmer_base.lowfat --fixed 0 --mean 500 --num 500000 --sd 350 --seed 0 retro.hmm
+time used:     323395 ms
+cpu time used: 323231 ms
+memory used:     6196 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/sjeng_base.lowfat ref.txt
+time used:     306411 ms
+cpu time used: 306406 ms
+memory used:   181352 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/libquantum_base.lowfat 1397 8
+time used:     203779 ms
+cpu time used: 203776 ms
+memory used:   100752 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/h264ref_base.lowfat -d foreman_ref_encoder_baseline.cfg
+time used:      65444 ms
+cpu time used:  65391 ms
+memory used:    24640 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/h264ref_base.lowfat -d foreman_ref_encoder_main.cfg
+time used:      40809 ms
+cpu time used:  40805 ms
+memory used:    18900 kb
+exit code:      32764
+Running ../run_base_ref_lowfat.0000/h264ref_base.lowfat -d sss_encoder_main.cfg
+time used:     356609 ms
+cpu time used: 355333 ms
+memory used:    66008 kb
+exit code:      32765
+Running ../run_base_ref_lowfat.0000/lbm_base.lowfat 3000 reference.dat 0 0 100_100_130_ldc.of
+time used:     220474 ms
+cpu time used: 220423 ms
+memory used:   420712 kb
+exit code:      32766
+Running ../run_base_ref_lowfat.0000/sphinx_livepretend_base.lowfat ctlfile . args.an4
+time used:     576534 ms
+cpu time used: 576486 ms
+memory used:    48452 kb
+exit code:      32765

@@ -1,0 +1,15 @@
+Running ../run_peak_refspeed_lowfat.0000/lbm_s_peak.lowfat 2000 reference.dat 0 0 200_200_260_ldc.of
+time used:     1261618 ms
+cpu time used: 1256799 ms
+memory used:   3302044 kb
+exit code:      32766
+Running ../run_peak_refspeed_lowfat.0000/imagick_s_peak.lowfat -limit disk 0 refspeed_input.tga -resize 817% -rotate -2.76 -shave 540x375 -alpha remove -auto-level -contrast-stretch 1x1% -colorspace Lab -channel R -equalize +channel -colorspace sRGB -define histogram:unique-colors=false -adaptive-blur 0x5 -despeckle -auto-gamma -adaptive-sharpen 55 -enhance -brightness-contrast 10x10 -resize 30% refspeed_output.tga
+time used:     10326118 ms
+cpu time used: 10236409 ms
+memory used:   7165416 kb
+exit code:      32766
+Running ../run_peak_refspeed_lowfat.0000/nab_s_peak.lowfat 3j1n 20140317 220
+time used:     1871194 ms
+cpu time used: 1871115 ms
+memory used:   625028 kb
+exit code:      32765
