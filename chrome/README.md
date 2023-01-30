@@ -58,6 +58,7 @@ is_debug = false
 is_camp = true
 symbol_level = 1
 is_component_build = true
+enable_nacl = false
 ```
 
 ## Compile V8 only
