@@ -1,74 +1,72 @@
-test/benchmarks/csuite/csuite.py octane compare ../out/camp/d8
                                benchmark:    score |  master_ |      % |
 ===================================================+==========+========+
-                                Richards:  66563.4 S  66674.9 S   -0.2 |
-                               DeltaBlue: 136942.8 S 142086.3 S   -3.6 |
-                                  Crypto:  71837.9 |  72595.0 |   -1.0 |
-                                RayTrace: 118578.9 S 124860.7 |   -5.0 |
-                             EarleyBoyer:  89078.0 S  92261.0 S   -3.4 |
-                                  RegExp:  11006.2 |  11175.3 |   -1.5 |
-                                   Splay:  15808.6 S  15873.0 S   -0.4 |
-                            SplayLatency:  14308.9 S  14540.7 S   -1.6 |
-                            NavierStokes:  68729.7 |  69287.3 |   -0.8 |
-                                   PdfJS:  33524.4 S  36449.1 S   -8.0 |
-                                Mandreel:  69708.0 S  70432.8 |   -1.0 |
-                         MandreelLatency:  70241.8 S  69274.3 S    1.4 |
-                                 Gameboy: 128513.3 S 133565.0 |   -3.8 |
-                                CodeLoad:  23717.6 |  24455.8 |   -3.0 |
-                                   Box2D:  95113.0 S 106499.7 S  -10.7 |
-                                    zlib:  34653.6 S  35861.2 |   -3.4 |
-                              Typescript:  58448.1 |  61362.3 S   -4.7 |
-                                  Octane:  50754.4 S  52514.3 S   -3.4 |
+                       3d-cube-sunspider:     13.2 S     10.1 S  -23.5 |
+                      3d-morph-sunspider:      8.2 S      6.0 S  -26.8 |
+                   3d-raytrace-sunspider:     13.7 S     10.6 S  -22.6 |
+           access-binary-trees-sunspider:      3.1 S      2.7 S  -12.9 |
+               access-fannkuch-sunspider:     20.9 S     19.5 S   -6.7 |
+                  access-nbody-sunspider:      9.6 S      6.9 S  -28.1 |
+                 access-nsieve-sunspider:      6.9 S      6.0 S  -13.0 |
+      bitops-3bit-bits-in-byte-sunspider:      2.2 S      1.8 S  -18.2 |
+           bitops-bits-in-byte-sunspider:      3.1 S      2.4 S  -22.6 |
+            bitops-bitwise-and-sunspider:      2.8 S      2.1 S  -25.0 |
+            bitops-nsieve-bits-sunspider:      6.9 S      5.3 S  -23.2 |
+         controlflow-recursive-sunspider:      3.2 S      2.7 S  -15.6 |
+                    crypto-aes-sunspider:      9.5 S      7.6 S  -20.0 |
+                    crypto-md5-sunspider:      5.5 S      5.0 S   -9.1 |
+                   crypto-sha1-sunspider:      5.6 S      4.7 S  -16.1 |
+             date-format-tofte-sunspider:     11.5 S      9.3 S  -19.1 |
+             date-format-xparb-sunspider:      7.4 S      6.3 S  -14.9 |
+                   math-cordic-sunspider:      3.9 S      2.9 S  -25.6 |
+             math-partial-sums-sunspider:     10.9 S      9.8 S  -10.1 |
+            math-spectral-norm-sunspider:      4.1 S      3.1 S  -24.4 |
+                    regexp-dna-sunspider:      5.6 S      4.8 S  -14.3 |
+                 string-base64-sunspider:      6.3 S      5.5 S  -12.7 |
+                  string-fasta-sunspider:      9.4 S      7.7 S  -18.1 |
+               string-tagcloud-sunspider:     22.0 S     16.5 S  -25.0 |
+            string-unpack-code-sunspider:     24.8 S     19.1 S  -23.0 |
+         string-validate-input-sunspider:      9.8 S      7.0 S  -28.6 |
+                               SunSpider:    230.2 S    185.5 S  -19.4 |
 ---------------------------------------------------+----------+--------+
 
-test/benchmarks/csuite/csuite.py kraken compare ../out/camp/d8
                                benchmark:    score |  master_ |      % |
 ===================================================+==========+========+
-                           ai-astar-orig:     40.6 S     40.5 S   -0.2 |
-               audio-beat-detection-orig:     54.8 S     54.9 S    0.2 |
-                          audio-dft-orig:     53.7 S     54.1 S    0.7 |
-                          audio-fft-orig:     22.6 S     23.2 S    2.7 |
-                   audio-oscillator-orig:     72.7 S     72.0 S   -1.0 |
-              imaging-gaussian-blur-orig:     72.1 S     72.1 S        |
-                   imaging-darkroom-orig:     87.2 S     87.6 S    0.5 |
-                 imaging-desaturate-orig:     30.1 S     30.2 S    0.3 |
-               json-parse-financial-orig:     80.9 |     80.5 S   -0.5 |
-           json-stringify-tinderbox-orig:     42.3 S     41.5 S   -1.9 |
-                stanford-crypto-aes-orig:     55.7 S     54.4 S   -2.3 |
-                stanford-crypto-ccm-orig:     92.3 S     90.4 S   -2.1 |
-             stanford-crypto-pbkdf2-orig:     56.4 S     56.1 S   -0.5 |
-   stanford-crypto-sha256-iterative-orig:     23.7 S     23.1 S   -2.5 |
-                                  Kraken:    785.1 S    780.6 S   -0.6 |
+                                Richards:  65134.9 |  66674.9 S   -2.3 |
+                               DeltaBlue: 129082.2 S 142086.3 S   -9.2 |
+                                  Crypto:  70275.0 |  72595.0 |   -3.2 |
+                                RayTrace: 108062.7 | 124860.7 |  -13.5 |
+                             EarleyBoyer:  78329.7 |  92261.0 S  -15.1 |
+                                  RegExp:  10042.7 |  11175.3 |  -10.1 |
+                                   Splay:  15475.1 S  15873.0 S   -2.5 |
+                            SplayLatency:  14321.3 |  14540.7 S   -1.5 |
+                            NavierStokes:  67131.0 |  69287.3 |   -3.1 |
+                                   PdfJS:  27019.1 S  36449.1 S  -25.9 |
+                                Mandreel:  66700.3 |  70432.8 |   -5.3 |
+                         MandreelLatency:  48166.9 S  69274.3 S  -30.5 |
+                                 Gameboy: 109838.7 S 133565.0 |  -17.8 |
+                                CodeLoad:  18378.9 |  24455.8 |  -24.8 |
+                                   Box2D:  86010.9 S 106499.7 S  -19.2 |
+                                    zlib:  27003.6 |  35861.2 |  -24.7 |
+                              Typescript:  53828.8 S  61362.3 S  -12.3 |
+                                  Octane:  45357.4 S  52514.3 S  -13.6 |
 ---------------------------------------------------+----------+--------+
 
-test/benchmarks/csuite/csuite.py sunspider compare ../out/camp/d8
+
                                benchmark:    score |  master_ |      % |
 ===================================================+==========+========+
-                       3d-cube-sunspider:     10.3 S     10.1 S   -1.9 |
-                      3d-morph-sunspider:      6.1 S      6.0 S   -1.6 |
-                   3d-raytrace-sunspider:     11.1 S     10.6 S   -4.5 |
-           access-binary-trees-sunspider:      2.7 S      2.7 S        |
-               access-fannkuch-sunspider:     19.8 S     19.5 S   -1.5 |
-                  access-nbody-sunspider:      7.1 S      6.9 S   -2.8 |
-                 access-nsieve-sunspider:      6.3 S      6.0 S   -4.8 |
-      bitops-3bit-bits-in-byte-sunspider:      1.8 S      1.8 S        |
-           bitops-bits-in-byte-sunspider:      2.4 S      2.4 S        |
-            bitops-bitwise-and-sunspider:      2.2 S      2.1 S   -4.5 |
-            bitops-nsieve-bits-sunspider:      5.4 S      5.3 S   -1.9 |
-         controlflow-recursive-sunspider:      2.7 S      2.7 S        |
-                    crypto-aes-sunspider:      7.8 S      7.6 S   -2.6 |
-                    crypto-md5-sunspider:      5.3 S      5.0 S   -5.7 |
-                   crypto-sha1-sunspider:      4.8 S      4.7 S   -2.1 |
-             date-format-tofte-sunspider:      9.7 S      9.3 S   -4.1 |
-             date-format-xparb-sunspider:      6.6 S      6.3 S   -4.5 |
-                   math-cordic-sunspider:      3.0 S      2.9 S   -3.3 |
-             math-partial-sums-sunspider:     10.2 S      9.8 S   -3.9 |
-            math-spectral-norm-sunspider:      3.2 S      3.1 S   -3.1 |
-                    regexp-dna-sunspider:      5.1 S      4.8 S   -5.9 |
-                 string-base64-sunspider:      5.7 S      5.5 S   -3.5 |
-                  string-fasta-sunspider:      7.9 S      7.7 S   -2.5 |
-               string-tagcloud-sunspider:     16.5 S     16.5 S        |
-            string-unpack-code-sunspider:     19.7 S     19.1 S   -3.0 |
-         string-validate-input-sunspider:      7.3 S      7.0 S   -4.1 |
-                               SunSpider:    190.7 S    185.5 S   -2.7 |
+                           ai-astar-orig:     44.0 S     40.5 S   -8.0 |
+               audio-beat-detection-orig:     67.8 S     54.9 S  -19.0 |
+                          audio-dft-orig:     75.8 S     54.1 S  -28.6 |
+                          audio-fft-orig:     27.5 S     23.2 S  -15.6 |
+                   audio-oscillator-orig:    100.1 S     72.0 S  -28.1 |
+              imaging-gaussian-blur-orig:     85.8 S     72.1 S  -16.0 |
+                   imaging-darkroom-orig:    101.0 S     87.6 S  -13.3 |
+                 imaging-desaturate-orig:     39.4 S     30.2 S  -23.4 |
+               json-parse-financial-orig:    117.0 S     80.5 S  -31.2 |
+           json-stringify-tinderbox-orig:     61.2 |     41.5 S  -32.2 |
+                stanford-crypto-aes-orig:     64.5 S     54.4 S  -15.7 |
+                stanford-crypto-ccm-orig:    117.5 S     90.4 S  -23.1 |
+             stanford-crypto-pbkdf2-orig:     67.3 S     56.1 S  -16.6 |
+   stanford-crypto-sha256-iterative-orig:     28.4 S     23.1 S  -18.7 |
+                                  Kraken:    997.3 S    780.6 S  -21.7 |
 ---------------------------------------------------+----------+--------+
