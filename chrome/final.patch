@@ -1,21 +1,8 @@
-diff --git a/build/config/compiler/BUILD.gn b/build/config/compiler/BUILD.gn
-index 50be57ff8550e..58515925deb53 100644
---- a/build/config/compiler/BUILD.gn
-+++ b/build/config/compiler/BUILD.gn
-@@ -1627,7 +1627,7 @@ config("default_warnings") {
-       if (!is_nacl) {
-         cflags += [
-           # TODO(crbug.com/1343975) Evaluate and possibly enable.
--          "-Wno-deprecated-builtins",
-+          # "-Wno-deprecated-builtins",
- 
-           # TODO(crbug.com/1352183) Evaluate and possibly enable.
-           "-Wno-bitfield-constant-conversion",
 diff --git a/build/config/sanitizers/BUILD.gn b/build/config/sanitizers/BUILD.gn
-index cb07c547122d8..4ee1f212a0bab 100644
+index cb07c547122d8..e95688423d301 100644
 --- a/build/config/sanitizers/BUILD.gn
 +++ b/build/config/sanitizers/BUILD.gn
-@@ -157,6 +157,12 @@ config("default_sanitizer_ldflags") {
+@@ -157,8 +157,17 @@ config("default_sanitizer_ldflags") {
  
    if (is_posix || is_fuchsia) {
      ldflags = []
@@ -26,9 +13,27 @@ index cb07c547122d8..4ee1f212a0bab 100644
 +      ]
 +    }
      if (is_asan) {
-       ldflags += [ "-fsanitize=address" ]
+-      ldflags += [ "-fsanitize=address" ]
++      ldflags += [ "-fsanitize=address",
++                   "-mllvm", "-asan-stack=0",
++                   "-mllvm", "-asan-globals=0",
++                   "-fsanitize-recover=address" ]
      }
-@@ -382,6 +388,20 @@ config("hwasan_flags") {
+     if (is_hwasan) {
+       ldflags += [ "-fsanitize=hwaddress" ]
+@@ -261,7 +270,10 @@ config("common_sanitizer_flags") {
+ config("asan_flags") {
+   cflags = []
+   if (is_asan) {
+-    cflags += [ "-fsanitize=address" ]
++      cflags += [ "-fsanitize=address",
++                  "-mllvm", "-asan-stack=0",
++                  "-mllvm", "-asan-globals=0",
++                  "-fsanitize-recover=address" ]    
+     if (is_win) {
+       if (!defined(asan_win_blocklist_path)) {
+         asan_win_blocklist_path =
+@@ -382,6 +394,21 @@ config("hwasan_flags") {
    }
  }
  
@@ -37,19 +42,20 @@ index cb07c547122d8..4ee1f212a0bab 100644
 +    cflags = [
 +      "-O1", "-Xclang", "-load", "-Xclang",
 +      "/home/moe/violet/build/src/compiler_pass/libProtectionPass.so",
++      "-flegacy-pass-manager",
 +      "-L/home/moe/violet/build/src/safe_tcmalloc/tcmalloc",
 +      "-ltcmalloc_tcmalloc", 
 +      "-Qunused-arguments", 
 +      "-Wpointer-arith", 
 +      "-Wpointer-to-int-cast",
-+    ]  
++    ]
 +  }
 +}
 +
  config("lsan_flags") {
    if (is_lsan) {
      cflags = [ "-fsanitize=leak" ]
-@@ -514,6 +534,7 @@ all_sanitizer_configs = [
+@@ -514,6 +541,7 @@ all_sanitizer_configs = [
    ":common_sanitizer_flags",
    ":coverage_flags",
    ":default_sanitizer_ldflags",

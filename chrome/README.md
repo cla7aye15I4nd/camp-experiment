@@ -20,14 +20,14 @@ clang_base_path = "/usr/lib/llvm-14"
 treat_warnings_as_errors = false
 clang_use_chrome_plugins = false
 is_debug = false
-is_asan = false
+is_camp = false
 symbol_level = 1
-is_component_build = true 
+is_component_build = true
 ```
 
 ## ASAN
 ```
-patch -p1 < asan.patch
+patch -p1 < final.patch
 ```
 ```config
 clang_base_path = "/usr/lib/llvm-14"
@@ -42,7 +42,7 @@ is_component_build = true
 
 ## CAMP
 ```
-patch -p1 < camp.patch
+patch -p1 < final.patch
 ```
 in `src/third_party/boringssl/src/crypto/mem.c:OPENSSL_free:188`, replace code between `#else` and `#elseif` with:
 ```c
