@@ -1,3 +1,0 @@
-[submodule "juliet/qiling"]
-	path = juliet/qiling
-	url = git@github.com:qilingframework/qiling.git
