@@ -1,8 +1,34 @@
+diff --git a/base/allocator/allocator.gni b/base/allocator/allocator.gni
+index 04d2a4c6a6dcc..57801f99b56f0 100644
+--- a/base/allocator/allocator.gni
++++ b/base/allocator/allocator.gni
+@@ -6,7 +6,7 @@ import("//build/config/chromecast_build.gni")
+ import("//build/config/sanitizers/sanitizers.gni")
+ 
+ # Sanitizers replace the allocator, don't use our own.
+-_is_using_sanitizers = is_asan || is_hwasan || is_lsan || is_tsan || is_msan
++_is_using_sanitizers = is_asan || is_hwasan || is_lsan || is_tsan || is_msan || is_camp
+ 
+ # - Windows: shims don't work for component builds and debug CRT is not
+ # compatible, see below. On x86, there are some memory regresions.
+diff --git a/build/config/BUILD.gn b/build/config/BUILD.gn
+index c0a686022adf6..46c73328401e5 100644
+--- a/build/config/BUILD.gn
++++ b/build/config/BUILD.gn
+@@ -78,7 +78,7 @@ config("feature_flags") {
+   if (use_x11) {
+     defines += [ "USE_X11=1" ]
+   }
+-  if (is_asan || is_hwasan || is_lsan || is_tsan || is_msan) {
++  if (is_asan || is_hwasan || is_lsan || is_tsan || is_msan || is_camp) {
+     defines += [ "MEMORY_TOOL_REPLACES_ALLOCATOR" ]
+   }
+   if (is_asan) {
 diff --git a/build/config/sanitizers/BUILD.gn b/build/config/sanitizers/BUILD.gn
-index cb07c547122d8..e95688423d301 100644
+index f90b3318ea627..5db7a3cb1735e 100644
 --- a/build/config/sanitizers/BUILD.gn
 +++ b/build/config/sanitizers/BUILD.gn
-@@ -157,8 +157,17 @@ config("default_sanitizer_ldflags") {
+@@ -155,6 +155,13 @@ config("default_sanitizer_ldflags") {
  
    if (is_posix || is_fuchsia) {
      ldflags = []
@@ -12,28 +38,11 @@ index cb07c547122d8..e95688423d301 100644
 +        "-ltcmalloc_tcmalloc", 
 +      ]
 +    }
++
      if (is_asan) {
--      ldflags += [ "-fsanitize=address" ]
-+      ldflags += [ "-fsanitize=address",
-+                   "-mllvm", "-asan-stack=0",
-+                   "-mllvm", "-asan-globals=0",
-+                   "-fsanitize-recover=address" ]
+       ldflags += [ "-fsanitize=address" ]
      }
-     if (is_hwasan) {
-       ldflags += [ "-fsanitize=hwaddress" ]
-@@ -261,7 +270,10 @@ config("common_sanitizer_flags") {
- config("asan_flags") {
-   cflags = []
-   if (is_asan) {
--    cflags += [ "-fsanitize=address" ]
-+      cflags += [ "-fsanitize=address",
-+                  "-mllvm", "-asan-stack=0",
-+                  "-mllvm", "-asan-globals=0",
-+                  "-fsanitize-recover=address" ]    
-     if (is_win) {
-       if (!defined(asan_win_blocklist_path)) {
-         asan_win_blocklist_path =
-@@ -382,6 +394,21 @@ config("hwasan_flags") {
+@@ -399,6 +406,21 @@ config("hwasan_flags") {
    }
  }
  
@@ -55,24 +64,25 @@ index cb07c547122d8..e95688423d301 100644
  config("lsan_flags") {
    if (is_lsan) {
      cflags = [ "-fsanitize=leak" ]
-@@ -514,6 +541,7 @@ all_sanitizer_configs = [
-   ":common_sanitizer_flags",
-   ":coverage_flags",
-   ":default_sanitizer_ldflags",
+@@ -536,6 +558,7 @@ all_sanitizer_configs = [
+   ":lsan_flags",
+   ":msan_flags",
+   ":tsan_flags",
 +  ":camp_flags",
-   ":asan_flags",
-   ":cfi_flags",
-   ":hwasan_flags",
+   ":ubsan_flags",
+   ":ubsan_no_recover",
+   ":ubsan_null_flags",
 diff --git a/build/config/sanitizers/sanitizers.gni b/build/config/sanitizers/sanitizers.gni
-index ebc3c3e2365a1..9fc1927f9a4b3 100644
+index 39d197cf600c5..d82ba9e6ff820 100644
 --- a/build/config/sanitizers/sanitizers.gni
 +++ b/build/config/sanitizers/sanitizers.gni
-@@ -10,6 +10,8 @@ import("//build/config/profiling/profiling.gni")
- import("//build/toolchain/toolchain.gni")
+@@ -18,6 +18,9 @@ declare_args() {
+   # See http://clang.llvm.org/docs/HardwareAssistedAddressSanitizerDesign.html
+   is_hwasan = false
  
- declare_args() {
++
 +  is_camp = false
 +  
-   # Compile for Address Sanitizer to find memory bugs.
-   is_asan = false
+   # Compile for Leak Sanitizer to find leaks.
+   is_lsan = false
  
