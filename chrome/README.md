@@ -11,18 +11,18 @@ fetch --nohooks chromium
 cd src
 ./build/install-build-deps.sh
 gclient runhooks
-git checkout tags/111.0.5505.0
+git checkout tags/89.0.4389.128
 ```
 
 ## Native
 ```config
-clang_base_path = "/usr/lib/llvm-14"
-treat_warnings_as_errors = false
+clang_base_path = "/usr/lib/llvm-12/"
 clang_use_chrome_plugins = false
 is_debug = false
-is_camp = false
-symbol_level = 1
 is_component_build = true
+symbol_level = 1
+treat_warnings_as_errors = false
+enable_nacl = false
 ```
 
 ## ASAN
@@ -44,20 +44,16 @@ is_component_build = true
 ```
 patch -p1 < final.patch
 ```
-in `src/third_party/boringssl/src/crypto/mem.c:OPENSSL_free:188`, replace code between `#else` and `#elseif` with:
-```c
-(void)sdallocx;
-free(ptr);
-```
 
 ```config
-clang_base_path = "/usr/lib/llvm-14"
-treat_warnings_as_errors = false
+clang_base_path = "/usr/lib/llvm-12/"
 clang_use_chrome_plugins = false
-is_debug = false
 is_camp = true
-symbol_level = 1
+is_debug = false
 is_component_build = true
+symbol_level = 1
+treat_warnings_as_errors = false
+
 enable_nacl = false
 ```
 
