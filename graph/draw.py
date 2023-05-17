@@ -61,6 +61,46 @@ cpu2006 = {
         '217.43',
         '260.07',
     ],
+    'camp oob': [
+        '296.57',
+        '356.14',
+        '129.43',
+        '135.84',
+        '244.50',
+        '265.09',
+        '335.63',
+        '282.63',
+        '185.43',
+        '448.44',
+        '91.77',
+        '446.40',
+        '286.56',
+        '781.42',
+        '219.07',
+        '143.41',
+        '320.00',
+        '609.21',
+    ],
+    'camp uaf': [
+        '383.096',
+        '232.389',
+        '163.851',
+        '159.839',
+        '256.221',
+        '250.598',
+        '154.582',
+        '255.625',
+        '161.147',
+        '197.54',
+        '92.564',
+        '227.528',
+        '149.588',
+        '754.508',
+        '128.841',
+        '122.995',
+        '361.81',
+        '811.31',
+    ],
     'camp': [
         '546.87',
         '359.23',
@@ -81,7 +121,7 @@ cpu2006 = {
         '401.35',
         '702.18',
     ],
-    'camp-remove': [
+    'redundant-opt': [
         '641.61',
         '388.88',
         '258.75',
@@ -101,7 +141,7 @@ cpu2006 = {
         '565.59',
         '1115.45',
     ],
-    'camp-type': [
+    'struct-opt': [
         '750.33',
         '442.37',
         '332.30',
@@ -121,7 +161,7 @@ cpu2006 = {
         '777.30',
         '1316.46',
     ],
-    'camp-merge': [
+    'merge-opt': [
         '541.86',
         '704.51',
         '245.60',
@@ -141,6 +181,26 @@ cpu2006 = {
         '609.89',
         '1203.03',
     ],
+    'dangnull': [
+        '448.68',
+        '245.232',
+        '255.18',
+        '206.053',
+        '247.445',
+        '344.862',
+        '160.054',
+        '264.779',
+        '166.291',
+        '193.022',
+        '127.539',
+        '241.615',
+        '142.438',
+        '796.722',
+        '130.798',
+        '236.183',
+        '306.507',
+        '682.351',
+    ]
 }
 
 import numpy as np
@@ -158,19 +218,15 @@ total_width, n = 0.8, len(cpu2006.keys())
 width = total_width / n
 x = x - (total_width - width) / 2
 
-plt.figure(figsize=(11,5))
+plt.figure(figsize=(12,5))
 plt.xticks(x, labels, rotation=75)
 
 for i, key in enumerate(cpu2006.keys()):
     plt.bar(x + i * width, cpu2006[key], width=width, label=key)
 
-plt.subplots_adjust(bottom=0.25)
-plt.legend()
-plt.ylabel("Runtime Overhead (%)", font = {
-    'family' : 'Computer Modern Roamn',
-    'weight' : 'normal',
-    'size'   : 12,
-})
+plt.subplots_adjust(bottom=0.20, left=0.08, right=0.95)
+plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.07), ncol=5, fancybox=True, shadow=True)
+plt.ylabel("Runtime Overhead (%)")
 
-
-plt.savefig('cpu2006.png')
+plt.savefig('cpu2006.png', dpi=300)
+plt.savefig('cpu2006.pdf', dpi=300)
