@@ -23,9 +23,15 @@ def test_nginx(tag):
     print('start')
 
     # ab -n 10000000 -c 100 http://0.0.0.0/index.html > ../asan.txt
+    # ../wrk/wrk -t8 -c100 -d60s --latency http://localhost:8080/index.html
+
     benchmark = subprocess.Popen(
-        ['ab', '-n', '10000000', '-c', '100', 'http://0.0.0.0/index.html'],
+        ['wrk/wrk', '-t8', '-c100', '-d60s', '--latency', 'http://localhost:8080/index.html'],
         stdout=subprocess.PIPE)
+
+    # benchmark = subprocess.Popen(
+    #     ['ab', '-n', '10000000', '-c', '100', 'http://0.0.0.0/index.html'],
+    #     stdout=subprocess.PIPE)
 
     proc = os.popen("ps -aux | grep nginx | grep root").read().split()[1]
     print('proc', proc)
@@ -56,6 +62,7 @@ def test_nginx(tag):
     stop_nginx.communicate()
 
     time.sleep(1)
+    print(out.decode())
 
     for line in out.decode().splitlines():
         if line.startswith('Time taken for tests:'):

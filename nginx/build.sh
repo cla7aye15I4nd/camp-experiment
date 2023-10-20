@@ -19,3 +19,7 @@ make install
 make -j16 CC="clang -fsanitize=address -fsanitize-recover=address -mllvm -asan-stack=0 -mllvm -asan-globals=0"
 make install
 
+./configure --prefix=asanmm
+make -j16 CC="/home/moe/ASAN--/llvm-12.0.0-project/ASan--Build-12.0.0/bin/clang -fsanitize=address -fsanitize-recover=address -mllvm -asan-stack=0 -mllvm -asan-globals=0"
+make install
+
