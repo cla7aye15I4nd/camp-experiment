@@ -23,6 +23,7 @@ def create_spec2017_script(tag):
 
     tags = [tag]
     base_dir = '/root/cpu2017/benchspec/CPU'
+    copy_dir = '/root/cpu2017-copy/benchspec/CPU'
     run_base = 'run_peak_refspeed_'
 
     for name, cases in script.items():
@@ -32,7 +33,8 @@ def create_spec2017_script(tag):
                 f.write('g++ spectest.c -o spectest\n\n')
 
                 for case in cases:
-                    case_path = os.path.join(base_dir, case, 'run')
+                    os.system(f'cp -r {base_dir}/{case} {copy_dir}')
+                    case_path = os.path.join(copy_dir, case, 'run')
                     avail = [dir for dir in os.listdir(case_path) if dir.startswith(f'{run_base}{tag}.')]
 
                     if not avail:
@@ -79,7 +81,8 @@ def create_spec2006_script(tag):
     }
 
     tags = [tag]
-    base_dir = '/root/cpu2006/benchspec/CPU2006'
+    base_dir = '/home/moe/cpu2006/benchspec/CPU2006'
+    copy_dir = '/root/cpu2006-copy/benchspec/CPU2006'
     run_base = 'run_base_ref_'
 
     for name, cases in script.items():
@@ -89,7 +92,8 @@ def create_spec2006_script(tag):
                 f.write('g++ spectest.c -o spectest\n\n')
 
                 for case in cases:
-                    case_path = os.path.join(base_dir, case, 'run')
+                    os.system(f'cp -r {base_dir}/{case} {copy_dir}')
+                    case_path = os.path.join(copy_dir, case, 'run')
                     avail = [dir for dir in os.listdir(case_path) if dir.startswith(f'{run_base}{tag}.')]
 
                     if not avail:
