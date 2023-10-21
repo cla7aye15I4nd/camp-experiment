@@ -35,7 +35,7 @@ def create_spec2017_script(tag):
 
                 for case in cases:
                     os.system(f'mkdir -p {copy_dir}/{case}/run')
-                    case_path = os.path.join(copy_dir, case, 'run')
+                    case_path = os.path.join(base_dir, case, 'run')
                     avail = [dir for dir in os.listdir(case_path) if dir.startswith(f'{run_base}{tag}.')]
 
                     if not avail:
@@ -96,7 +96,7 @@ def create_spec2006_script(tag):
 
                 for case in cases:
                     os.system(f'mkdir -p {copy_dir}/{case}/run')
-                    case_path = os.path.join(copy_dir, case, 'run')
+                    case_path = os.path.join(base_dir, case, 'run')
                     avail = [dir for dir in os.listdir(case_path) if dir.startswith(f'{run_base}{tag}.')]
 
                     if not avail:
