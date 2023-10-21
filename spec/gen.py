@@ -26,6 +26,7 @@ def create_spec2017_script(tag):
     copy_dir = '/root/cpu2017-copy/benchspec/CPU'
     run_base = 'run_peak_refspeed_'
 
+    os.system(f'mkdir -p {copy_dir}')
     for name, cases in script.items():
         for tag in tags:
             with open(f'{name}_{tag}_2017_test.sh', 'w') as f:
@@ -33,14 +34,15 @@ def create_spec2017_script(tag):
                 f.write('g++ spectest.c -o spectest\n\n')
 
                 for case in cases:
-                    os.system(f'cp -r {base_dir}/{case} {copy_dir}')
+                    os.system(f'mkdir -p {copy_dir}/{case}/run')
                     case_path = os.path.join(copy_dir, case, 'run')
                     avail = [dir for dir in os.listdir(case_path) if dir.startswith(f'{run_base}{tag}.')]
 
                     if not avail:
                         print("Not Found", case, tag)
                         continue
-                    run_path = os.path.join(case_path, max(avail))
+                    os.system(f'cp -r {base_dir}/{case}/run/{max(avail)} {copy_dir}/{case}/run')
+                    run_path = os.path.join(copy_dir, case, 'run', max(avail))
 
                     f.write(f'cd {run_path}\n')
                     with open(f'{run_path}/speccmds.cmd') as sf:
@@ -85,6 +87,7 @@ def create_spec2006_script(tag):
     copy_dir = '/root/cpu2006-copy/benchspec/CPU2006'
     run_base = 'run_base_ref_'
 
+    os.system(f'mkdir -p {copy_dir}')
     for name, cases in script.items():
         for tag in tags:
             with open(f'{name}_{tag}_2006_test.sh', 'w') as f:
@@ -92,14 +95,15 @@ def create_spec2006_script(tag):
                 f.write('g++ spectest.c -o spectest\n\n')
 
                 for case in cases:
-                    os.system(f'cp -r {base_dir}/{case} {copy_dir}')
+                    os.system(f'mkdir -p {copy_dir}/{case}/run')
                     case_path = os.path.join(copy_dir, case, 'run')
                     avail = [dir for dir in os.listdir(case_path) if dir.startswith(f'{run_base}{tag}.')]
 
                     if not avail:
                         print("Not Found", case, tag)
                         continue
-                    run_path = os.path.join(case_path, max(avail))
+                    os.system(f'cp -r {base_dir}/{case}/run/{max(avail)} {copy_dir}/{case}/run')
+                    run_path = os.path.join(copy_dir, case, 'run', max(avail))
 
                     f.write(f'cd {run_path}\n')
                     with open(f'{run_path}/speccmds.cmd') as sf:
