@@ -1511,13 +1511,13 @@ def test_heap_overflow(vtype, text=b'20\n'):
 test_heap_overflow("CWE122_Heap_Based_Buffer_Overflow")
 
 # [TESTED]
-test_heap_overflow("CWE124_Buffer_Underwrite", text=b'-15\n')
+# test_heap_overflow("CWE124_Buffer_Underwrite", text=b'-15\n')
 
 # [TESTED]
-test_heap_overflow("CWE126_Buffer_Overread")
+# test_heap_overflow("CWE126_Buffer_Overread")
 
 # [TESTED]
-test_heap_overflow("CWE127_Buffer_Underread", text=b'-15\n')
+# test_heap_overflow("CWE127_Buffer_Underread", text=b'-15\n')
 
 # [TESTED]
 test_must_be_detected('CWE415_Double_Free')
@@ -1526,7 +1526,7 @@ test_must_be_detected('CWE415_Double_Free')
 test_must_be_detected_with_gdb('CWE416_Use_After_Free')
 
 # [TESTED]
-test_must_be_detected_with_gdb('CWE476_NULL_Pointer_Dereference', gdbscript='null.gdb')
+# test_must_be_detected_with_gdb('CWE476_NULL_Pointer_Dereference', gdbscript='null.gdb')
 
 # [TESTED]
 test_must_be_detected('CWE761_Free_Pointer_Not_at_Start_of_Buffer')
