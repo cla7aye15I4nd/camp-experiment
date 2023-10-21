@@ -1338,12 +1338,8 @@ stack_oob_whitelist = heap_based_overflow_whitelist + buffer_underread_whitelist
 
 badout = {
     'CWE122_Heap_Based_Buffer_Overflow': [],
-    'CWE124_Buffer_Underwrite': [],
-    'CWE126_Buffer_Overread': [],
-    'CWE127_Buffer_Underread': [],
     'CWE415_Double_Free': [],
     'CWE416_Use_After_Free': [],
-    'CWE476_NULL_Pointer_Dereference': [],
     'CWE761_Free_Pointer_Not_at_Start_of_Buffer': [],
 }
 
