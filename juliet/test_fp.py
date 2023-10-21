@@ -44,7 +44,7 @@ for idx, (key, path_ans) in enumerate(goodans.items()):
     with open("/tmp/file.txt") as f:
         p = subprocess.Popen(
                 [f'{path_out}'], 
-                env={'LD_LIBRARY_PATH': '/home/moe/violet/build/src/safe_tcmalloc/tcmalloc'},
+                env={'LD_LIBRARY_PATH': '/root/CAMP/build/src/safe_tcmalloc/tcmalloc'},
                 stdin=f,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE)

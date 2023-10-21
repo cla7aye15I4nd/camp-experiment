@@ -12,6 +12,6 @@ ab -n 10000000 -c 100 http://0.0.0.0/index.html > ../native.txt
 sudo ./native/sbin/nginx -s stop
 sleep 1
 
-sudo LD_LIBRARY_PATH=/home/moe/violet/build/src/safe_tcmalloc/tcmalloc ./camp/sbin/nginx
+sudo LD_LIBRARY_PATH=/root/CAMP/build/src/safe_tcmalloc/tcmalloc ./camp/sbin/nginx
 ab -n 10000000 -c 100 http://0.0.0.0/index.html > ../camp.txt
-sudo LD_LIBRARY_PATH=/home/moe/violet/build/src/safe_tcmalloc/tcmalloc ./camp/sbin/nginx -s stop
+sudo LD_LIBRARY_PATH=/root/CAMP/build/src/safe_tcmalloc/tcmalloc ./camp/sbin/nginx -s stop

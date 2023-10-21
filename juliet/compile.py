@@ -41,9 +41,9 @@ os.system('cd dataset && make individuals -j`nproc`')
 collect('badans')
 
 patch('bad')
-os.system('cd dataset && make CC=/home/moe/violet/tools/vcc CPP=/home/moe/violet/tools/v++ individuals -j`nproc`')
+os.system('cd dataset && make CC=/root/CAMP/tools/vcc CPP=/root/CAMP/tools/v++ individuals -j`nproc`')
 collect('goodout')
 
 patch('good')
-os.system('cd dataset && make CC=/home/moe/violet/tools/vcc CPP=/home/moe/violet/tools/v++ individuals -j`nproc`')
+os.system('cd dataset && make CC=/root/CAMP/tools/vcc CPP=/root/CAMP/tools/v++ individuals -j`nproc`')
 collect('badout')

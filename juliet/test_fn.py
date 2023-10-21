@@ -1385,7 +1385,7 @@ def common_setup(path, text=b'XXXXSSSS\n'):
         if 'listen' in path:
             p = subprocess.Popen(
                 [f'{path}'],
-                env={'LD_LIBRARY_PATH': '/home/moe/violet/build/src/safe_tcmalloc/tcmalloc', 'ADD': 'XXXXSSSS'},
+                env={'LD_LIBRARY_PATH': '/root/CAMP/build/src/safe_tcmalloc/tcmalloc', 'ADD': 'XXXXSSSS'},
                 stdin=f,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE)
@@ -1401,7 +1401,7 @@ def common_setup(path, text=b'XXXXSSSS\n'):
             th.start()
             p = subprocess.Popen(
                 [f'{path}'],
-                env={'LD_LIBRARY_PATH': '/home/moe/violet/build/src/safe_tcmalloc/tcmalloc', 'ADD': 'XXXXSSSS'},
+                env={'LD_LIBRARY_PATH': '/root/CAMP/build/src/safe_tcmalloc/tcmalloc', 'ADD': 'XXXXSSSS'},
                 stdin=f,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE)
@@ -1409,7 +1409,7 @@ def common_setup(path, text=b'XXXXSSSS\n'):
         else:
             p = subprocess.Popen(
                 [f'{path}'],
-                env={'LD_LIBRARY_PATH': '/home/moe/violet/build/src/safe_tcmalloc/tcmalloc', 'ADD': 'XXXXSSSS'},
+                env={'LD_LIBRARY_PATH': '/root/CAMP/build/src/safe_tcmalloc/tcmalloc', 'ADD': 'XXXXSSSS'},
                 stdin=f,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE)
@@ -1464,7 +1464,7 @@ def test_must_be_detected_with_gdb(vtype, gdbscript='uaf.gdb'):
         for _ in range(50):
             p = subprocess.Popen(
                 ['gdb', '--batch', '--command', gdbscript, f'{path}'],
-                env={'LD_LIBRARY_PATH': '/home/moe/violet/build/src/safe_tcmalloc/tcmalloc'},
+                env={'LD_LIBRARY_PATH': '/root/CAMP/build/src/safe_tcmalloc/tcmalloc'},
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE)
             

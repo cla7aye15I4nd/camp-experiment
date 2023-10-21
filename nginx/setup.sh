@@ -17,7 +17,7 @@ popd
 git clone --branch release-1.22.1 https://github.com/nginx/nginx.git
 pushd nginx
 ./auto/configure
-make CC=/home/moe/violet/tools/vcc CXX=/home/moe/violet/tools/v++ -j`nproc`
+make CC=/root/CAMP/tools/vcc CXX=/root/CAMP/tools/v++ -j`nproc`
 popd
 ​
 # copy nginx basic conf

@@ -22,7 +22,7 @@ def create_spec2017_script(tag):
     }
 
     tags = [tag]
-    base_dir = '/home/moe/cpu2017/benchspec/CPU'
+    base_dir = '/root/cpu2017/benchspec/CPU'
     run_base = 'run_peak_refspeed_'
 
     for name, cases in script.items():
@@ -48,7 +48,7 @@ def create_spec2017_script(tag):
                                 line_split = line_split[:line_split.index('>')]
                                 while not line_split[0].startswith('../run'):
                                     line_split.pop(0)
-                                f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line_split) + '\n')
+                                f.write('/root/camp-experiment/spec/spectest ' + ' '.join(line_split) + '\n')
                     
                     f.write('\n')
 
@@ -79,7 +79,7 @@ def create_spec2006_script(tag):
     }
 
     tags = [tag]
-    base_dir = '/home/moe/cpu2006/benchspec/CPU2006'
+    base_dir = '/root/cpu2006/benchspec/CPU2006'
     run_base = 'run_base_ref_'
 
     for name, cases in script.items():
@@ -109,9 +109,9 @@ def create_spec2006_script(tag):
                                 while not line_split[0].startswith('../run'):
                                     line_split.pop(0)
                                 if inp:
-                                    f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line_split) + f' < {inp} \n')
+                                    f.write('/root/camp-experiment/spec/spectest ' + ' '.join(line_split) + f' < {inp} \n')
                                 else:
-                                    f.write('/home/moe/camp-experiment/spec/spectest ' + ' '.join(line_split) + '\n')
+                                    f.write('/root/camp-experiment/spec/spectest ' + ' '.join(line_split) + '\n')
                     
                     f.write('\n')
 

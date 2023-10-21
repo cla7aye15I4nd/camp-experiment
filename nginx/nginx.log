@@ -415,8 +415,8 @@ Percentage of the requests served within a certain time (ms)
 ==2667359==ERROR: LeakSanitizer: detected memory leaks
 
 Direct leak of 1024 byte(s) in 1 object(s) allocated from:
-    #0 0x4a6127 in posix_memalign (/home/moe/camp-experiment/nginx/nginx-1.22.1/asan/sbin/nginx+0x4a6127)
-    #1 0x53f637 in ngx_memalign /home/moe/camp-experiment/nginx/nginx-1.22.1/src/os/unix/ngx_alloc.c:57:11
+    #0 0x4a6127 in posix_memalign (/root/camp-experiment/nginx/nginx-1.22.1/asan/sbin/nginx+0x4a6127)
+    #1 0x53f637 in ngx_memalign /root/camp-experiment/nginx/nginx-1.22.1/src/os/unix/ngx_alloc.c:57:11
 
 SUMMARY: AddressSanitizer: 1024 byte(s) leaked in 1 allocation(s).
 asan: 153.169s 378092kb

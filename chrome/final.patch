@@ -34,7 +34,7 @@ index f90b3318ea627..5db7a3cb1735e 100644
      ldflags = []
 +    if (is_camp) {
 +      ldflags += [
-+        "-L/home/moe/violet/build/src/safe_tcmalloc/tcmalloc",
++        "-L/root/CAMP/build/src/safe_tcmalloc/tcmalloc",
 +        "-ltcmalloc_tcmalloc", 
 +      ]
 +    }
@@ -50,9 +50,9 @@ index f90b3318ea627..5db7a3cb1735e 100644
 +  if (is_camp) {
 +    cflags = [
 +      "-O1", "-Xclang", "-load", "-Xclang",
-+      "/home/moe/violet/build/src/compiler_pass/libProtectionPass.so",
++      "/root/CAMP/build/src/compiler_pass/libProtectionPass.so",
 +      "-flegacy-pass-manager",
-+      "-L/home/moe/violet/build/src/safe_tcmalloc/tcmalloc",
++      "-L/root/CAMP/build/src/safe_tcmalloc/tcmalloc",
 +      "-ltcmalloc_tcmalloc", 
 +      "-Qunused-arguments", 
 +      "-Wpointer-arith", 

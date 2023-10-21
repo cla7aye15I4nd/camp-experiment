@@ -5,7 +5,7 @@ import sys
 
 env_map = {
     'asan': {'ASN_OPTIONS': 'halt_on_error=0'},
-    'camp': {'LD_LIBRARY_PATH': '/home/moe/violet/build/src/safe_tcmalloc/tcmalloc'},
+    'camp': {'LD_LIBRARY_PATH': '/root/CAMP/build/src/safe_tcmalloc/tcmalloc'},
     'native': {},
 }
 
@@ -17,7 +17,7 @@ def test_nginx(tag):
     start_nginx = subprocess.Popen(
         ['valgrind', '--trace-children=yes', f'./{tag}/sbin/nginx'], 
         env=env_map[tag],
-        cwd='/home/moe/camp-experiment/nginx/nginx-1.22.1')
+        cwd='/root/camp-experiment/nginx/nginx-1.22.1')
 
     start_nginx.communicate()
     print('start')
@@ -58,7 +58,7 @@ def test_nginx(tag):
     stop_nginx = subprocess.Popen(
         [f'./{tag}/sbin/nginx', '-s', 'stop'],
         env=env_map[tag],
-        cwd='/home/moe/camp-experiment/nginx/nginx-1.22.1')
+        cwd='/root/camp-experiment/nginx/nginx-1.22.1')
     stop_nginx.communicate()
 
     time.sleep(1)

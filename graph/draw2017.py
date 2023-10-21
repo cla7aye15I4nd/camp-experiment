@@ -140,12 +140,26 @@ cpu2017 = {
         '1566.02',
         '21760.75',
         '2510.21',
+    ],
+    'no-cache': [
+        '0',
+        '0',
+        '595.652',
+        '0',
+        '535.111',
+        '308.079',
+        '913.657',
+        '3044.342',
+        '819.27',
+        '7463.338',
+        '1757.827',
     ]
 }
 
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
 
 native = np.array([float(x) for x in cpu2017['native']])
 cpu2017.pop('native')
@@ -160,6 +174,19 @@ for key in cpu2017.keys():
         v = float(cpu2017[key][i]) / native[i]
         cpu2017[key][i] = v
 
+def g_mean(x):
+    prod = 1
+    n = 0
+    for v in x:
+        if v > 1:
+            prod *= v - 1
+            n += 1
+    return prod ** (1. / n)
+
+print('camp', cpu2017['camp'])
+print('no-cache', cpu2017['no-cache'])
+print(g_mean(cpu2017['camp']))
+print(g_mean(cpu2017['no-cache']))
 
 # cpu2017.pop('tcmalloc')
 size = len(labels)
@@ -169,6 +196,7 @@ total_width, n = 0.8, len(cpu2017.keys())
 width = total_width / n
 x = x - (total_width - width) / 2
 
+## set the font with times new roman
 plt.figure(figsize=(12,5))
 plt.xticks(x, labels, fontsize=12)
 
